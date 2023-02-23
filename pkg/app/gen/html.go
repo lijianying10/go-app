@@ -1349,20 +1349,6 @@ Note: The xmlns attribute is only required on the outermost svg element of SVG d
 	},
 
 	{
-		Name: "font-face-src",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <font-face-src> SVG element corresponds to the src descriptor in CSS @font-face rules. It serves as container for <font-face-name>, pointing to locally installed copies of this font, and <font-face-uri>, utilizing remotely defined fonts.`,
-		Attrs: attrsSVGByNames(),
-	},
-
-	{
-		Name: "font-face-uri",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <font-face-uri> SVG element points to a remote definition of the current font.`,
-		Attrs: attrsSVGByNames(),
-	},
-
-	{
 		Name: "altGlyphDef",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <altGlyphDef> SVG element defines a substitution representation for glyphs.`,
@@ -1766,14 +1752,6 @@ The <altGlyph> SVG element allows sophisticated selection of the glyphs used to 
 	},
 
 	{
-		Name: "font-face",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <font-face> SVG element corresponds to the CSS @font-face rule. It defines a font's outer properties.`,
-		Attrs:         attrsSVGByNames(),
-		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
 		Name: "title",
 		Doc: `The <title> element provides an accessible, short-text description of any SVG container element or graphics element.
 Text in a <title> element is not rendered as part of the graphic, but browsers usually display it as a tooltip. If an element can be described by visible text, it is recommended to reference that text with an aria-labelledby attribute rather than using the <title> element.
@@ -1800,13 +1778,13 @@ Note: For backward compatibility with SVG 1.1, <title> elements should be the fi
 			"height",
 			"href",
 			"href",
-			"xlink:href",
+
 			"href",
-			"xlink:href",
+
 			"href",
-			"xlink:href",
+
 			"href",
-			"xlink:href",
+
 			"href",
 			"x",
 			"y",
@@ -1849,18 +1827,14 @@ Note: For backward compatibility with SVG 1.1, <title> elements should be the fi
 			"transform",
 			"vector-effect",
 			"visibility",
-			"xlink:href",
-			"xlink:title",
 		),
 		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
-		Name: "mpath",
-		Doc:  `The <mpath> sub-element for the <animateMotion> element provides the ability to reference an external <path> element as the definition of a motion path.`,
-		Attrs: attrsSVGByNames(
-			"xlink:href",
-		),
+		Name:          "mpath",
+		Doc:           `The <mpath> sub-element for the <animateMotion> element provides the ability to reference an external <path> element as the definition of a motion path.`,
+		Attrs:         attrsSVGByNames(),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
@@ -1901,7 +1875,7 @@ SVG's <a> element is a container, which means you can create a link around text 
 		Attrs: attrsSVGByNames(
 			"href",
 			"target",
-			"xlink:href",
+
 			"Core",
 			"id",
 			"lang",
@@ -1939,7 +1913,6 @@ SVG's <a> element is a container, which means you can create a link around text 
 			"transform",
 			"vector-effect",
 			"visibility",
-			"xlink:title",
 		),
 		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
@@ -1948,13 +1921,6 @@ SVG's <a> element is a container, which means you can create a link around text 
 		Name: "glyph",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 A <glyph> defines a single glyph in an SVG font.`,
-		Attrs:         attrsSVGByNames(),
-		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
-		Name:          "animate/contributors.txt",
-		Doc:           ``,
 		Attrs:         attrsSVGByNames(),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
@@ -1992,7 +1958,7 @@ The <pattern> is referenced by the fill and/or stroke attributes on other graphi
 			"viewBox",
 			"width",
 			"x",
-			"xlink:href",
+
 			"y",
 			"Core",
 			"id",
@@ -2030,71 +1996,8 @@ The <pattern> is referenced by the fill and/or stroke attributes on other graphi
 			"transform",
 			"vector-effect",
 			"visibility",
-			"xlink:title",
 		),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
-		Name: "text",
-		Doc: `The SVG <text> element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, like any other SVG graphics element.
-If text is included in SVG not inside of a <text> element, it is not rendered. This is different than being hidden by default, as setting the display property won't show the text.`,
-		Attrs: attrsSVGByNames(
-			"display",
-			"x",
-			"y",
-			"dx",
-			"dy",
-			"rotate",
-			"lengthAdjust",
-			"textLength",
-			"Core",
-			"id",
-			"tabindex",
-			"Styling",
-			"class",
-			"style",
-			"font-family",
-			"font-size",
-			"font-size-adjust",
-			"font-stretch",
-			"font-style",
-			"font-variant",
-			"font-weight",
-			"Conditional_Processing",
-			"requiredExtensions",
-			"systemLanguage",
-			"Presentation",
-			"clip-path",
-			"clip-rule",
-			"color",
-			"color-interpolation",
-			"color-rendering",
-			"cursor",
-			"display",
-			"dominant-baseline",
-			"fill",
-			"fill-opacity",
-			"fill-rule",
-			"filter",
-			"mask",
-			"opacity",
-			"pointer-events",
-			"shape-rendering",
-			"stroke",
-			"stroke-dasharray",
-			"stroke-dashoffset",
-			"stroke-linecap",
-			"stroke-linejoin",
-			"stroke-miterlimit",
-			"stroke-opacity",
-			"stroke-width",
-			"text-anchor",
-			"transform",
-			"vector-effect",
-			"visibility",
-		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
@@ -2112,14 +2015,6 @@ If text is included in SVG not inside of a <text> element, it is not rendered. T
 			"style",
 			"in",
 		),
-		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
-		Name: "font-face-name",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <font-face-name> element points to a locally installed copy of this font, identified by its name.`,
-		Attrs:         attrsSVGByNames(),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
@@ -2466,7 +2361,6 @@ Note: Don't be confused with CSS radial-gradient() as CSS gradients can only app
 			"transform",
 			"vector-effect",
 			"visibility",
-			"xlink:title",
 		),
 		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
@@ -2584,16 +2478,7 @@ where P(x,y) is the input image, in, and P'(x,y) is the destination. XC(x,y) and
 			"filterRes",
 			"filterUnits",
 			"primitiveUnits",
-			"xlink:href",
 		),
-		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
-		Name: "font-face-format",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <font-face-format> SVG element describes the type of font referenced by its parent <font-face-uri>.`,
-		Attrs:         attrsSVGByNames(),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
@@ -2793,7 +2678,7 @@ Note: While SVG's script element is equivalent to the HTML <script> element, it 
 			"href",
 			"href",
 			"type",
-			"xlink:href",
+
 			"Core",
 			"id",
 			"Styling",
@@ -2817,7 +2702,6 @@ Note: While SVG's script element is equivalent to the HTML <script> element, it 
 			"class",
 			"style",
 			"preserveAspectRatio",
-			"xlink:href",
 		),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
@@ -3002,18 +2886,10 @@ Note: The HTML spec defines <image> as a synonym for <img> while parsing HTML. T
 			"width",
 			"height",
 			"href",
-			"xlink:href",
+
 			"preserveAspectRatio",
 			"crossorigin",
 		),
-		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
-	},
-
-	{
-		Name: "missing-glyph",
-		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
-The <missing-glyph> SVG element's content is rendered, if for a given character the font doesn't define an appropriate <glyph>.`,
-		Attrs:         attrsSVGByNames(),
 		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
@@ -4009,12 +3885,6 @@ var svgattrs = map[string]attr{
 		Doc:  "The in attribute identifies input for the given filter primitive.",
 	},
 
-	"xlink:href": {
-		Name: "Xlink:href",
-		Type: "string",
-		Doc:  "Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.",
-	},
-
 	"style": {
 		Name: "Style",
 		Type: "string",
@@ -4521,12 +4391,6 @@ var svgattrs = map[string]attr{
 		Name: "By",
 		Type: "string",
 		Doc:  "The by attribute specifies a relative offset value for an attribute that will be modified during an animation.",
-	},
-
-	"xlink:title": {
-		Name: "Xlink:title",
-		Type: "attr|value",
-		Doc:  "Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.",
 	},
 
 	"filterUnits": {
@@ -5581,7 +5445,7 @@ import (
 		switch t.Name {
 		case "Elem", "ElemSelfClosing":
 			fmt.Fprintf(f, `
-			// %s returns an HTML element that %s
+			/* %s returns an HTML element that %s */
 			func %s(tag string) HTML%s {
 				e := &html%s{
 					htmlElement: htmlElement{
@@ -5603,7 +5467,7 @@ import (
 
 		default:
 			fmt.Fprintf(f, `
-			// %s returns an HTML element that %s
+			/* %s returns an HTML element that %s */
 			func %s() HTML%s {
 				e := &html%s{
 					htmlElement: htmlElement{
@@ -5667,7 +5531,7 @@ func writeInterface(w io.Writer, t tag) {
 		fmt.Fprintln(w)
 		fmt.Fprintln(w)
 
-		fmt.Fprintf(w, "// %s %s\n", a.Name, a.Doc)
+		fmt.Fprintf(w, "/* %s %s\n*/\n", a.Name, a.Doc)
 		writeAttrFunction(w, a, t, true)
 	}
 
@@ -5682,7 +5546,7 @@ func writeInterface(w io.Writer, t tag) {
 		fmt.Fprintln(w)
 		fmt.Fprintln(w)
 
-		fmt.Fprintf(w, "// %s %s\n", e.Name, e.Doc)
+		fmt.Fprintf(w, "/* %s %s\n*/\n", e.Name, e.Doc)
 		writeEventFunction(w, e, t, true)
 	}
 
