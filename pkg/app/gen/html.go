@@ -5161,9 +5161,36 @@ func eventHandlersByName(names ...string) []eventHandler {
 }
 
 func withSVGAnimationEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, svgEventHandlersByName(
-		"onbegin", "onend", "onrepeat",
-	)...)
+	begin := false
+	end := false
+	repeat := false
+	for _, h := range handlers {
+		if h.Name == "OnBegin" {
+			begin = true
+		}
+		if h.Name == "OnEnd" {
+			end = true
+		}
+		if h.Name == "OnRepeat" {
+			repeat = true
+		}
+	}
+	if !begin {
+		handlers = append(handlers, svgEventHandlersByName(
+			"onbegin",
+		)...)
+	}
+
+	if !end {
+		handlers = append(handlers, svgEventHandlersByName(
+			"onend",
+		)...)
+	}
+	if !repeat {
+		handlers = append(handlers, svgEventHandlersByName(
+			"onrepeat",
+		)...)
+	}
 
 	sort.Slice(handlers, func(i, j int) bool {
 		return strings.Compare(handlers[i].Name, handlers[j].Name) <= 0

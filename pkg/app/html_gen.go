@@ -56691,14 +56691,6 @@ type HTMLclipPath interface {
 	 */
 	ClipPath(v string) HTMLclipPath
 
-	/* ClipPath The clip-path presentation attribute defines or associates a clipping path with the element it is related to.
-	 */
-	ClipPath(v string) HTMLclipPath
-
-	/* ClipPath The clip-path presentation attribute defines or associates a clipping path with the element it is related to.
-	 */
-	ClipPath(v string) HTMLclipPath
-
 	/* ClipRule « SVG Attribute reference home
 	 */
 	ClipRule(v string) HTMLclipPath
@@ -56851,16 +56843,6 @@ func (e *htmlclipPath) Text(v any) HTMLclipPath {
 
 func (e *htmlclipPath) Class(v string) HTMLclipPath {
 	e.setAttr("class", v)
-	return e
-}
-
-func (e *htmlclipPath) ClipPath(v string) HTMLclipPath {
-	e.setAttr("clip-path", v)
-	return e
-}
-
-func (e *htmlclipPath) ClipPath(v string) HTMLclipPath {
-	e.setAttr("clip-path", v)
 	return e
 }
 
@@ -59718,10 +59700,6 @@ type HTMLellipse interface {
 	 */
 	Transform(v string) HTMLellipse
 
-	/* Transform The transform attribute defines a list of transform definitions that are applied to an element and the element's children.
-	 */
-	Transform(v string) HTMLellipse
-
 	/* VectorEffect The vector-effect property specifies the vector effect to use when drawing an object. Vector effects are applied before any of the other compositing operations, i.e. filters, masks and clips.
 	 */
 	VectorEffect(v string) HTMLellipse
@@ -60185,11 +60163,6 @@ func (e *htmlellipse) Systemlanguage(v string) HTMLellipse {
 
 func (e *htmlellipse) Tabindex(v string) HTMLellipse {
 	e.setAttr("tabindex", v)
-	return e
-}
-
-func (e *htmlellipse) Transform(v string) HTMLellipse {
-	e.setAttr("transform", v)
 	return e
 }
 
@@ -60913,10 +60886,6 @@ type HTMLsvg interface {
 	 */
 	Viewbox(v string) HTMLsvg
 
-	/* Viewbox The viewBox attribute defines the position and dimension, in user space, of an SVG viewport.
-	 */
-	Viewbox(v string) HTMLsvg
-
 	/* Visibility The visibility attribute lets you control the visibility of graphical elements. With a value of hidden or collapse the current graphics element is invisible.
 	 */
 	Visibility(v string) HTMLsvg
@@ -61435,11 +61404,6 @@ func (e *htmlsvg) VectorEffect(v string) HTMLsvg {
 
 func (e *htmlsvg) Version(v string) HTMLsvg {
 	e.setAttr("version", v)
-	return e
-}
-
-func (e *htmlsvg) Viewbox(v string) HTMLsvg {
-	e.setAttr("viewbox", v)
 	return e
 }
 
@@ -65983,10 +65947,6 @@ type HTMLanimate interface {
 	 */
 	OnBegin(h EventHandler, scope ...any) HTMLanimate
 
-	/* OnBegin
-	 */
-	OnBegin(h EventHandler, scope ...any) HTMLanimate
-
 	/* OnCancel
 	 */
 	OnCancel(h EventHandler, scope ...any) HTMLanimate
@@ -66062,10 +66022,6 @@ type HTMLanimate interface {
 	/* OnEmptied
 	 */
 	OnEmptied(h EventHandler, scope ...any) HTMLanimate
-
-	/* OnEnd
-	 */
-	OnEnd(h EventHandler, scope ...any) HTMLanimate
 
 	/* OnEnd
 	 */
@@ -66174,10 +66130,6 @@ type HTMLanimate interface {
 	/* OnRatechange
 	 */
 	OnRatechange(h EventHandler, scope ...any) HTMLanimate
-
-	/* OnRepeat
-	 */
-	OnRepeat(h EventHandler, scope ...any) HTMLanimate
 
 	/* OnRepeat
 	 */
@@ -66395,11 +66347,6 @@ func (e *htmlanimate) OnBegin(h EventHandler, scope ...any) HTMLanimate {
 	return e
 }
 
-func (e *htmlanimate) OnBegin(h EventHandler, scope ...any) HTMLanimate {
-	e.setEventHandler("begin", h, scope...)
-	return e
-}
-
 func (e *htmlanimate) OnCancel(h EventHandler, scope ...any) HTMLanimate {
 	e.setEventHandler("cancel", h, scope...)
 	return e
@@ -66492,11 +66439,6 @@ func (e *htmlanimate) OnDurationchange(h EventHandler, scope ...any) HTMLanimate
 
 func (e *htmlanimate) OnEmptied(h EventHandler, scope ...any) HTMLanimate {
 	e.setEventHandler("emptied", h, scope...)
-	return e
-}
-
-func (e *htmlanimate) OnEnd(h EventHandler, scope ...any) HTMLanimate {
-	e.setEventHandler("end", h, scope...)
 	return e
 }
 
@@ -66632,11 +66574,6 @@ func (e *htmlanimate) OnProgress(h EventHandler, scope ...any) HTMLanimate {
 
 func (e *htmlanimate) OnRatechange(h EventHandler, scope ...any) HTMLanimate {
 	e.setEventHandler("ratechange", h, scope...)
-	return e
-}
-
-func (e *htmlanimate) OnRepeat(h EventHandler, scope ...any) HTMLanimate {
-	e.setEventHandler("repeat", h, scope...)
 	return e
 }
 
@@ -67860,21 +67797,9 @@ type HTMLmarker interface {
 	 */
 	MarkerEnd(v string) HTMLmarker
 
-	/* MarkerEnd The marker-end attribute defines the arrowhead or polymarker that will be drawn at the final vertex of the given shape.
-	 */
-	MarkerEnd(v string) HTMLmarker
-
 	/* MarkerMid The marker-mid attribute defines the arrowhead or polymarker that will be drawn at all interior vertices of the given shape.
 	 */
 	MarkerMid(v string) HTMLmarker
-
-	/* MarkerMid The marker-mid attribute defines the arrowhead or polymarker that will be drawn at all interior vertices of the given shape.
-	 */
-	MarkerMid(v string) HTMLmarker
-
-	/* MarkerStart The marker-start attribute defines the arrowhead or polymarker that will be drawn at the first vertex of the given shape.
-	 */
-	MarkerStart(v string) HTMLmarker
 
 	/* MarkerStart The marker-start attribute defines the arrowhead or polymarker that will be drawn at the first vertex of the given shape.
 	 */
@@ -68118,23 +68043,8 @@ func (e *htmlmarker) MarkerEnd(v string) HTMLmarker {
 	return e
 }
 
-func (e *htmlmarker) MarkerEnd(v string) HTMLmarker {
-	e.setAttr("marker-end", v)
-	return e
-}
-
 func (e *htmlmarker) MarkerMid(v string) HTMLmarker {
 	e.setAttr("marker-mid", v)
-	return e
-}
-
-func (e *htmlmarker) MarkerMid(v string) HTMLmarker {
-	e.setAttr("marker-mid", v)
-	return e
-}
-
-func (e *htmlmarker) MarkerStart(v string) HTMLmarker {
-	e.setAttr("marker-start", v)
 	return e
 }
 
@@ -69288,30 +69198,6 @@ type HTMLuse interface {
 	 */
 	Height(v string) HTMLuse
 
-	/* Height The height attribute defines the vertical length of an element in the user coordinate system.
-	 */
-	Height(v string) HTMLuse
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLuse
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLuse
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLuse
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLuse
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLuse
-
 	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
 	 */
 	Href(v string) HTMLuse
@@ -69412,21 +69298,9 @@ type HTMLuse interface {
 	 */
 	Width(v string) HTMLuse
 
-	/* Width The width attribute defines the horizontal length of an element in the user coordinate system.
-	 */
-	Width(v string) HTMLuse
-
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
 	X(v string) HTMLuse
-
-	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
-	 */
-	X(v string) HTMLuse
-
-	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
-	 */
-	Y(v string) HTMLuse
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
@@ -69784,36 +69658,6 @@ func (e *htmluse) Height(v string) HTMLuse {
 	return e
 }
 
-func (e *htmluse) Height(v string) HTMLuse {
-	e.setAttr("height", v)
-	return e
-}
-
-func (e *htmluse) Href(v string) HTMLuse {
-	e.setAttr("href", v)
-	return e
-}
-
-func (e *htmluse) Href(v string) HTMLuse {
-	e.setAttr("href", v)
-	return e
-}
-
-func (e *htmluse) Href(v string) HTMLuse {
-	e.setAttr("href", v)
-	return e
-}
-
-func (e *htmluse) Href(v string) HTMLuse {
-	e.setAttr("href", v)
-	return e
-}
-
-func (e *htmluse) Href(v string) HTMLuse {
-	e.setAttr("href", v)
-	return e
-}
-
 func (e *htmluse) Href(v string) HTMLuse {
 	e.setAttr("href", v)
 	return e
@@ -69939,23 +69783,8 @@ func (e *htmluse) Width(v string) HTMLuse {
 	return e
 }
 
-func (e *htmluse) Width(v string) HTMLuse {
-	e.setAttr("width", v)
-	return e
-}
-
 func (e *htmluse) X(v string) HTMLuse {
 	e.setAttr("x", v)
-	return e
-}
-
-func (e *htmluse) X(v string) HTMLuse {
-	e.setAttr("x", v)
-	return e
-}
-
-func (e *htmluse) Y(v string) HTMLuse {
-	e.setAttr("y", v)
 	return e
 }
 
@@ -70439,10 +70268,6 @@ type HTMLset interface {
 	 */
 	OnBegin(h EventHandler, scope ...any) HTMLset
 
-	/* OnBegin
-	 */
-	OnBegin(h EventHandler, scope ...any) HTMLset
-
 	/* OnCancel
 	 */
 	OnCancel(h EventHandler, scope ...any) HTMLset
@@ -70518,10 +70343,6 @@ type HTMLset interface {
 	/* OnEmptied
 	 */
 	OnEmptied(h EventHandler, scope ...any) HTMLset
-
-	/* OnEnd
-	 */
-	OnEnd(h EventHandler, scope ...any) HTMLset
 
 	/* OnEnd
 	 */
@@ -70630,10 +70451,6 @@ type HTMLset interface {
 	/* OnRatechange
 	 */
 	OnRatechange(h EventHandler, scope ...any) HTMLset
-
-	/* OnRepeat
-	 */
-	OnRepeat(h EventHandler, scope ...any) HTMLset
 
 	/* OnRepeat
 	 */
@@ -70825,11 +70642,6 @@ func (e *htmlset) OnBegin(h EventHandler, scope ...any) HTMLset {
 	return e
 }
 
-func (e *htmlset) OnBegin(h EventHandler, scope ...any) HTMLset {
-	e.setEventHandler("begin", h, scope...)
-	return e
-}
-
 func (e *htmlset) OnCancel(h EventHandler, scope ...any) HTMLset {
 	e.setEventHandler("cancel", h, scope...)
 	return e
@@ -70922,11 +70734,6 @@ func (e *htmlset) OnDurationchange(h EventHandler, scope ...any) HTMLset {
 
 func (e *htmlset) OnEmptied(h EventHandler, scope ...any) HTMLset {
 	e.setEventHandler("emptied", h, scope...)
-	return e
-}
-
-func (e *htmlset) OnEnd(h EventHandler, scope ...any) HTMLset {
-	e.setEventHandler("end", h, scope...)
 	return e
 }
 
@@ -71062,11 +70869,6 @@ func (e *htmlset) OnProgress(h EventHandler, scope ...any) HTMLset {
 
 func (e *htmlset) OnRatechange(h EventHandler, scope ...any) HTMLset {
 	e.setEventHandler("ratechange", h, scope...)
-	return e
-}
-
-func (e *htmlset) OnRepeat(h EventHandler, scope ...any) HTMLset {
-	e.setEventHandler("repeat", h, scope...)
 	return e
 }
 
@@ -72412,10 +72214,6 @@ type HTMLpattern interface {
 	 */
 	Fill(v string) HTMLpattern
 
-	/* Fill The fill attribute has two different meanings. For shapes and text it's a presentation attribute that defines the color (or any SVG paint servers like gradients or patterns) used to paint the element; for animation it defines the final state of the animation.
-	 */
-	Fill(v string) HTMLpattern
-
 	/* FillOpacity The fill-opacity attribute is a presentation attribute defining the opacity of the paint server (color, gradient, pattern, etc.) applied to a shape.
 	 */
 	FillOpacity(v string) HTMLpattern
@@ -72479,10 +72277,6 @@ type HTMLpattern interface {
 	/* ShapeRendering The shape-rendering attribute provides hints to the renderer about what tradeoffs to make when rendering shapes like paths, circles, or rectangles.
 	 */
 	ShapeRendering(v string) HTMLpattern
-
-	/* Stroke The stroke attribute is a presentation attribute defining the color (or any SVG paint servers like gradients or patterns) used to paint the outline of the shape;
-	 */
-	Stroke(v string) HTMLpattern
 
 	/* Stroke The stroke attribute is a presentation attribute defining the color (or any SVG paint servers like gradients or patterns) used to paint the outline of the shape;
 	 */
@@ -72657,11 +72451,6 @@ func (e *htmlpattern) Fill(v string) HTMLpattern {
 	return e
 }
 
-func (e *htmlpattern) Fill(v string) HTMLpattern {
-	e.setAttr("fill", v)
-	return e
-}
-
 func (e *htmlpattern) FillOpacity(v string) HTMLpattern {
 	e.setAttr("fill-opacity", v)
 	return e
@@ -72739,11 +72528,6 @@ func (e *htmlpattern) Requiredextensions(n string, v any) HTMLpattern {
 
 func (e *htmlpattern) ShapeRendering(v string) HTMLpattern {
 	e.setAttr("shape-rendering", v)
-	return e
-}
-
-func (e *htmlpattern) Stroke(v string) HTMLpattern {
-	e.setAttr("stroke", v)
 	return e
 }
 
@@ -74198,10 +73982,6 @@ type HTMLfeBlend interface {
 	 */
 	Mode(v string) HTMLfeBlend
 
-	/* Mode The mode attribute defines the blending mode on the <feBlend> filter primitive.
-	 */
-	Mode(v string) HTMLfeBlend
-
 	/* Style The style attribute allows to style an element using CSS declarations. It functions identically to the style attribute in HTML.
 	 */
 	Style(v string) HTMLfeBlend
@@ -74267,11 +74047,6 @@ func (e *htmlfeBlend) Mode(v string) HTMLfeBlend {
 	return e
 }
 
-func (e *htmlfeBlend) Mode(v string) HTMLfeBlend {
-	e.setAttr("mode", v)
-	return e
-}
-
 func (e *htmlfeBlend) Style(v string) HTMLfeBlend {
 	e.setAttr("style", v)
 	return e
@@ -74315,33 +74090,9 @@ type HTMLfeComposite interface {
 	 */
 	In(v string) HTMLfeComposite
 
-	/* In The in attribute identifies input for the given filter primitive.
-	 */
-	In(v string) HTMLfeComposite
-
-	/* In The in attribute identifies input for the given filter primitive.
-	 */
-	In(v string) HTMLfeComposite
-
-	/* In The in attribute identifies input for the given filter primitive.
-	 */
-	In(v string) HTMLfeComposite
-
 	/* In2 The in2 attribute identifies the second input for the given filter primitive. It works exactly like the in attribute.
 	 */
 	In2(n string, v any) HTMLfeComposite
-
-	/* In2 The in2 attribute identifies the second input for the given filter primitive. It works exactly like the in attribute.
-	 */
-	In2(n string, v any) HTMLfeComposite
-
-	/* In2 The in2 attribute identifies the second input for the given filter primitive. It works exactly like the in attribute.
-	 */
-	In2(n string, v any) HTMLfeComposite
-
-	/* K1 The k1 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
-	 */
-	K1(v string) HTMLfeComposite
 
 	/* K1 The k1 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
 	 */
@@ -74351,14 +74102,6 @@ type HTMLfeComposite interface {
 	 */
 	K2(v string) HTMLfeComposite
 
-	/* K2 The k2 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
-	 */
-	K2(v string) HTMLfeComposite
-
-	/* K3 The k3 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
-	 */
-	K3(v string) HTMLfeComposite
-
 	/* K3 The k3 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
 	 */
 	K3(v string) HTMLfeComposite
@@ -74366,14 +74109,6 @@ type HTMLfeComposite interface {
 	/* K4 The k4 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
 	 */
 	K4(v string) HTMLfeComposite
-
-	/* K4 The k4 attribute defines one of the values to be used within the arithmetic operation of the <feComposite> filter primitive.
-	 */
-	K4(v string) HTMLfeComposite
-
-	/* Operator The operator attribute has two meanings based on the context it's used in. Either it defines the compositing or morphing operation to be performed.
-	 */
-	Operator(v string) HTMLfeComposite
 
 	/* Operator The operator attribute has two meanings based on the context it's used in. Either it defines the compositing or morphing operation to be performed.
 	 */
@@ -74553,38 +74288,8 @@ func (e *htmlfeComposite) In(v string) HTMLfeComposite {
 	return e
 }
 
-func (e *htmlfeComposite) In(v string) HTMLfeComposite {
-	e.setAttr("in", v)
-	return e
-}
-
-func (e *htmlfeComposite) In(v string) HTMLfeComposite {
-	e.setAttr("in", v)
-	return e
-}
-
-func (e *htmlfeComposite) In(v string) HTMLfeComposite {
-	e.setAttr("in", v)
-	return e
-}
-
 func (e *htmlfeComposite) In2(n string, v any) HTMLfeComposite {
 	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlfeComposite) In2(n string, v any) HTMLfeComposite {
-	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlfeComposite) In2(n string, v any) HTMLfeComposite {
-	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlfeComposite) K1(v string) HTMLfeComposite {
-	e.setAttr("k1", v)
 	return e
 }
 
@@ -74598,16 +74303,6 @@ func (e *htmlfeComposite) K2(v string) HTMLfeComposite {
 	return e
 }
 
-func (e *htmlfeComposite) K2(v string) HTMLfeComposite {
-	e.setAttr("k2", v)
-	return e
-}
-
-func (e *htmlfeComposite) K3(v string) HTMLfeComposite {
-	e.setAttr("k3", v)
-	return e
-}
-
 func (e *htmlfeComposite) K3(v string) HTMLfeComposite {
 	e.setAttr("k3", v)
 	return e
@@ -74615,16 +74310,6 @@ func (e *htmlfeComposite) K3(v string) HTMLfeComposite {
 
 func (e *htmlfeComposite) K4(v string) HTMLfeComposite {
 	e.setAttr("k4", v)
-	return e
-}
-
-func (e *htmlfeComposite) K4(v string) HTMLfeComposite {
-	e.setAttr("k4", v)
-	return e
-}
-
-func (e *htmlfeComposite) Operator(v string) HTMLfeComposite {
-	e.setAttr("operator", v)
 	return e
 }
 
@@ -74675,14 +74360,6 @@ type HTMLfeFlood interface {
 	/* FloodColor The flood-color attribute indicates what color to use to flood the current filter primitive subregion.
 	 */
 	FloodColor(v string) HTMLfeFlood
-
-	/* FloodColor The flood-color attribute indicates what color to use to flood the current filter primitive subregion.
-	 */
-	FloodColor(v string) HTMLfeFlood
-
-	/* FloodOpacity The flood-opacity attribute indicates the opacity value to use across the current filter primitive subregion.
-	 */
-	FloodOpacity(v string) HTMLfeFlood
 
 	/* FloodOpacity The flood-opacity attribute indicates the opacity value to use across the current filter primitive subregion.
 	 */
@@ -74740,16 +74417,6 @@ func (e *htmlfeFlood) Class(v string) HTMLfeFlood {
 
 func (e *htmlfeFlood) FloodColor(v string) HTMLfeFlood {
 	e.setAttr("flood-color", v)
-	return e
-}
-
-func (e *htmlfeFlood) FloodColor(v string) HTMLfeFlood {
-	e.setAttr("flood-color", v)
-	return e
-}
-
-func (e *htmlfeFlood) FloodOpacity(v string) HTMLfeFlood {
-	e.setAttr("flood-opacity", v)
 	return e
 }
 
@@ -74841,17 +74508,9 @@ type HTMLmask interface {
 	 */
 	Height(v string) HTMLmask
 
-	/* Height The height attribute defines the vertical length of an element in the user coordinate system.
-	 */
-	Height(v string) HTMLmask
-
 	/* Id The id attribute assigns a unique name to an element.
 	 */
 	Id(v string) HTMLmask
-
-	/* Mask The mask attribute is a presentation attribute mainly used to bind a given <mask> element with the element the attribute belongs to.
-	 */
-	Mask(v string) HTMLmask
 
 	/* Mask The mask attribute is a presentation attribute mainly used to bind a given <mask> element with the element the attribute belongs to.
 	 */
@@ -74941,21 +74600,9 @@ type HTMLmask interface {
 	 */
 	Width(v string) HTMLmask
 
-	/* Width The width attribute defines the horizontal length of an element in the user coordinate system.
-	 */
-	Width(v string) HTMLmask
-
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
 	X(v string) HTMLmask
-
-	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
-	 */
-	X(v string) HTMLmask
-
-	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
-	 */
-	Y(v string) HTMLmask
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
@@ -75062,18 +74709,8 @@ func (e *htmlmask) Height(v string) HTMLmask {
 	return e
 }
 
-func (e *htmlmask) Height(v string) HTMLmask {
-	e.setAttr("height", v)
-	return e
-}
-
 func (e *htmlmask) Id(v string) HTMLmask {
 	e.setAttr("id", v)
-	return e
-}
-
-func (e *htmlmask) Mask(v string) HTMLmask {
-	e.setAttr("mask", v)
 	return e
 }
 
@@ -75187,23 +74824,8 @@ func (e *htmlmask) Width(v string) HTMLmask {
 	return e
 }
 
-func (e *htmlmask) Width(v string) HTMLmask {
-	e.setAttr("width", v)
-	return e
-}
-
 func (e *htmlmask) X(v string) HTMLmask {
 	e.setAttr("x", v)
-	return e
-}
-
-func (e *htmlmask) X(v string) HTMLmask {
-	e.setAttr("x", v)
-	return e
-}
-
-func (e *htmlmask) Y(v string) HTMLmask {
-	e.setAttr("y", v)
 	return e
 }
 
@@ -75371,10 +74993,6 @@ type HTMLtextPath interface {
 	/* Filter The filter attribute specifies the filter effects defined by the <filter> element that shall be applied to its element.
 	 */
 	Filter(v string) HTMLtextPath
-
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLtextPath
 
 	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
 	 */
@@ -75840,11 +75458,6 @@ func (e *htmltextPath) FillRule(v string) HTMLtextPath {
 
 func (e *htmltextPath) Filter(v string) HTMLtextPath {
 	e.setAttr("filter", v)
-	return e
-}
-
-func (e *htmltextPath) Href(v string) HTMLtextPath {
-	e.setAttr("href", v)
 	return e
 }
 
@@ -77555,18 +77168,6 @@ type HTMLfeDisplacementMap interface {
 	 */
 	In(v string) HTMLfeDisplacementMap
 
-	/* In The in attribute identifies input for the given filter primitive.
-	 */
-	In(v string) HTMLfeDisplacementMap
-
-	/* In The in attribute identifies input for the given filter primitive.
-	 */
-	In(v string) HTMLfeDisplacementMap
-
-	/* In2 The in2 attribute identifies the second input for the given filter primitive. It works exactly like the in attribute.
-	 */
-	In2(n string, v any) HTMLfeDisplacementMap
-
 	/* In2 The in2 attribute identifies the second input for the given filter primitive. It works exactly like the in attribute.
 	 */
 	In2(n string, v any) HTMLfeDisplacementMap
@@ -77582,14 +77183,6 @@ type HTMLfeDisplacementMap interface {
 	/* Xchannelselector The xChannelSelector attribute indicates which color channel from in2 to use to displace the pixels in in along the x-axis.
 	 */
 	Xchannelselector(v string) HTMLfeDisplacementMap
-
-	/* Xchannelselector The xChannelSelector attribute indicates which color channel from in2 to use to displace the pixels in in along the x-axis.
-	 */
-	Xchannelselector(v string) HTMLfeDisplacementMap
-
-	/* Ychannelselector The yChannelSelector attribute indicates which color channel from in2 to use to displace the pixels in in along the y-axis.
-	 */
-	Ychannelselector(v string) HTMLfeDisplacementMap
 
 	/* Ychannelselector The yChannelSelector attribute indicates which color channel from in2 to use to displace the pixels in in along the y-axis.
 	 */
@@ -77649,21 +77242,6 @@ func (e *htmlfeDisplacementMap) In(v string) HTMLfeDisplacementMap {
 	return e
 }
 
-func (e *htmlfeDisplacementMap) In(v string) HTMLfeDisplacementMap {
-	e.setAttr("in", v)
-	return e
-}
-
-func (e *htmlfeDisplacementMap) In(v string) HTMLfeDisplacementMap {
-	e.setAttr("in", v)
-	return e
-}
-
-func (e *htmlfeDisplacementMap) In2(n string, v any) HTMLfeDisplacementMap {
-	e.setAttr(n, v)
-	return e
-}
-
 func (e *htmlfeDisplacementMap) In2(n string, v any) HTMLfeDisplacementMap {
 	e.setAttr(n, v)
 	return e
@@ -77681,16 +77259,6 @@ func (e *htmlfeDisplacementMap) Style(v string) HTMLfeDisplacementMap {
 
 func (e *htmlfeDisplacementMap) Xchannelselector(v string) HTMLfeDisplacementMap {
 	e.setAttr("xchannelselector", v)
-	return e
-}
-
-func (e *htmlfeDisplacementMap) Xchannelselector(v string) HTMLfeDisplacementMap {
-	e.setAttr("xchannelselector", v)
-	return e
-}
-
-func (e *htmlfeDisplacementMap) Ychannelselector(v string) HTMLfeDisplacementMap {
-	e.setAttr("ychannelselector", v)
 	return e
 }
 
@@ -78850,10 +78418,6 @@ type HTMLfeGaussianBlur interface {
 	 */
 	Stddeviation(v string) HTMLfeGaussianBlur
 
-	/* Stddeviation The stdDeviation attribute defines the standard deviation for the blur operation.
-	 */
-	Stddeviation(v string) HTMLfeGaussianBlur
-
 	/* Style The style attribute allows to style an element using CSS declarations. It functions identically to the style attribute in HTML.
 	 */
 	Style(v string) HTMLfeGaussianBlur
@@ -78911,11 +78475,6 @@ func (e *htmlfeGaussianBlur) Edgemode(n string, v any) HTMLfeGaussianBlur {
 
 func (e *htmlfeGaussianBlur) In(v string) HTMLfeGaussianBlur {
 	e.setAttr("in", v)
-	return e
-}
-
-func (e *htmlfeGaussianBlur) Stddeviation(v string) HTMLfeGaussianBlur {
-	e.setAttr("stddeviation", v)
 	return e
 }
 
@@ -79732,10 +79291,6 @@ type HTMLanimateMotion interface {
 	 */
 	Calcmode(n string, v any) HTMLanimateMotion
 
-	/* Calcmode The calcMode attribute specifies the interpolation mode for the animation.
-	 */
-	Calcmode(n string, v any) HTMLanimateMotion
-
 	/* Class « SVG Attribute reference home
 	 */
 	Class(v string) HTMLanimateMotion
@@ -79780,10 +79335,6 @@ type HTMLanimateMotion interface {
 	 */
 	Keytimes(v string) HTMLanimateMotion
 
-	/* Keytimes The keyTimes attribute represents a list of time values used to control the pacing of the animation.
-	 */
-	Keytimes(v string) HTMLanimateMotion
-
 	/* Max The max attribute specifies the maximum value of the active animation duration.
 	 */
 	Max(v string) HTMLanimateMotion
@@ -79791,10 +79342,6 @@ type HTMLanimateMotion interface {
 	/* Min The min attribute specifies the minimum value of the active animation duration.
 	 */
 	Min(v string) HTMLanimateMotion
-
-	/* Path The path attribute has two different meanings, either it defines a text path along which the characters of a text are rendered, or a motion path along which a referenced element is animated.
-	 */
-	Path(v string) HTMLanimateMotion
 
 	/* Path The path attribute has two different meanings, either it defines a text path along which the characters of a text are rendered, or a motion path along which a referenced element is animated.
 	 */
@@ -79834,10 +79381,6 @@ type HTMLanimateMotion interface {
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLanimateMotion
-
-	/* OnBegin
-	 */
-	OnBegin(h EventHandler, scope ...any) HTMLanimateMotion
 
 	/* OnBegin
 	 */
@@ -79918,10 +79461,6 @@ type HTMLanimateMotion interface {
 	/* OnEmptied
 	 */
 	OnEmptied(h EventHandler, scope ...any) HTMLanimateMotion
-
-	/* OnEnd
-	 */
-	OnEnd(h EventHandler, scope ...any) HTMLanimateMotion
 
 	/* OnEnd
 	 */
@@ -80030,10 +79569,6 @@ type HTMLanimateMotion interface {
 	/* OnRatechange
 	 */
 	OnRatechange(h EventHandler, scope ...any) HTMLanimateMotion
-
-	/* OnRepeat
-	 */
-	OnRepeat(h EventHandler, scope ...any) HTMLanimateMotion
 
 	/* OnRepeat
 	 */
@@ -80154,11 +79689,6 @@ func (e *htmlanimateMotion) Calcmode(n string, v any) HTMLanimateMotion {
 	return e
 }
 
-func (e *htmlanimateMotion) Calcmode(n string, v any) HTMLanimateMotion {
-	e.setAttr(n, v)
-	return e
-}
-
 func (e *htmlanimateMotion) Class(v string) HTMLanimateMotion {
 	e.setAttr("class", v)
 	return e
@@ -80214,11 +79744,6 @@ func (e *htmlanimateMotion) Keytimes(v string) HTMLanimateMotion {
 	return e
 }
 
-func (e *htmlanimateMotion) Keytimes(v string) HTMLanimateMotion {
-	e.setAttr("keytimes", v)
-	return e
-}
-
 func (e *htmlanimateMotion) Max(v string) HTMLanimateMotion {
 	e.setAttr("max", v)
 	return e
@@ -80226,11 +79751,6 @@ func (e *htmlanimateMotion) Max(v string) HTMLanimateMotion {
 
 func (e *htmlanimateMotion) Min(v string) HTMLanimateMotion {
 	e.setAttr("min", v)
-	return e
-}
-
-func (e *htmlanimateMotion) Path(v string) HTMLanimateMotion {
-	e.setAttr("path", v)
 	return e
 }
 
@@ -80281,11 +79801,6 @@ func (e *htmlanimateMotion) Values(n string, v any) HTMLanimateMotion {
 
 func (e *htmlanimateMotion) On(event string, h EventHandler, scope ...any) HTMLanimateMotion {
 	e.setEventHandler(event, h, scope...)
-	return e
-}
-
-func (e *htmlanimateMotion) OnBegin(h EventHandler, scope ...any) HTMLanimateMotion {
-	e.setEventHandler("begin", h, scope...)
 	return e
 }
 
@@ -80386,11 +79901,6 @@ func (e *htmlanimateMotion) OnDurationchange(h EventHandler, scope ...any) HTMLa
 
 func (e *htmlanimateMotion) OnEmptied(h EventHandler, scope ...any) HTMLanimateMotion {
 	e.setEventHandler("emptied", h, scope...)
-	return e
-}
-
-func (e *htmlanimateMotion) OnEnd(h EventHandler, scope ...any) HTMLanimateMotion {
-	e.setEventHandler("end", h, scope...)
 	return e
 }
 
@@ -80526,11 +80036,6 @@ func (e *htmlanimateMotion) OnProgress(h EventHandler, scope ...any) HTMLanimate
 
 func (e *htmlanimateMotion) OnRatechange(h EventHandler, scope ...any) HTMLanimateMotion {
 	e.setEventHandler("ratechange", h, scope...)
-	return e
-}
-
-func (e *htmlanimateMotion) OnRepeat(h EventHandler, scope ...any) HTMLanimateMotion {
-	e.setEventHandler("repeat", h, scope...)
 	return e
 }
 
@@ -80855,10 +80360,6 @@ type HTMLscript interface {
 	 */
 	Href(v string) HTMLscript
 
-	/* Href The href attribute defines a link to a resource as a reference URL. The exact meaning of that link depends on the context of each element using it.
-	 */
-	Href(v string) HTMLscript
-
 	/* Id The id attribute assigns a unique name to an element.
 	 */
 	Id(v string) HTMLscript
@@ -81162,11 +80663,6 @@ func (e *htmlscript) Class(v string) HTMLscript {
 
 func (e *htmlscript) Core(n string, v any) HTMLscript {
 	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlscript) Href(v string) HTMLscript {
-	e.setAttr("href", v)
 	return e
 }
 
@@ -81697,14 +81193,6 @@ type HTMLfeOffset interface {
 	 */
 	Dx(v string) HTMLfeOffset
 
-	/* Dx The dx attribute indicates a shift along the x-axis on the position of an element or its content.
-	 */
-	Dx(v string) HTMLfeOffset
-
-	/* Dy The dy attribute indicates a shift along the y-axis on the position of an element or its content.
-	 */
-	Dy(v string) HTMLfeOffset
-
 	/* Dy The dy attribute indicates a shift along the y-axis on the position of an element or its content.
 	 */
 	Dy(v string) HTMLfeOffset
@@ -81765,16 +81253,6 @@ func (e *htmlfeOffset) Class(v string) HTMLfeOffset {
 
 func (e *htmlfeOffset) Dx(v string) HTMLfeOffset {
 	e.setAttr("dx", v)
-	return e
-}
-
-func (e *htmlfeOffset) Dx(v string) HTMLfeOffset {
-	e.setAttr("dx", v)
-	return e
-}
-
-func (e *htmlfeOffset) Dy(v string) HTMLfeOffset {
-	e.setAttr("dy", v)
 	return e
 }
 
@@ -83599,14 +83077,6 @@ type HTMLstop interface {
 	 */
 	StopColor(n string, v any) HTMLstop
 
-	/* StopColor The stop-color attribute indicates what color to use at a gradient stop.
-	 */
-	StopColor(n string, v any) HTMLstop
-
-	/* StopOpacity The stop-opacity attribute defines the opacity of a given color gradient stop.
-	 */
-	StopOpacity(n string, v any) HTMLstop
-
 	/* StopOpacity The stop-opacity attribute defines the opacity of a given color gradient stop.
 	 */
 	StopOpacity(n string, v any) HTMLstop
@@ -83936,16 +83406,6 @@ func (e *htmlstop) Presentation(n string, v any) HTMLstop {
 }
 
 func (e *htmlstop) StopColor(n string, v any) HTMLstop {
-	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlstop) StopColor(n string, v any) HTMLstop {
-	e.setAttr(n, v)
-	return e
-}
-
-func (e *htmlstop) StopOpacity(n string, v any) HTMLstop {
 	e.setAttr(n, v)
 	return e
 }
