@@ -1027,34 +1027,17 @@ var tags = []tag{
 	},
 
 	{
-		Name: "switch",
-		Doc: `The <switch> SVG element evaluates any requiredFeatures, requiredExtensions and systemLanguage attributes on its direct child elements in order, and then renders the first child where these attributes evaluate to true.
-Other direct children will be bypassed and therefore not rendered. If a child element is a container element, like <g>, then its subtree is also processed/rendered or bypassed/not rendered.
-
-Note: The display and visibility properties have no effect on <switch> element processing. In particular, setting display:none on a child has no effect on the true/false testing for <switch> processing.
-`,
-		Attrs: attrsByNames(
-			"requiredFeatures",
-			"requiredExtensions",
-			"systemLanguage",
-			"class",
-			"style",
-			"transform",
-		),
-	},
-
-	{
 		Name: "vkern",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <vkern> SVG element allows to fine-tweak the vertical distance between two glyphs in top-to-bottom fonts. This process is known as kerning.`,
-		Attrs: attrsByNames(),
+		Attrs: attrsSVGByNames(),
 	},
 
 	{
 		Name: "clipPath",
 		Doc: `The <clipPath> SVG element defines a clipping path, to be used by the clip-path property.
 A clipping path restricts the region to which paint can be applied. Conceptually, parts of the drawing that lie outside of the region bounded by the clipping path are not drawn.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"clip-path",
 			"clip-path",
 			"clipPathUnits",
@@ -1097,20 +1080,20 @@ A clipping path restricts the region to which paint can be applied. Conceptually
 		Doc: `The <desc> element provides an accessible, long-text description of any SVG container element or graphics element.
 Text in a <desc> element is not rendered as part of the graphic. If the element can be described by visible text, it is possible to reference that text with the aria-describedby attribute. If aria-describedby is used, it will take precedence over <desc>.
 The hidden text of a <desc> element can also be concatenated with the visible text of other elements using multiple IDs in an aria-describedby value. In that case, the <desc> element must provide an ID for reference.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"Core",
 			"id",
 			"Styling",
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "line",
 		Doc:  `The <line> element is an SVG basic shape used to create a line connecting two points.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x1",
 			"x2",
 			"y1",
@@ -1153,13 +1136,13 @@ The hidden text of a <desc> element can also be concatenated with the visible te
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "rect",
 		Doc:  `The <rect> element is a basic SVG shape that draws rectangles, defined by their position, width, and height. The rectangles may have their corners rounded.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x",
 			"y",
 			"width",
@@ -1204,7 +1187,7 @@ The hidden text of a <desc> element can also be concatenated with the visible te
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
@@ -1213,7 +1196,7 @@ The hidden text of a <desc> element can also be concatenated with the visible te
 
 Note: Ellipses are unable to specify the exact orientation of the ellipse (if, for example, you wanted to draw an ellipse tilted at a 45 degree angle), but it can be rotated by using the transform attribute.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"transform",
 			"cx",
 			"cy",
@@ -1257,14 +1240,14 @@ Note: Ellipses are unable to specify the exact orientation of the ellipse (if, f
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "feSpecularLighting",
 		Doc: `The <feSpecularLighting> SVG filter primitive lights a source graphic using the alpha channel as a bump map. The resulting image is an RGBA image based on the light color. The lighting calculation follows the standard specular component of the Phong lighting model. The resulting image depends on the light color, light position and surface geometry of the input bump map. The result of the lighting calculation is added. The filter primitive assumes that the viewer is at infinity in the z direction.
 This filter primitive produces an image which contains the specular reflection part of the lighting calculation. Such a map is intended to be combined with a texture using the add term of the arithmetic <feComposite> method. Multiple light sources can be simulated by adding several of these light maps before applying it to the texture image.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
@@ -1281,7 +1264,7 @@ This filter primitive produces an image which contains the specular reflection p
 The <feSpotLight> SVG filter primitive defines a light source that can be used to create a spotlight effect.
 It is used within a lighting filter primitive: <feDiffuseLighting> or <feSpecularLighting>.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x",
 			"y",
 			"z",
@@ -1299,7 +1282,7 @@ It is used within a lighting filter primitive: <feDiffuseLighting> or <feSpecula
 
 Note: The xmlns attribute is only required on the outermost svg element of SVG documents. It is unnecessary for inner svg elements or inside HTML documents.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"viewBox",
 			"baseProfile",
 			"contentScriptType",
@@ -1348,13 +1331,13 @@ Note: The xmlns attribute is only required on the outermost svg element of SVG d
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGDocumentEventHandler(withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...)...)...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGDocumentEventHandler(withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...)...)...),
 	},
 
 	{
 		Name: "feTurbulence",
 		Doc:  `The <feTurbulence> SVG filter primitive creates an image using the Perlin turbulence function. It allows the synthesis of artificial textures like clouds or marble. The resulting image will fill the entire filter primitive subregion.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"baseFrequency",
@@ -1369,28 +1352,28 @@ Note: The xmlns attribute is only required on the outermost svg element of SVG d
 		Name: "font-face-src",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font-face-src> SVG element corresponds to the src descriptor in CSS @font-face rules. It serves as container for <font-face-name>, pointing to locally installed copies of this font, and <font-face-uri>, utilizing remotely defined fonts.`,
-		Attrs: attrsByNames(),
+		Attrs: attrsSVGByNames(),
 	},
 
 	{
 		Name: "font-face-uri",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font-face-uri> SVG element points to a remote definition of the current font.`,
-		Attrs: attrsByNames(),
+		Attrs: attrsSVGByNames(),
 	},
 
 	{
 		Name: "altGlyphDef",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <altGlyphDef> SVG element defines a substitution representation for glyphs.`,
-		Attrs: attrsByNames(),
+		Attrs: attrsSVGByNames(),
 	},
 
 	{
 		Name: "defs",
 		Doc: `The <defs> element is used to store graphical objects that will be used at a later time. Objects created inside a <defs> element are not rendered directly. To display them you have to reference them (with a <use> element for example).
 Graphical objects can be referenced from anywhere, however, defining these objects inside of a <defs> element promotes understandability of the SVG content and is beneficial to the overall accessibility of the document.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"Core",
 			"id",
 			"lang",
@@ -1425,13 +1408,13 @@ Graphical objects can be referenced from anywhere, however, defining these objec
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...)...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...)...),
 	},
 
 	{
 		Name: "feMerge",
 		Doc:  `The <feMerge> SVG element allows filter effects to be applied concurrently instead of sequentially. This is achieved by other filters storing their output via the result attribute and then accessing it in a <feMergeNode> child.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"result",
 			"class",
 			"style",
@@ -1441,7 +1424,7 @@ Graphical objects can be referenced from anywhere, however, defining these objec
 	{
 		Name: "feMorphology",
 		Doc:  `The <feMorphology> SVG filter primitive is used to erode or dilate the input image. Its usefulness lies especially in fattening or thinning effects.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
@@ -1453,13 +1436,13 @@ Graphical objects can be referenced from anywhere, however, defining these objec
 	{
 		Name:  "metadata",
 		Doc:   `The <metadata> SVG element adds metadata to SVG content. Metadata is structured information about data. The contents of <metadata> should be elements from other XML namespaces such as RDF, FOAF, etc.`,
-		Attrs: attrsByNames(),
+		Attrs: attrsSVGByNames(),
 	},
 
 	{
 		Name: "path",
 		Doc:  `The <path> SVG element is the generic element to define a shape. All the basic shapes can be created with a path element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"d",
 			"pathLength",
 			"Core",
@@ -1499,14 +1482,14 @@ Graphical objects can be referenced from anywhere, however, defining these objec
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "polygon",
 		Doc: `The <polygon> element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point.
 For open shapes, see the <polyline> element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"points",
 			"pathLength",
 			"Core",
@@ -1546,13 +1529,13 @@ For open shapes, see the <polyline> element.`,
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "tspan",
 		Doc:  `The SVG <tspan> element defines a subtext within a <text> element or another <tspan> element. It allows for adjustment of the style and/or position of that subtext as needed.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x",
 			"y",
 			"dx",
@@ -1598,13 +1581,13 @@ For open shapes, see the <polyline> element.`,
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName()...)...),
 	},
 
 	{
 		Name: "animate",
 		Doc:  `The SVG <animate> element provides a way to animate an attribute of an element over time.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"begin",
 			"dur",
 			"end",
@@ -1624,30 +1607,28 @@ For open shapes, see the <polyline> element.`,
 			"attributeName",
 			"additive",
 			"accumulate",
-			"onbegin",
-			"onend",
-			"onrepeat",
 			"Core",
 			"id",
 			"Styling",
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler()...)...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
 
 	{
 		Name: "altGlyphItem",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <altGlyphItem> element provides a set of candidates for glyph substitution by the <altGlyph> element.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "g",
 		Doc: `The <g> SVG element is a container used to group other SVG elements.
 Transformations applied to the <g> element are performed on its child elements, and its attributes are inherited by its children. It can also group multiple elements to be referenced later with the <use> element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"Core",
 			"id",
 			"tabindex",
@@ -1685,21 +1666,22 @@ Transformations applied to the <g> element are performed on its child elements, 
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
 		Name: "glyphRef",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The glyphRef element provides a single possible glyph to the referencing <altGlyph> substitution.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "marker",
 		Doc: `The <marker> element defines the graphic that is to be used for drawing arrowheads or polymarkers on a given <path>, <line>, <polyline> or <polygon> element.
 Markers are attached to shapes using the marker-start, marker-mid, and marker-end properties.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"marker-start",
 			"marker-mid",
 			"marker-end",
@@ -1751,39 +1733,44 @@ Markers are attached to shapes using the marker-start, marker-mid, and marker-en
 			"marker-mid",
 			"marker-end",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "altGlyph",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <altGlyph> SVG element allows sophisticated selection of the glyphs used to render its child character data.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feMergeNode",
 		Doc:  `The feMergeNode takes the result of another filter to be processed by its parent <feMerge>.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"Core",
 			"in",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "fePointLight",
 		Doc:  `The <fePointLight> filter primitive defines a light source which allows to create a point light effect. It that can be used within a lighting filter primitive: <feDiffuseLighting> or <feSpecularLighting>.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x",
 			"y",
 			"z",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "font-face",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font-face> SVG element corresponds to the CSS @font-face rule. It defines a font's outer properties.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -1793,20 +1780,20 @@ Text in a <title> element is not rendered as part of the graphic, but browsers u
 
 Note: For backward compatibility with SVG 1.1, <title> elements should be the first child element of their parent.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"Core",
 			"id",
 			"Styling",
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
 		Name: "use",
 		Doc:  `The <use> element takes nodes from within the SVG document, and duplicates them somewhere else.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"x",
 			"y",
 			"width",
@@ -1865,15 +1852,16 @@ Note: For backward compatibility with SVG 1.1, <title> elements should be the fi
 			"xlink:href",
 			"xlink:title",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
 		Name: "mpath",
 		Doc:  `The <mpath> sub-element for the <animateMotion> element provides the ability to reference an external <path> element as the definition of a motion path.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"xlink:href",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -1883,7 +1871,7 @@ It supports all attribute types, including those that cannot reasonably be inter
 
 Note: The <set> element is non-additive. The additive and accumulate attributes are not allowed, and will be ignored if specified.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"additive",
 			"accumulate",
 			"To",
@@ -1897,23 +1885,20 @@ Note: The <set> element is non-additive. The additive and accumulate attributes 
 			"repeatDur",
 			"fill",
 			"attributeName",
-			"onbegin",
-			"onend",
-			"onrepeat",
 			"Core",
 			"id",
 			"Styling",
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler()...)...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
 
 	{
 		Name: "a",
 		Doc: `The <a> SVG element creates a hyperlink to other web pages, files, locations in the same page, email addresses, or any other URL. It is very similar to HTML's <a> element.
 SVG's <a> element is a container, which means you can create a link around text (like in HTML) but also around any shape.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"href",
 			"target",
 			"xlink:href",
@@ -1956,42 +1941,46 @@ SVG's <a> element is a container, which means you can create a link around text 
 			"visibility",
 			"xlink:title",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...)...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
 
 	{
 		Name: "glyph",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 A <glyph> defines a single glyph in an SVG font.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
-		Name:  "animate/contributors.txt",
-		Doc:   ``,
-		Attrs: attrsByNames(),
+		Name:          "animate/contributors.txt",
+		Doc:           ``,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feDistantLight",
 		Doc:  `The <feDistantLight> filter primitive defines a distant light source that can be used within a lighting filter primitive: <feDiffuseLighting> or <feSpecularLighting>.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"azimuth",
 			"elevation",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
-		Name:  "feFuncA",
-		Doc:   `The <feFuncA> SVG filter primitive defines the transfer function for the alpha component of the input graphic of its parent <feComponentTransfer> element.`,
-		Attrs: attrsByNames(),
+		Name:          "feFuncA",
+		Doc:           `The <feFuncA> SVG filter primitive defines the transfer function for the alpha component of the input graphic of its parent <feComponentTransfer> element.`,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "pattern",
 		Doc: `The <pattern> element defines a graphics object which can be redrawn at repeated x- and y-coordinate intervals ("tiled") to cover an area.
 The <pattern> is referenced by the fill and/or stroke attributes on other graphics elements to fill or stroke those elements with the referenced pattern.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"fill",
 			"stroke",
 			"height",
@@ -2043,13 +2032,14 @@ The <pattern> is referenced by the fill and/or stroke attributes on other graphi
 			"visibility",
 			"xlink:title",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "text",
 		Doc: `The SVG <text> element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, like any other SVG graphics element.
 If text is included in SVG not inside of a <text> element, it is not rendered. This is different than being hidden by default, as setting the display property won't show the text.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"display",
 			"x",
 			"y",
@@ -2104,36 +2094,39 @@ If text is included in SVG not inside of a <text> element, it is not rendered. T
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
-		Name:  "feFuncB",
-		Doc:   `The <feFuncB> SVG filter primitive defines the transfer function for the blue component of the input graphic of its parent <feComponentTransfer> element.`,
-		Attrs: attrsByNames(),
+		Name:          "feFuncB",
+		Doc:           `The <feFuncB> SVG filter primitive defines the transfer function for the blue component of the input graphic of its parent <feComponentTransfer> element.`,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feTile",
 		Doc:  `The <feTile> SVG filter primitive allows to fill a target rectangle with a repeated, tiled pattern of an input image. The effect is similar to the one of a <pattern>.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "font-face-name",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font-face-name> element points to a locally installed copy of this font, identified by its name.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "foreignObject",
 		Doc:  `The <foreignObject> SVG element includes elements from a different XML namespace. In the context of a browser, it is most likely (X)HTML.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"height",
 			"width",
 			"x",
@@ -2175,24 +2168,25 @@ The <font-face-name> element points to a locally installed copy of this font, id
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGDocumentEventHandler(withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...)...)...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGDocumentEventHandler(withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...)...),
 	},
 
 	{
 		Name: "animateTransform",
 		Doc:  `The animateTransform element animates a transformation attribute on its target element, thereby allowing animations to control translation, scaling, rotation, and/or skewing.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"by",
 			"From",
 			"To",
 			"type",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feBlend",
 		Doc:  `The <feBlend> SVG filter primitive composes two objects together ruled by a certain blending mode. This is similar to what is known from image editing software when blending two layers. The mode is defined by the mode attribute.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"mode",
 			"class",
 			"style",
@@ -2200,6 +2194,7 @@ The <font-face-name> element points to a locally installed copy of this font, id
 			"in2",
 			"mode",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2324,7 +2319,7 @@ The table below shows each of these operations using an image of the MDN logo co
 
 
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"in",
 			"in2",
 			"in",
@@ -2345,12 +2340,13 @@ The table below shows each of these operations using an image of the MDN logo co
 			"operator",
 			"in",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feFlood",
 		Doc:  `The <feFlood> SVG filter primitive fills the filter subregion with the color and opacity defined by flood-color and flood-opacity.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"flood-color",
 			"flood-opacity",
 			"class",
@@ -2358,12 +2354,13 @@ The table below shows each of these operations using an image of the MDN logo co
 			"flood-color",
 			"flood-opacity",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "mask",
 		Doc:  `The <mask> element defines an alpha mask for compositing the current object into the background. A mask is used/referenced using the mask property.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"mask",
 			"height",
 			"maskContentUnits",
@@ -2407,6 +2404,7 @@ The table below shows each of these operations using an image of the MDN logo co
 			"vector-effect",
 			"visibility",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2415,13 +2413,14 @@ The table below shows each of these operations using an image of the MDN logo co
 
 Note: Don't be confused with CSS radial-gradient() as CSS gradients can only apply to HTML elements where SVG gradient can only apply to SVG elements.
 `,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "textPath",
 		Doc:  `To render text along the shape of a <path>, enclose the text in a <textPath> element that has an href attribute with a reference to the <path> element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"href",
 			"href",
 			"lengthAdjust",
@@ -2469,31 +2468,33 @@ Note: Don't be confused with CSS radial-gradient() as CSS gradients can only app
 			"visibility",
 			"xlink:title",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
 		Name: "discard",
 		Doc: `The <discard> SVG element allows authors to specify the time at which particular elements are to be discarded, thereby reducing the resources required by an SVG user agent. This is particularly useful to help SVG viewers conserve memory while displaying long-running documents.
 The <discard> element may occur wherever the <animate> element may.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"begin",
 			"href",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "hkern",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <hkern> SVG element allows to fine-tweak the horizontal distance between two glyphs. This process is known as kerning.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "symbol",
 		Doc: `The <symbol> element is used to define graphical template objects which can be instantiated by a <use> element.
 The use of <symbol> elements for graphics that are used multiple times in the same document adds structure and semantics. Documents that are rich in structure may be rendered graphically, as speech, or as Braille, and thus promote accessibility.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"height",
 			"preserveAspectRatio",
 			"refX",
@@ -2535,14 +2536,15 @@ The use of <symbol> elements for graphics that are used multiple times in the sa
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...)...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
 
 	{
 		Name: "tref",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The textual content for a <text> SVG element can be either character data directly embedded within the <text> element or the character data content of a referenced element, where the referencing is specified with a <tref> element.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2551,7 +2553,7 @@ The textual content for a <text> SVG element can be either character data direct
 The formula for the transformation looks like this:
 P'(x,y) ← P(x + scale * (XC(x,y) - 0.5), y + scale * (YC(x,y) - 0.5))
 where P(x,y) is the input image, in, and P'(x,y) is the destination. XC(x,y) and YC(x,y) are the component values of the channel designated by xChannelSelector and yChannelSelector.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"in2",
 			"in",
 			"in",
@@ -2565,12 +2567,13 @@ where P(x,y) is the input image, in, and P'(x,y) is the destination. XC(x,y) and
 			"xChannelSelector",
 			"yChannelSelector",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "filter",
 		Doc:  `The <filter> SVG element defines a custom filter effect by grouping atomic filter primitives. It is never rendered itself, but must be used by the filter attribute on SVG elements, or the filter CSS property for SVG/HTML elements.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"filter",
 			"class",
 			"style",
@@ -2583,19 +2586,21 @@ where P(x,y) is the input image, in, and P'(x,y) is the destination. XC(x,y) and
 			"primitiveUnits",
 			"xlink:href",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "font-face-format",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font-face-format> SVG element describes the type of font referenced by its parent <font-face-uri>.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "polyline",
 		Doc:  `The <polyline> SVG element is an SVG basic shape that creates straight lines connecting several points. Typically a polyline is used to create open shapes as the last point doesn't have to be connected to the first point. For closed shapes see the <polygon> element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"points",
 			"pathLength",
 			"Core",
@@ -2635,13 +2640,13 @@ The <font-face-format> SVG element describes the type of font referenced by its 
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
 		Name: "feGaussianBlur",
 		Doc:  `The <feGaussianBlur> SVG filter primitive blurs the input image by the amount specified in stdDeviation, which defines the bell-curve.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"stdDeviation",
 			"class",
 			"style",
@@ -2649,13 +2654,15 @@ The <font-face-format> SVG element describes the type of font referenced by its 
 			"stdDeviation",
 			"edgeMode",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "font",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <font> SVG element defines a font to be used for text layout.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2664,7 +2671,7 @@ The <font> SVG element defines a font to be used for text layout.`,
 
 Note: SVG's style element has the same attributes as the corresponding element in HTML (see HTML's <style> element).
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"type",
 			"media",
 			"title",
@@ -2674,7 +2681,7 @@ Note: SVG's style element has the same attributes as the corresponding element i
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
@@ -2683,7 +2690,7 @@ Note: SVG's style element has the same attributes as the corresponding element i
 
 Note: To reuse an existing path, it will be necessary to use an <mpath> element inside the <animateMotion> element instead of the path attribute.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"path",
 			"keyPoints",
 			"keyTimes",
@@ -2710,16 +2717,13 @@ Note: To reuse an existing path, it will be necessary to use an <mpath> element 
 			"attributeName",
 			"additive",
 			"accumulate",
-			"onbegin",
-			"onend",
-			"onrepeat",
 			"Core",
 			"id",
 			"Styling",
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler()...)...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGAnimationEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...)...),
 	},
 
 	{
@@ -2762,19 +2766,21 @@ B' | 0 0 1 0 0 |
 A' | 0 0 0 1 0 |
 
 In it, every new value is exactly 1 times its old value, with nothing else added. It is recommended to start manipulating the matrix from here.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
 			"type",
 			"values",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
-		Name:  "linearGradient",
-		Doc:   `The <linearGradient> element lets authors define linear gradients to apply to other SVG elements.`,
-		Attrs: attrsByNames(),
+		Name:          "linearGradient",
+		Doc:           `The <linearGradient> element lets authors define linear gradients to apply to other SVG elements.`,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2783,7 +2789,7 @@ In it, every new value is exactly 1 times its old value, with nothing else added
 
 Note: While SVG's script element is equivalent to the HTML <script> element, it has some discrepancies, like it uses the href attribute instead of src and it doesn't support ECMAScript modules so far (See browser compatibility below for details)
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"href",
 			"href",
 			"type",
@@ -2794,30 +2800,32 @@ Note: While SVG's script element is equivalent to the HTML <script> element, it 
 			"class",
 			"style",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
-		Name:  "feFuncR",
-		Doc:   `The <feFuncR> SVG filter primitive defines the transfer function for the red component of the input graphic of its parent <feComponentTransfer> element.`,
-		Attrs: attrsByNames(),
+		Name:          "feFuncR",
+		Doc:           `The <feFuncR> SVG filter primitive defines the transfer function for the red component of the input graphic of its parent <feComponentTransfer> element.`,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feImage",
 		Doc:  `The <feImage> SVG filter primitive fetches image data from an external source and provides the pixel data as output (meaning if the external source is an SVG image, it is rasterized.)`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"preserveAspectRatio",
 			"xlink:href",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feOffset",
 		Doc:  `The <feOffset> SVG filter primitive allows to offset the input image. The input image as a whole is offset by the values specified in the dx and dy attributes.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"dx",
 			"dy",
 			"class",
@@ -2826,13 +2834,14 @@ Note: While SVG's script element is equivalent to the HTML <script> element, it 
 			"dx",
 			"dy",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feDiffuseLighting",
 		Doc: `The <feDiffuseLighting> SVG filter primitive lights an image using the alpha channel as a bump map. The resulting image, which is an RGBA opaque image, depends on the light color, light position and surface geometry of the input bump map.
 The light map produced by this filter primitive can be combined with a texture image using the multiply term of the arithmetic operator of the <feComposite> filter primitive. Multiple light sources can be simulated by adding several of these light maps together before applying it to the texture image.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
@@ -2840,23 +2849,25 @@ The light map produced by this filter primitive can be combined with a texture i
 			"diffuseConstant",
 			"kernelUnitLength",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "view",
 		Doc:  `A view is a defined way to view the image, like a zoom level or a detail view.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"viewBox",
 			"preserveAspectRatio",
 			"zoomAndPan",
 			"viewTarget",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "circle",
 		Doc:  `The <circle> SVG element is an SVG basic shape, used to draw circles based on a center point and a radius.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"cx",
 			"cy",
 			"r",
@@ -2898,7 +2909,7 @@ The light map produced by this filter primitive can be combined with a texture i
 			"vector-effect",
 			"visibility",
 		),
-		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGGraphicalEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
@@ -2909,18 +2920,20 @@ Note: The CSS cursor property should be used instead of this element.
 
 The <cursor> SVG element can be used to define a platform-independent custom cursor. A recommended approach for defining a platform-independent custom cursor is to create a PNG image and define a cursor element that references the PNG image and identifies the exact position within the image which is the pointer position (i.e., the hot spot).
 The PNG format is recommended because it supports the ability to define a transparency mask via an alpha channel. If a different image format is used, this format should support the definition of a transparency mask (two options: provide an explicit alpha channel or use a particular pixel color to indicate transparency). If the transparency mask can be determined, the mask defines the shape of the cursor; otherwise, the cursor is an opaque rectangle. Typically, the other pixel information (e.g., the R, G and B channels) defines the colors for those parts of the cursor which are not masked out. Note that cursors usually contain at least two colors so that the cursor can be visible over most backgrounds.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "feComponentTransfer",
 		Doc: `The <feComponentTransfer> SVG filter primitive performs color-component-wise remapping of data for each pixel. It allows operations like brightness adjustment, contrast adjustment, color balance or thresholding.
 The calculations are performed on non-premultiplied color values. The colors are modified by changing each channel (R, G, B, and A) to the result of what the children <feFuncR>, <feFuncB>, <feFuncG>, and <feFuncA> return. If more than one of the same element is provided, the last one specified is used, and if no element is supplied to modify one of the channels, the effect is the same is if an identity transformation had been given for that channel.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2955,7 +2968,7 @@ Let's focus on the color value at the second row and second column of the image 
 6*100 + 5*120 + 4*140 +
 3*200 + 2*220 + 1*240) / (9+8+7+6+5+4+3+2+1)
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"in",
@@ -2969,6 +2982,7 @@ Let's focus on the color value at the second row and second column of the image 
 			"kernelUnitLength",
 			"preserveAlpha",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
@@ -2979,7 +2993,7 @@ SVG files displayed with <image> are treated as an image: external resources are
 
 Note: The HTML spec defines <image> as a synonym for <img> while parsing HTML. This specific element and its behavior only apply inside SVG documents or inline SVGs.
 `,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"class",
 			"style",
 			"transform",
@@ -2992,19 +3006,21 @@ Note: The HTML spec defines <image> as a synonym for <img> while parsing HTML. T
 			"preserveAspectRatio",
 			"crossorigin",
 		),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "missing-glyph",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <missing-glyph> SVG element's content is rendered, if for a given character the font doesn't define an appropriate <glyph>.`,
-		Attrs: attrsByNames(),
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 
 	{
 		Name: "stop",
 		Doc:  `The SVG <stop> element defines a color and its position to use on a gradient. This element is always a child of a <linearGradient> or <radialGradient> element.`,
-		Attrs: attrsByNames(
+		Attrs: attrsSVGByNames(
 			"offset",
 			"stop-color",
 			"stop-opacity",
@@ -3020,13 +3036,14 @@ The <missing-glyph> SVG element's content is rendered, if for a given character 
 			"stop-opacity",
 			"visibility",
 		),
-		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler()...),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(svgEventHandlersByName("onbegin", "onend", "onrepeat")...)...),
 	},
 
 	{
-		Name:  "feFuncG",
-		Doc:   `The <feFuncG> SVG filter primitive defines the transfer function for the green component of the input graphic of its parent <feComponentTransfer> element.`,
-		Attrs: attrsByNames(),
+		Name:          "feFuncG",
+		Doc:           `The <feFuncG> SVG filter primitive defines the transfer function for the green component of the input graphic of its parent <feComponentTransfer> element.`,
+		Attrs:         attrsSVGByNames(),
+		EventHandlers: svgEventHandlersByName("onbegin", "onend", "onrepeat"),
 	},
 }
 
@@ -4786,6 +4803,218 @@ type eventHandler struct {
 	Doc  string
 }
 
+var svgEventHandlers = map[string]eventHandler{"onbegin": {
+	Name: "OnBegin",
+},
+	"onend": {
+		Name: "OnEnd",
+	},
+	"onrepeat": {
+		Name: "OnRepeat",
+	},
+	"oncopy": {
+		Name: "OnCopy",
+	},
+	"oncut": {
+		Name: "OnCut",
+	},
+	"onpaste": {
+		Name: "OnPaste",
+	},
+	"onabort": {
+		Name: "OnAbort",
+	},
+	" onerror": {
+		Name: "OoNerror",
+	},
+	" onresize": {
+		Name: "OoNresize",
+	},
+	" onscroll": {
+		Name: "OoNscroll",
+	},
+	" onunload": {
+		Name: "OoNunload",
+	},
+	"onactivate": {
+		Name: "OnActivate",
+	},
+	"onfocusin": {
+		Name: "OnFocusin",
+	},
+	"onfocusout": {
+		Name: "OnFocusout",
+	},
+	"oncancel": {
+		Name: "OnCancel",
+	},
+	"oncanplay": {
+		Name: "OnCanplay",
+	},
+	"oncanplaythrough": {
+		Name: "OnCanplaythrough",
+	},
+	"onchange": {
+		Name: "OnChange",
+	},
+	"onclick": {
+		Name: "OnClick",
+	},
+	"onclose": {
+		Name: "OnClose",
+	},
+	"oncuechange": {
+		Name: "OnCuechange",
+	},
+	"ondblclick": {
+		Name: "OnDblclick",
+	},
+	"ondrag": {
+		Name: "OnDrag",
+	},
+	"ondragend": {
+		Name: "OnDragend",
+	},
+	"ondragenter": {
+		Name: "OnDragenter",
+	},
+	"ondragleave": {
+		Name: "OnDragleave",
+	},
+	"ondragover": {
+		Name: "OnDragover",
+	},
+	"ondragstart": {
+		Name: "OnDragstart",
+	},
+	"ondrop": {
+		Name: "OnDrop",
+	},
+	"ondurationchange": {
+		Name: "OnDurationchange",
+	},
+	"onemptied": {
+		Name: "OnEmptied",
+	},
+	"onended": {
+		Name: "OnEnded",
+	},
+	"onerror": {
+		Name: "OnError",
+	},
+	"onfocus": {
+		Name: "OnFocus",
+	},
+	"oninput": {
+		Name: "OnInput",
+	},
+	"oninvalid": {
+		Name: "OnInvalid",
+	},
+	"onkeydown": {
+		Name: "OnKeydown",
+	},
+	"onkeypress": {
+		Name: "OnKeypress",
+	},
+	"onkeyup": {
+		Name: "OnKeyup",
+	},
+	"onload": {
+		Name: "OnLoad",
+	},
+	"onloadeddata": {
+		Name: "OnLoadeddata",
+	},
+	"onloadedmetadata": {
+		Name: "OnLoadedmetadata",
+	},
+	"onloadstart": {
+		Name: "OnLoadstart",
+	},
+	"onmousedown": {
+		Name: "OnMousedown",
+	},
+	"onmouseenter": {
+		Name: "OnMouseenter",
+	},
+	"onmouseleave": {
+		Name: "OnMouseleave",
+	},
+	"onmousemove": {
+		Name: "OnMousemove",
+	},
+	"onmouseout": {
+		Name: "OnMouseout",
+	},
+	"onmouseover": {
+		Name: "OnMouseover",
+	},
+	"onmouseup": {
+		Name: "OnMouseup",
+	},
+	"onmousewheel": {
+		Name: "OnMousewheel",
+	},
+	"onpause": {
+		Name: "OnPause",
+	},
+	"onplay": {
+		Name: "OnPlay",
+	},
+	"onplaying": {
+		Name: "OnPlaying",
+	},
+	"onprogress": {
+		Name: "OnProgress",
+	},
+	"onratechange": {
+		Name: "OnRatechange",
+	},
+	"onreset": {
+		Name: "OnReset",
+	},
+	"onresize": {
+		Name: "OnResize",
+	},
+	"onscroll": {
+		Name: "OnScroll",
+	},
+	"onseeked": {
+		Name: "OnSeeked",
+	},
+	"onseeking": {
+		Name: "OnSeeking",
+	},
+	"onselect": {
+		Name: "OnSelect",
+	},
+	"onshow": {
+		Name: "OnShow",
+	},
+	"onstalled": {
+		Name: "OnStalled",
+	},
+	"onsubmit": {
+		Name: "OnSubmit",
+	},
+	"onsuspend": {
+		Name: "OnSuspend",
+	},
+	"ontimeupdate": {
+		Name: "OnTimeupdate",
+	},
+	"ontoggle": {
+		Name: "OnToggle",
+	},
+	"onvolumechange": {
+		Name: "OnVolumechange",
+	},
+	"onwaiting": {
+		Name: "OnWaiting",
+	},
+}
+
 var eventHandlers = map[string]eventHandler{
 	// Window events:
 	"onafterprint": {
@@ -5092,6 +5321,23 @@ var eventHandlers = map[string]eventHandler{
 	},
 }
 
+func svgEventHandlersByName(names ...string) []eventHandler {
+	res := make([]eventHandler, 0, len(names))
+	for _, n := range names {
+		h, ok := svgEventHandlers[n]
+		if !ok {
+			panic("unknown event handler: " + n)
+		}
+		res = append(res, h)
+	}
+
+	sort.Slice(res, func(i, j int) bool {
+		return strings.Compare(res[i].Name, res[j].Name) <= 0
+	})
+
+	return res
+}
+
 func eventHandlersByName(names ...string) []eventHandler {
 	res := make([]eventHandler, 0, len(names))
 	for _, n := range names {
@@ -5110,7 +5356,7 @@ func eventHandlersByName(names ...string) []eventHandler {
 }
 
 func withSVGAnimationEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, eventHandlersByName(
+	handlers = append(handlers, svgEventHandlersByName(
 		"onbegin", "onend", "onrepeat",
 	)...)
 
@@ -5122,7 +5368,7 @@ func withSVGAnimationEventHandler(handlers ...eventHandler) []eventHandler {
 }
 
 func withSVGDocumentElementEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, eventHandlersByName(
+	handlers = append(handlers, svgEventHandlersByName(
 		"oncopy", "oncut", "onpaste",
 	)...)
 
@@ -5134,7 +5380,7 @@ func withSVGDocumentElementEventHandler(handlers ...eventHandler) []eventHandler
 }
 
 func withSVGDocumentEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, eventHandlersByName(
+	handlers = append(handlers, svgEventHandlersByName(
 		"onabort", " onerror", " onresize", " onscroll", " onunload",
 	)...)
 
@@ -5146,7 +5392,7 @@ func withSVGDocumentEventHandler(handlers ...eventHandler) []eventHandler {
 }
 
 func withSVGGraphicalEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, eventHandlersByName(
+	handlers = append(handlers, svgEventHandlersByName(
 		"onactivate", "onfocusin", "onfocusout",
 	)...)
 
@@ -5158,7 +5404,7 @@ func withSVGGraphicalEventHandler(handlers ...eventHandler) []eventHandler {
 }
 
 func withSVGGlobalEventHandler(handlers ...eventHandler) []eventHandler {
-	handlers = append(handlers, eventHandlersByName(
+	handlers = append(handlers, svgEventHandlersByName(
 		"oncancel",
 		"oncanplay",
 		"oncanplaythrough",
