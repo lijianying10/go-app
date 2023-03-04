@@ -4721,13 +4721,13 @@ var svgEventHandlers = map[string]eventHandler{"onbegin": {
 		Name: "OnInvalid",
 	},
 	"onkeydown": {
-		Name: "OnKeyDown",
+		Name: "OnKeydown",
 	},
 	"onkeypress": {
-		Name: "OnKeyPress",
+		Name: "OnKeypress",
 	},
 	"onkeyup": {
-		Name: "OnKeyUp",
+		Name: "OnKeyup",
 	},
 	"onload": {
 		Name: "OnLoad",
@@ -5513,6 +5513,12 @@ func writeInterface(w io.Writer, t tag) {
 		// On registers the given event handler to the specified event.
 		On(event string, h EventHandler, scope ...any) HTML%s 
 	`, t.Name)
+
+	if t.Name == "Input" {
+		for _, e := range t.EventHandlers {
+			fmt.Println("debug", e.Name)
+		}
+	}
 
 	for _, e := range t.EventHandlers {
 		fmt.Fprintln(w)
