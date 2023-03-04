@@ -3580,7 +3580,7 @@ var svgattrs = map[string]attr{
 
 	"x2": {
 		Name: "X2",
-		Type: "string",
+		Type: "any",
 		Doc:  "The x2 attribute is used to specify the second x-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the x attribute instead.",
 	},
 
@@ -4139,7 +4139,7 @@ var svgattrs = map[string]attr{
 
 	"x1": {
 		Name: "X1",
-		Type: "string",
+		Type: "any",
 		Doc:  "The x1 attribute is used to specify the first x-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the x attribute instead.",
 	},
 
@@ -4215,7 +4215,7 @@ var svgattrs = map[string]attr{
 
 	"y2": {
 		Name: "Y2",
-		Type: "string",
+		Type: "any",
 		Doc:  "The y2 attribute is used to specify the second y-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the y attribute instead.",
 	},
 
@@ -4253,7 +4253,7 @@ var svgattrs = map[string]attr{
 
 	"y1": {
 		Name: "Y1",
-		Type: "string",
+		Type: "any",
 		Doc:  "The y1 attribute is used to specify the first y-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the y attribute instead.",
 	},
 
@@ -5513,12 +5513,6 @@ func writeInterface(w io.Writer, t tag) {
 		// On registers the given event handler to the specified event.
 		On(event string, h EventHandler, scope ...any) HTML%s 
 	`, t.Name)
-
-	if t.Name == "Input" {
-		for _, e := range t.EventHandlers {
-			fmt.Println("debug", e.Name)
-		}
-	}
 
 	for _, e := range t.EventHandlers {
 		fmt.Fprintln(w)

@@ -7175,10 +7175,10 @@ func TestSVGline(t *testing.T) {
 	elem.Transform("foo")
 	elem.VectorEffect("foo")
 	elem.Visibility("foo")
-	elem.X1("foo")
-	elem.X2("foo")
-	elem.Y1("foo")
-	elem.Y2("foo")
+	elem.X1(42)
+	elem.X2(42)
+	elem.Y1(42)
+	elem.Y2(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)

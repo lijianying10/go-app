@@ -57788,19 +57788,19 @@ type HTMLSVGline interface {
 
 	/* X1 The x1 attribute is used to specify the first x-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the x attribute instead.
 	 */
-	X1(v string) HTMLSVGline
+	X1(v any) HTMLSVGline
 
 	/* X2 The x2 attribute is used to specify the second x-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the x attribute instead.
 	 */
-	X2(v string) HTMLSVGline
+	X2(v any) HTMLSVGline
 
 	/* Y1 The y1 attribute is used to specify the first y-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the y attribute instead.
 	 */
-	Y1(v string) HTMLSVGline
+	Y1(v any) HTMLSVGline
 
 	/* Y2 The y2 attribute is used to specify the second y-coordinate for drawing an SVG element that requires more than one coordinate. Elements that only need one coordinate use the y attribute instead.
 	 */
-	Y2(v string) HTMLSVGline
+	Y2(v any) HTMLSVGline
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGline
@@ -58252,22 +58252,22 @@ func (e *htmlSVGline) Visibility(v string) HTMLSVGline {
 	return e
 }
 
-func (e *htmlSVGline) X1(v string) HTMLSVGline {
+func (e *htmlSVGline) X1(v any) HTMLSVGline {
 	e.setAttr("x1", v)
 	return e
 }
 
-func (e *htmlSVGline) X2(v string) HTMLSVGline {
+func (e *htmlSVGline) X2(v any) HTMLSVGline {
 	e.setAttr("x2", v)
 	return e
 }
 
-func (e *htmlSVGline) Y1(v string) HTMLSVGline {
+func (e *htmlSVGline) Y1(v any) HTMLSVGline {
 	e.setAttr("y1", v)
 	return e
 }
 
-func (e *htmlSVGline) Y2(v string) HTMLSVGline {
+func (e *htmlSVGline) Y2(v any) HTMLSVGline {
 	e.setAttr("y2", v)
 	return e
 }
