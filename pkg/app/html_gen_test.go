@@ -7022,13 +7022,13 @@ func TestWbr(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testvkern(t *testing.T) {
-	elem := vkern()
+func TestSVGvkern(t *testing.T) {
+	elem := SVGvkern()
 	elem.Text("hello")
 }
 
-func TestclipPath(t *testing.T) {
-	elem := clipPath()
+func TestSVGclipPath(t *testing.T) {
+	elem := SVGclipPath()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7064,8 +7064,8 @@ func TestclipPath(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testdesc(t *testing.T) {
-	elem := desc()
+func TestSVGdesc(t *testing.T) {
+	elem := SVGdesc()
 	elem.Class("foo")
 	elem.Core("foo", "bar")
 	elem.Id("foo")
@@ -7136,8 +7136,8 @@ func Testdesc(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testline(t *testing.T) {
-	elem := line()
+func TestSVGline(t *testing.T) {
+	elem := SVGline()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7244,8 +7244,8 @@ func Testline(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testrect(t *testing.T) {
-	elem := rect()
+func TestSVGrect(t *testing.T) {
+	elem := SVGrect()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7354,8 +7354,8 @@ func Testrect(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testellipse(t *testing.T) {
-	elem := ellipse()
+func TestSVGellipse(t *testing.T) {
+	elem := SVGellipse()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7462,8 +7462,8 @@ func Testellipse(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeSpecularLighting(t *testing.T) {
-	elem := feSpecularLighting()
+func TestSVGfeSpecularLighting(t *testing.T) {
+	elem := SVGfeSpecularLighting()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.Kernelunitlength("foo", "bar")
@@ -7474,8 +7474,8 @@ func TestfeSpecularLighting(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeSpotLight(t *testing.T) {
-	elem := feSpotLight()
+func TestSVGfeSpotLight(t *testing.T) {
+	elem := SVGfeSpotLight()
 	elem.Limitingconeangle("foo")
 	elem.Pointsatx("foo")
 	elem.Pointsaty("foo")
@@ -7487,8 +7487,8 @@ func TestfeSpotLight(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testsvg(t *testing.T) {
-	elem := svg()
+func TestSvg(t *testing.T) {
+	elem := Svg()
 	elem.Baseprofile("foo")
 	elem.Class("foo")
 	elem.ClipPath("foo")
@@ -7608,8 +7608,8 @@ func Testsvg(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeTurbulence(t *testing.T) {
-	elem := feTurbulence()
+func TestSVGfeTurbulence(t *testing.T) {
+	elem := SVGfeTurbulence()
 	elem.Basefrequency("foo")
 	elem.Class("foo")
 	elem.Numoctaves("foo")
@@ -7620,13 +7620,13 @@ func TestfeTurbulence(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestaltGlyphDef(t *testing.T) {
-	elem := altGlyphDef()
+func TestSVGaltGlyphDef(t *testing.T) {
+	elem := SVGaltGlyphDef()
 	elem.Text("hello")
 }
 
-func Testdefs(t *testing.T) {
-	elem := defs()
+func TestSVGdefs(t *testing.T) {
+	elem := SVGdefs()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7728,16 +7728,16 @@ func Testdefs(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeMerge(t *testing.T) {
-	elem := feMerge()
+func TestSVGfeMerge(t *testing.T) {
+	elem := SVGfeMerge()
 	elem.Class("foo")
 	elem.Result("foo")
 	elem.Style("foo")
 	elem.Text("hello")
 }
 
-func TestfeMorphology(t *testing.T) {
-	elem := feMorphology()
+func TestSVGfeMorphology(t *testing.T) {
+	elem := SVGfeMorphology()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.Operator("foo")
@@ -7746,13 +7746,13 @@ func TestfeMorphology(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testmetadata(t *testing.T) {
-	elem := metadata()
+func TestSVGmetadata(t *testing.T) {
+	elem := SVGmetadata()
 	elem.Text("hello")
 }
 
-func Testpath(t *testing.T) {
-	elem := path()
+func TestSVGpath(t *testing.T) {
+	elem := SVGpath()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7856,8 +7856,8 @@ func Testpath(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testpolygon(t *testing.T) {
-	elem := polygon()
+func TestSVGpolygon(t *testing.T) {
+	elem := SVGpolygon()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -7961,8 +7961,8 @@ func Testpolygon(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testtspan(t *testing.T) {
-	elem := tspan()
+func TestSVGtspan(t *testing.T) {
+	elem := SVGtspan()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8072,8 +8072,8 @@ func Testtspan(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testanimate(t *testing.T) {
-	elem := animate()
+func TestSVGanimate(t *testing.T) {
+	elem := SVGanimate()
 	elem.Accumulate("foo", "bar")
 	elem.Additive("foo", "bar")
 	elem.Attributename("foo")
@@ -8166,8 +8166,8 @@ func Testanimate(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestaltGlyphItem(t *testing.T) {
-	elem := altGlyphItem()
+func TestSVGaltGlyphItem(t *testing.T) {
+	elem := SVGaltGlyphItem()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8177,8 +8177,8 @@ func TestaltGlyphItem(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testg(t *testing.T) {
-	elem := g()
+func TestSVGg(t *testing.T) {
+	elem := SVGg()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8283,8 +8283,8 @@ func Testg(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestglyphRef(t *testing.T) {
-	elem := glyphRef()
+func TestSVGglyphRef(t *testing.T) {
+	elem := SVGglyphRef()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8294,8 +8294,8 @@ func TestglyphRef(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testmarker(t *testing.T) {
-	elem := marker()
+func TestSVGmarker(t *testing.T) {
+	elem := SVGmarker()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8352,8 +8352,8 @@ func Testmarker(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestaltGlyph(t *testing.T) {
-	elem := altGlyph()
+func TestSVGaltGlyph(t *testing.T) {
+	elem := SVGaltGlyph()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8363,8 +8363,8 @@ func TestaltGlyph(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeMergeNode(t *testing.T) {
-	elem := feMergeNode()
+func TestSVGfeMergeNode(t *testing.T) {
+	elem := SVGfeMergeNode()
 	elem.Core("foo", "bar")
 	elem.In("foo")
 
@@ -8376,8 +8376,8 @@ func TestfeMergeNode(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfePointLight(t *testing.T) {
-	elem := fePointLight()
+func TestSVGfePointLight(t *testing.T) {
+	elem := SVGfePointLight()
 	elem.X("foo")
 	elem.Y("foo")
 	elem.Z("foo")
@@ -8390,8 +8390,8 @@ func TestfePointLight(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testtitle(t *testing.T) {
-	elem := title()
+func TestSVGtitle(t *testing.T) {
+	elem := SVGtitle()
 	elem.Class("foo")
 	elem.Core("foo", "bar")
 	elem.Id("foo")
@@ -8465,8 +8465,8 @@ func Testtitle(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testuse(t *testing.T) {
-	elem := use()
+func TestSVGuse(t *testing.T) {
+	elem := SVGuse()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8577,8 +8577,8 @@ func Testuse(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testmpath(t *testing.T) {
-	elem := mpath()
+func TestSVGmpath(t *testing.T) {
+	elem := SVGmpath()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8588,8 +8588,8 @@ func Testmpath(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testset(t *testing.T) {
-	elem := set()
+func TestSVGset(t *testing.T) {
+	elem := SVGset()
 	elem.Accumulate("foo", "bar")
 	elem.Additive("foo", "bar")
 	elem.Attributename("foo")
@@ -8676,8 +8676,8 @@ func Testset(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testa(t *testing.T) {
-	elem := a()
+func TestSVGa(t *testing.T) {
+	elem := SVGa()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8788,8 +8788,8 @@ func Testa(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testglyph(t *testing.T) {
-	elem := glyph()
+func TestSVGglyph(t *testing.T) {
+	elem := SVGglyph()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8799,8 +8799,8 @@ func Testglyph(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeDistantLight(t *testing.T) {
-	elem := feDistantLight()
+func TestSVGfeDistantLight(t *testing.T) {
+	elem := SVGfeDistantLight()
 	elem.Azimuth("foo")
 	elem.Elevation("foo")
 
@@ -8812,8 +8812,8 @@ func TestfeDistantLight(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeFuncA(t *testing.T) {
-	elem := feFuncA()
+func TestSVGfeFuncA(t *testing.T) {
+	elem := SVGfeFuncA()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8823,8 +8823,8 @@ func TestfeFuncA(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testpattern(t *testing.T) {
-	elem := pattern()
+func TestSVGpattern(t *testing.T) {
+	elem := SVGpattern()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -8880,8 +8880,8 @@ func Testpattern(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeFuncB(t *testing.T) {
-	elem := feFuncB()
+func TestSVGfeFuncB(t *testing.T) {
+	elem := SVGfeFuncB()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8891,8 +8891,8 @@ func TestfeFuncB(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeTile(t *testing.T) {
-	elem := feTile()
+func TestSVGfeTile(t *testing.T) {
+	elem := SVGfeTile()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.Style("foo")
@@ -8905,8 +8905,8 @@ func TestfeTile(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestforeignObject(t *testing.T) {
-	elem := foreignObject()
+func TestSVGforeignObject(t *testing.T) {
+	elem := SVGforeignObject()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -9023,8 +9023,8 @@ func TestforeignObject(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestanimateTransform(t *testing.T) {
-	elem := animateTransform()
+func TestSVGanimateTransform(t *testing.T) {
+	elem := SVGanimateTransform()
 	elem.By("foo")
 	elem.From("foo", "bar")
 	elem.To("foo", "bar")
@@ -9038,8 +9038,8 @@ func TestanimateTransform(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeBlend(t *testing.T) {
-	elem := feBlend()
+func TestSVGfeBlend(t *testing.T) {
+	elem := SVGfeBlend()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.In2("foo", "bar")
@@ -9054,8 +9054,8 @@ func TestfeBlend(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeComposite(t *testing.T) {
-	elem := feComposite()
+func TestSVGfeComposite(t *testing.T) {
+	elem := SVGfeComposite()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.In2("foo", "bar")
@@ -9074,8 +9074,8 @@ func TestfeComposite(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeFlood(t *testing.T) {
-	elem := feFlood()
+func TestSVGfeFlood(t *testing.T) {
+	elem := SVGfeFlood()
 	elem.Class("foo")
 	elem.FloodColor("foo")
 	elem.FloodOpacity("foo")
@@ -9089,8 +9089,8 @@ func TestfeFlood(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testmask(t *testing.T) {
-	elem := mask()
+func TestSVGmask(t *testing.T) {
+	elem := SVGmask()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -9137,8 +9137,8 @@ func Testmask(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestradialGradient(t *testing.T) {
-	elem := radialGradient()
+func TestSVGradialGradient(t *testing.T) {
+	elem := SVGradialGradient()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9148,8 +9148,8 @@ func TestradialGradient(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TesttextPath(t *testing.T) {
-	elem := textPath()
+func TestSVGtextPath(t *testing.T) {
+	elem := SVGtextPath()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -9262,8 +9262,8 @@ func TesttextPath(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testdiscard(t *testing.T) {
-	elem := discard()
+func TestSVGdiscard(t *testing.T) {
+	elem := SVGdiscard()
 	elem.Begin("foo")
 	elem.Href("foo")
 
@@ -9275,8 +9275,8 @@ func Testdiscard(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testhkern(t *testing.T) {
-	elem := hkern()
+func TestSVGhkern(t *testing.T) {
+	elem := SVGhkern()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9286,8 +9286,8 @@ func Testhkern(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testsymbol(t *testing.T) {
-	elem := symbol()
+func TestSVGsymbol(t *testing.T) {
+	elem := SVGsymbol()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -9399,8 +9399,8 @@ func Testsymbol(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testtref(t *testing.T) {
-	elem := tref()
+func TestSVGtref(t *testing.T) {
+	elem := SVGtref()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9410,8 +9410,8 @@ func Testtref(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeDisplacementMap(t *testing.T) {
-	elem := feDisplacementMap()
+func TestSVGfeDisplacementMap(t *testing.T) {
+	elem := SVGfeDisplacementMap()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.In2("foo", "bar")
@@ -9428,8 +9428,8 @@ func TestfeDisplacementMap(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testfilter(t *testing.T) {
-	elem := filter()
+func TestSVGfilter(t *testing.T) {
+	elem := SVGfilter()
 	elem.Class("foo")
 	elem.Filter("foo")
 	elem.Filterres("foo", "bar")
@@ -9449,8 +9449,8 @@ func Testfilter(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testpolyline(t *testing.T) {
-	elem := polyline()
+func TestSVGpolyline(t *testing.T) {
+	elem := SVGpolyline()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -9557,8 +9557,8 @@ func Testpolyline(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeGaussianBlur(t *testing.T) {
-	elem := feGaussianBlur()
+func TestSVGfeGaussianBlur(t *testing.T) {
+	elem := SVGfeGaussianBlur()
 	elem.Class("foo")
 	elem.Edgemode("foo", "bar")
 	elem.In("foo")
@@ -9573,8 +9573,8 @@ func TestfeGaussianBlur(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testfont(t *testing.T) {
-	elem := font()
+func TestSVGfont(t *testing.T) {
+	elem := SVGfont()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9584,8 +9584,8 @@ func Testfont(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Teststyle(t *testing.T) {
-	elem := style()
+func TestSVGstyle(t *testing.T) {
+	elem := SVGstyle()
 	elem.Class("foo")
 	elem.Core("foo", "bar")
 	elem.Id("foo")
@@ -9662,8 +9662,8 @@ func Teststyle(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestanimateMotion(t *testing.T) {
-	elem := animateMotion()
+func TestSVGanimateMotion(t *testing.T) {
+	elem := SVGanimateMotion()
 	elem.Accumulate("foo", "bar")
 	elem.Additive("foo", "bar")
 	elem.Attributename("foo")
@@ -9760,8 +9760,8 @@ func TestanimateMotion(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeColorMatrix(t *testing.T) {
-	elem := feColorMatrix()
+func TestSVGfeColorMatrix(t *testing.T) {
+	elem := SVGfeColorMatrix()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.Style("foo")
@@ -9776,8 +9776,8 @@ func TestfeColorMatrix(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestlinearGradient(t *testing.T) {
-	elem := linearGradient()
+func TestSVGlinearGradient(t *testing.T) {
+	elem := SVGlinearGradient()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9787,8 +9787,8 @@ func TestlinearGradient(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testscript(t *testing.T) {
-	elem := script()
+func TestSVGscript(t *testing.T) {
+	elem := SVGscript()
 	elem.Class("foo")
 	elem.Core("foo", "bar")
 	elem.Href("foo")
@@ -9864,8 +9864,8 @@ func Testscript(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeFuncR(t *testing.T) {
-	elem := feFuncR()
+func TestSVGfeFuncR(t *testing.T) {
+	elem := SVGfeFuncR()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9875,8 +9875,8 @@ func TestfeFuncR(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeImage(t *testing.T) {
-	elem := feImage()
+func TestSVGfeImage(t *testing.T) {
+	elem := SVGfeImage()
 	elem.Class("foo")
 	elem.Preserveaspectratio("foo")
 	elem.Style("foo")
@@ -9889,8 +9889,8 @@ func TestfeImage(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeOffset(t *testing.T) {
-	elem := feOffset()
+func TestSVGfeOffset(t *testing.T) {
+	elem := SVGfeOffset()
 	elem.Class("foo")
 	elem.Dx("foo")
 	elem.Dy("foo")
@@ -9905,8 +9905,8 @@ func TestfeOffset(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeDiffuseLighting(t *testing.T) {
-	elem := feDiffuseLighting()
+func TestSVGfeDiffuseLighting(t *testing.T) {
+	elem := SVGfeDiffuseLighting()
 	elem.Class("foo")
 	elem.Diffuseconstant("foo")
 	elem.In("foo")
@@ -9922,8 +9922,8 @@ func TestfeDiffuseLighting(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testview(t *testing.T) {
-	elem := view()
+func TestSVGview(t *testing.T) {
+	elem := SVGview()
 	elem.Preserveaspectratio("foo")
 	elem.Viewbox("foo")
 	elem.Viewtarget("foo", "bar")
@@ -9937,8 +9937,8 @@ func Testview(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testcircle(t *testing.T) {
-	elem := circle()
+func TestSVGcircle(t *testing.T) {
+	elem := SVGcircle()
 	elem.Class("foo")
 	elem.ClipPath("foo")
 	elem.ClipRule("foo")
@@ -10047,8 +10047,8 @@ func Testcircle(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testcursor(t *testing.T) {
-	elem := cursor()
+func TestSVGcursor(t *testing.T) {
+	elem := SVGcursor()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -10058,8 +10058,8 @@ func Testcursor(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeComponentTransfer(t *testing.T) {
-	elem := feComponentTransfer()
+func TestSVGfeComponentTransfer(t *testing.T) {
+	elem := SVGfeComponentTransfer()
 	elem.Class("foo")
 	elem.In("foo")
 	elem.Style("foo")
@@ -10072,8 +10072,8 @@ func TestfeComponentTransfer(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeConvolveMatrix(t *testing.T) {
-	elem := feConvolveMatrix()
+func TestSVGfeConvolveMatrix(t *testing.T) {
+	elem := SVGfeConvolveMatrix()
 	elem.Bias("foo", "bar")
 	elem.Class("foo")
 	elem.Divisor("foo")
@@ -10095,8 +10095,8 @@ func TestfeConvolveMatrix(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Testimage(t *testing.T) {
-	elem := image()
+func TestSVGimage(t *testing.T) {
+	elem := SVGimage()
 	elem.Class("foo")
 	elem.Crossorigin("foo")
 	elem.Height("foo")
@@ -10116,8 +10116,8 @@ func Testimage(t *testing.T) {
 	elem.Text("hello")
 }
 
-func Teststop(t *testing.T) {
-	elem := stop()
+func TestSVGstop(t *testing.T) {
+	elem := SVGstop()
 	elem.Class("foo")
 	elem.Color("foo")
 	elem.Core("foo", "bar")
@@ -10198,8 +10198,8 @@ func Teststop(t *testing.T) {
 	elem.Text("hello")
 }
 
-func TestfeFuncG(t *testing.T) {
-	elem := feFuncG()
+func TestSVGfeFuncG(t *testing.T) {
+	elem := SVGfeFuncG()
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
