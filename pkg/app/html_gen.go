@@ -57135,17 +57135,17 @@ type HTMLSVGdesc interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGdesc
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGdesc
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGdesc
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGdesc
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGdesc
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGdesc
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGdesc
 
 	/* OnLoad
 	 */
@@ -57453,17 +57453,17 @@ func (e *htmlSVGdesc) OnInvalid(h EventHandler, scope ...any) HTMLSVGdesc {
 	return e
 }
 
-func (e *htmlSVGdesc) OnKeydown(h EventHandler, scope ...any) HTMLSVGdesc {
+func (e *htmlSVGdesc) OnKeyDown(h EventHandler, scope ...any) HTMLSVGdesc {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGdesc) OnKeypress(h EventHandler, scope ...any) HTMLSVGdesc {
+func (e *htmlSVGdesc) OnKeyPress(h EventHandler, scope ...any) HTMLSVGdesc {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGdesc) OnKeyup(h EventHandler, scope ...any) HTMLSVGdesc {
+func (e *htmlSVGdesc) OnKeyUp(h EventHandler, scope ...any) HTMLSVGdesc {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -57905,17 +57905,17 @@ type HTMLSVGline interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGline
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGline
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGline
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGline
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGline
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGline
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGline
 
 	/* OnLoad
 	 */
@@ -58402,17 +58402,17 @@ func (e *htmlSVGline) OnInvalid(h EventHandler, scope ...any) HTMLSVGline {
 	return e
 }
 
-func (e *htmlSVGline) OnKeydown(h EventHandler, scope ...any) HTMLSVGline {
+func (e *htmlSVGline) OnKeyDown(h EventHandler, scope ...any) HTMLSVGline {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGline) OnKeypress(h EventHandler, scope ...any) HTMLSVGline {
+func (e *htmlSVGline) OnKeyPress(h EventHandler, scope ...any) HTMLSVGline {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGline) OnKeyup(h EventHandler, scope ...any) HTMLSVGline {
+func (e *htmlSVGline) OnKeyUp(h EventHandler, scope ...any) HTMLSVGline {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -58857,17 +58857,17 @@ type HTMLSVGrect interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGrect
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGrect
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGrect
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGrect
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGrect
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGrect
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGrect
 
 	/* OnLoad
 	 */
@@ -59364,17 +59364,17 @@ func (e *htmlSVGrect) OnInvalid(h EventHandler, scope ...any) HTMLSVGrect {
 	return e
 }
 
-func (e *htmlSVGrect) OnKeydown(h EventHandler, scope ...any) HTMLSVGrect {
+func (e *htmlSVGrect) OnKeyDown(h EventHandler, scope ...any) HTMLSVGrect {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGrect) OnKeypress(h EventHandler, scope ...any) HTMLSVGrect {
+func (e *htmlSVGrect) OnKeyPress(h EventHandler, scope ...any) HTMLSVGrect {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGrect) OnKeyup(h EventHandler, scope ...any) HTMLSVGrect {
+func (e *htmlSVGrect) OnKeyUp(h EventHandler, scope ...any) HTMLSVGrect {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -59811,17 +59811,17 @@ type HTMLSVGellipse interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGellipse
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGellipse
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGellipse
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGellipse
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGellipse
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGellipse
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGellipse
 
 	/* OnLoad
 	 */
@@ -60311,17 +60311,17 @@ func (e *htmlSVGellipse) OnInvalid(h EventHandler, scope ...any) HTMLSVGellipse 
 	return e
 }
 
-func (e *htmlSVGellipse) OnKeydown(h EventHandler, scope ...any) HTMLSVGellipse {
+func (e *htmlSVGellipse) OnKeyDown(h EventHandler, scope ...any) HTMLSVGellipse {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGellipse) OnKeypress(h EventHandler, scope ...any) HTMLSVGellipse {
+func (e *htmlSVGellipse) OnKeyPress(h EventHandler, scope ...any) HTMLSVGellipse {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGellipse) OnKeyup(h EventHandler, scope ...any) HTMLSVGellipse {
+func (e *htmlSVGellipse) OnKeyUp(h EventHandler, scope ...any) HTMLSVGellipse {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -61017,17 +61017,17 @@ type HTMLSvg interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSvg
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSvg
+	OnKeyDown(h EventHandler, scope ...any) HTMLSvg
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSvg
+	OnKeyPress(h EventHandler, scope ...any) HTMLSvg
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSvg
+	OnKeyUp(h EventHandler, scope ...any) HTMLSvg
 
 	/* OnLoad
 	 */
@@ -61577,17 +61577,17 @@ func (e *htmlSvg) OnInvalid(h EventHandler, scope ...any) HTMLSvg {
 	return e
 }
 
-func (e *htmlSvg) OnKeydown(h EventHandler, scope ...any) HTMLSvg {
+func (e *htmlSvg) OnKeyDown(h EventHandler, scope ...any) HTMLSvg {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSvg) OnKeypress(h EventHandler, scope ...any) HTMLSvg {
+func (e *htmlSvg) OnKeyPress(h EventHandler, scope ...any) HTMLSvg {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSvg) OnKeyup(h EventHandler, scope ...any) HTMLSvg {
+func (e *htmlSvg) OnKeyUp(h EventHandler, scope ...any) HTMLSvg {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -62177,17 +62177,17 @@ type HTMLSVGdefs interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGdefs
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGdefs
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGdefs
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGdefs
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGdefs
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGdefs
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGdefs
 
 	/* OnLoad
 	 */
@@ -62649,17 +62649,17 @@ func (e *htmlSVGdefs) OnInvalid(h EventHandler, scope ...any) HTMLSVGdefs {
 	return e
 }
 
-func (e *htmlSVGdefs) OnKeydown(h EventHandler, scope ...any) HTMLSVGdefs {
+func (e *htmlSVGdefs) OnKeyDown(h EventHandler, scope ...any) HTMLSVGdefs {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGdefs) OnKeypress(h EventHandler, scope ...any) HTMLSVGdefs {
+func (e *htmlSVGdefs) OnKeyPress(h EventHandler, scope ...any) HTMLSVGdefs {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGdefs) OnKeyup(h EventHandler, scope ...any) HTMLSVGdefs {
+func (e *htmlSVGdefs) OnKeyUp(h EventHandler, scope ...any) HTMLSVGdefs {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -63293,17 +63293,17 @@ type HTMLSVGpath interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGpath
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGpath
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGpath
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGpath
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGpath
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGpath
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGpath
 
 	/* OnLoad
 	 */
@@ -63775,17 +63775,17 @@ func (e *htmlSVGpath) OnInvalid(h EventHandler, scope ...any) HTMLSVGpath {
 	return e
 }
 
-func (e *htmlSVGpath) OnKeydown(h EventHandler, scope ...any) HTMLSVGpath {
+func (e *htmlSVGpath) OnKeyDown(h EventHandler, scope ...any) HTMLSVGpath {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpath) OnKeypress(h EventHandler, scope ...any) HTMLSVGpath {
+func (e *htmlSVGpath) OnKeyPress(h EventHandler, scope ...any) HTMLSVGpath {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpath) OnKeyup(h EventHandler, scope ...any) HTMLSVGpath {
+func (e *htmlSVGpath) OnKeyUp(h EventHandler, scope ...any) HTMLSVGpath {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -64210,17 +64210,17 @@ type HTMLSVGpolygon interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGpolygon
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGpolygon
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGpolygon
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGpolygon
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGpolygon
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGpolygon
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGpolygon
 
 	/* OnLoad
 	 */
@@ -64693,17 +64693,17 @@ func (e *htmlSVGpolygon) OnInvalid(h EventHandler, scope ...any) HTMLSVGpolygon 
 	return e
 }
 
-func (e *htmlSVGpolygon) OnKeydown(h EventHandler, scope ...any) HTMLSVGpolygon {
+func (e *htmlSVGpolygon) OnKeyDown(h EventHandler, scope ...any) HTMLSVGpolygon {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpolygon) OnKeypress(h EventHandler, scope ...any) HTMLSVGpolygon {
+func (e *htmlSVGpolygon) OnKeyPress(h EventHandler, scope ...any) HTMLSVGpolygon {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpolygon) OnKeyup(h EventHandler, scope ...any) HTMLSVGpolygon {
+func (e *htmlSVGpolygon) OnKeyUp(h EventHandler, scope ...any) HTMLSVGpolygon {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -65152,17 +65152,17 @@ type HTMLSVGtspan interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGtspan
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGtspan
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGtspan
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGtspan
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGtspan
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGtspan
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGtspan
 
 	/* OnLoad
 	 */
@@ -65664,17 +65664,17 @@ func (e *htmlSVGtspan) OnInvalid(h EventHandler, scope ...any) HTMLSVGtspan {
 	return e
 }
 
-func (e *htmlSVGtspan) OnKeydown(h EventHandler, scope ...any) HTMLSVGtspan {
+func (e *htmlSVGtspan) OnKeyDown(h EventHandler, scope ...any) HTMLSVGtspan {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtspan) OnKeypress(h EventHandler, scope ...any) HTMLSVGtspan {
+func (e *htmlSVGtspan) OnKeyPress(h EventHandler, scope ...any) HTMLSVGtspan {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtspan) OnKeyup(h EventHandler, scope ...any) HTMLSVGtspan {
+func (e *htmlSVGtspan) OnKeyUp(h EventHandler, scope ...any) HTMLSVGtspan {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -66047,17 +66047,17 @@ type HTMLSVGanimate interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGanimate
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGanimate
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGanimate
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGanimate
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGanimate
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGanimate
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGanimate
 
 	/* OnLoad
 	 */
@@ -66472,17 +66472,17 @@ func (e *htmlSVGanimate) OnInvalid(h EventHandler, scope ...any) HTMLSVGanimate 
 	return e
 }
 
-func (e *htmlSVGanimate) OnKeydown(h EventHandler, scope ...any) HTMLSVGanimate {
+func (e *htmlSVGanimate) OnKeyDown(h EventHandler, scope ...any) HTMLSVGanimate {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGanimate) OnKeypress(h EventHandler, scope ...any) HTMLSVGanimate {
+func (e *htmlSVGanimate) OnKeyPress(h EventHandler, scope ...any) HTMLSVGanimate {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGanimate) OnKeyup(h EventHandler, scope ...any) HTMLSVGanimate {
+func (e *htmlSVGanimate) OnKeyUp(h EventHandler, scope ...any) HTMLSVGanimate {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -66989,17 +66989,17 @@ type HTMLSVGg interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGg
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGg
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGg
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGg
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGg
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGg
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGg
 
 	/* OnLoad
 	 */
@@ -67476,17 +67476,17 @@ func (e *htmlSVGg) OnInvalid(h EventHandler, scope ...any) HTMLSVGg {
 	return e
 }
 
-func (e *htmlSVGg) OnKeydown(h EventHandler, scope ...any) HTMLSVGg {
+func (e *htmlSVGg) OnKeyDown(h EventHandler, scope ...any) HTMLSVGg {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGg) OnKeypress(h EventHandler, scope ...any) HTMLSVGg {
+func (e *htmlSVGg) OnKeyPress(h EventHandler, scope ...any) HTMLSVGg {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGg) OnKeyup(h EventHandler, scope ...any) HTMLSVGg {
+func (e *htmlSVGg) OnKeyUp(h EventHandler, scope ...any) HTMLSVGg {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -68614,17 +68614,17 @@ type HTMLSVGtitle interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGtitle
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGtitle
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGtitle
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGtitle
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGtitle
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGtitle
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGtitle
 
 	/* OnLoad
 	 */
@@ -68948,17 +68948,17 @@ func (e *htmlSVGtitle) OnInvalid(h EventHandler, scope ...any) HTMLSVGtitle {
 	return e
 }
 
-func (e *htmlSVGtitle) OnKeydown(h EventHandler, scope ...any) HTMLSVGtitle {
+func (e *htmlSVGtitle) OnKeyDown(h EventHandler, scope ...any) HTMLSVGtitle {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtitle) OnKeypress(h EventHandler, scope ...any) HTMLSVGtitle {
+func (e *htmlSVGtitle) OnKeyPress(h EventHandler, scope ...any) HTMLSVGtitle {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtitle) OnKeyup(h EventHandler, scope ...any) HTMLSVGtitle {
+func (e *htmlSVGtitle) OnKeyUp(h EventHandler, scope ...any) HTMLSVGtitle {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -69417,17 +69417,17 @@ type HTMLSVGuse interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGuse
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGuse
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGuse
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGuse
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGuse
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGuse
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGuse
 
 	/* OnLoad
 	 */
@@ -69933,17 +69933,17 @@ func (e *htmlSVGuse) OnInvalid(h EventHandler, scope ...any) HTMLSVGuse {
 	return e
 }
 
-func (e *htmlSVGuse) OnKeydown(h EventHandler, scope ...any) HTMLSVGuse {
+func (e *htmlSVGuse) OnKeyDown(h EventHandler, scope ...any) HTMLSVGuse {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGuse) OnKeypress(h EventHandler, scope ...any) HTMLSVGuse {
+func (e *htmlSVGuse) OnKeyPress(h EventHandler, scope ...any) HTMLSVGuse {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGuse) OnKeyup(h EventHandler, scope ...any) HTMLSVGuse {
+func (e *htmlSVGuse) OnKeyUp(h EventHandler, scope ...any) HTMLSVGuse {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -70368,17 +70368,17 @@ type HTMLSVGset interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGset
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGset
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGset
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGset
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGset
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGset
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGset
 
 	/* OnLoad
 	 */
@@ -70767,17 +70767,17 @@ func (e *htmlSVGset) OnInvalid(h EventHandler, scope ...any) HTMLSVGset {
 	return e
 }
 
-func (e *htmlSVGset) OnKeydown(h EventHandler, scope ...any) HTMLSVGset {
+func (e *htmlSVGset) OnKeyDown(h EventHandler, scope ...any) HTMLSVGset {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGset) OnKeypress(h EventHandler, scope ...any) HTMLSVGset {
+func (e *htmlSVGset) OnKeyPress(h EventHandler, scope ...any) HTMLSVGset {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGset) OnKeyup(h EventHandler, scope ...any) HTMLSVGset {
+func (e *htmlSVGset) OnKeyUp(h EventHandler, scope ...any) HTMLSVGset {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -71232,17 +71232,17 @@ type HTMLSVGa interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGa
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGa
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGa
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGa
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGa
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGa
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGa
 
 	/* OnLoad
 	 */
@@ -71748,17 +71748,17 @@ func (e *htmlSVGa) OnInvalid(h EventHandler, scope ...any) HTMLSVGa {
 	return e
 }
 
-func (e *htmlSVGa) OnKeydown(h EventHandler, scope ...any) HTMLSVGa {
+func (e *htmlSVGa) OnKeyDown(h EventHandler, scope ...any) HTMLSVGa {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGa) OnKeypress(h EventHandler, scope ...any) HTMLSVGa {
+func (e *htmlSVGa) OnKeyPress(h EventHandler, scope ...any) HTMLSVGa {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGa) OnKeyup(h EventHandler, scope ...any) HTMLSVGa {
+func (e *htmlSVGa) OnKeyUp(h EventHandler, scope ...any) HTMLSVGa {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -73108,17 +73108,17 @@ type HTMLSVGforeignObject interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGforeignObject
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGforeignObject
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGforeignObject
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGforeignObject
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGforeignObject
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGforeignObject
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGforeignObject
 
 	/* OnLoad
 	 */
@@ -73649,17 +73649,17 @@ func (e *htmlSVGforeignObject) OnInvalid(h EventHandler, scope ...any) HTMLSVGfo
 	return e
 }
 
-func (e *htmlSVGforeignObject) OnKeydown(h EventHandler, scope ...any) HTMLSVGforeignObject {
+func (e *htmlSVGforeignObject) OnKeyDown(h EventHandler, scope ...any) HTMLSVGforeignObject {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGforeignObject) OnKeypress(h EventHandler, scope ...any) HTMLSVGforeignObject {
+func (e *htmlSVGforeignObject) OnKeyPress(h EventHandler, scope ...any) HTMLSVGforeignObject {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGforeignObject) OnKeyup(h EventHandler, scope ...any) HTMLSVGforeignObject {
+func (e *htmlSVGforeignObject) OnKeyUp(h EventHandler, scope ...any) HTMLSVGforeignObject {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -75225,17 +75225,17 @@ type HTMLSVGtextPath interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGtextPath
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGtextPath
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGtextPath
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGtextPath
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGtextPath
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGtextPath
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGtextPath
 
 	/* OnLoad
 	 */
@@ -75751,17 +75751,17 @@ func (e *htmlSVGtextPath) OnInvalid(h EventHandler, scope ...any) HTMLSVGtextPat
 	return e
 }
 
-func (e *htmlSVGtextPath) OnKeydown(h EventHandler, scope ...any) HTMLSVGtextPath {
+func (e *htmlSVGtextPath) OnKeyDown(h EventHandler, scope ...any) HTMLSVGtextPath {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtextPath) OnKeypress(h EventHandler, scope ...any) HTMLSVGtextPath {
+func (e *htmlSVGtextPath) OnKeyPress(h EventHandler, scope ...any) HTMLSVGtextPath {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGtextPath) OnKeyup(h EventHandler, scope ...any) HTMLSVGtextPath {
+func (e *htmlSVGtextPath) OnKeyUp(h EventHandler, scope ...any) HTMLSVGtextPath {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -76377,17 +76377,17 @@ type HTMLSVGsymbol interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGsymbol
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGsymbol
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGsymbol
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGsymbol
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGsymbol
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGsymbol
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGsymbol
 
 	/* OnLoad
 	 */
@@ -76898,17 +76898,17 @@ func (e *htmlSVGsymbol) OnInvalid(h EventHandler, scope ...any) HTMLSVGsymbol {
 	return e
 }
 
-func (e *htmlSVGsymbol) OnKeydown(h EventHandler, scope ...any) HTMLSVGsymbol {
+func (e *htmlSVGsymbol) OnKeyDown(h EventHandler, scope ...any) HTMLSVGsymbol {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGsymbol) OnKeypress(h EventHandler, scope ...any) HTMLSVGsymbol {
+func (e *htmlSVGsymbol) OnKeyPress(h EventHandler, scope ...any) HTMLSVGsymbol {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGsymbol) OnKeyup(h EventHandler, scope ...any) HTMLSVGsymbol {
+func (e *htmlSVGsymbol) OnKeyUp(h EventHandler, scope ...any) HTMLSVGsymbol {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -77721,17 +77721,17 @@ type HTMLSVGpolyline interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGpolyline
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGpolyline
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGpolyline
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGpolyline
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGpolyline
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGpolyline
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGpolyline
 
 	/* OnLoad
 	 */
@@ -78217,17 +78217,17 @@ func (e *htmlSVGpolyline) OnInvalid(h EventHandler, scope ...any) HTMLSVGpolylin
 	return e
 }
 
-func (e *htmlSVGpolyline) OnKeydown(h EventHandler, scope ...any) HTMLSVGpolyline {
+func (e *htmlSVGpolyline) OnKeyDown(h EventHandler, scope ...any) HTMLSVGpolyline {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpolyline) OnKeypress(h EventHandler, scope ...any) HTMLSVGpolyline {
+func (e *htmlSVGpolyline) OnKeyPress(h EventHandler, scope ...any) HTMLSVGpolyline {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGpolyline) OnKeyup(h EventHandler, scope ...any) HTMLSVGpolyline {
+func (e *htmlSVGpolyline) OnKeyUp(h EventHandler, scope ...any) HTMLSVGpolyline {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -78729,17 +78729,17 @@ type HTMLSVGstyle interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGstyle
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGstyle
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGstyle
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGstyle
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGstyle
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGstyle
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGstyle
 
 	/* OnLoad
 	 */
@@ -79077,17 +79077,17 @@ func (e *htmlSVGstyle) OnInvalid(h EventHandler, scope ...any) HTMLSVGstyle {
 	return e
 }
 
-func (e *htmlSVGstyle) OnKeydown(h EventHandler, scope ...any) HTMLSVGstyle {
+func (e *htmlSVGstyle) OnKeyDown(h EventHandler, scope ...any) HTMLSVGstyle {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGstyle) OnKeypress(h EventHandler, scope ...any) HTMLSVGstyle {
+func (e *htmlSVGstyle) OnKeyPress(h EventHandler, scope ...any) HTMLSVGstyle {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGstyle) OnKeyup(h EventHandler, scope ...any) HTMLSVGstyle {
+func (e *htmlSVGstyle) OnKeyUp(h EventHandler, scope ...any) HTMLSVGstyle {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -79486,17 +79486,17 @@ type HTMLSVGanimateMotion interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGanimateMotion
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGanimateMotion
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGanimateMotion
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGanimateMotion
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGanimateMotion
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGanimateMotion
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGanimateMotion
 
 	/* OnLoad
 	 */
@@ -79934,17 +79934,17 @@ func (e *htmlSVGanimateMotion) OnInvalid(h EventHandler, scope ...any) HTMLSVGan
 	return e
 }
 
-func (e *htmlSVGanimateMotion) OnKeydown(h EventHandler, scope ...any) HTMLSVGanimateMotion {
+func (e *htmlSVGanimateMotion) OnKeyDown(h EventHandler, scope ...any) HTMLSVGanimateMotion {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGanimateMotion) OnKeypress(h EventHandler, scope ...any) HTMLSVGanimateMotion {
+func (e *htmlSVGanimateMotion) OnKeyPress(h EventHandler, scope ...any) HTMLSVGanimateMotion {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGanimateMotion) OnKeyup(h EventHandler, scope ...any) HTMLSVGanimateMotion {
+func (e *htmlSVGanimateMotion) OnKeyUp(h EventHandler, scope ...any) HTMLSVGanimateMotion {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -80483,17 +80483,17 @@ type HTMLSVGscript interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGscript
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGscript
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGscript
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGscript
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGscript
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGscript
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGscript
 
 	/* OnLoad
 	 */
@@ -80826,17 +80826,17 @@ func (e *htmlSVGscript) OnInvalid(h EventHandler, scope ...any) HTMLSVGscript {
 	return e
 }
 
-func (e *htmlSVGscript) OnKeydown(h EventHandler, scope ...any) HTMLSVGscript {
+func (e *htmlSVGscript) OnKeyDown(h EventHandler, scope ...any) HTMLSVGscript {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGscript) OnKeypress(h EventHandler, scope ...any) HTMLSVGscript {
+func (e *htmlSVGscript) OnKeyPress(h EventHandler, scope ...any) HTMLSVGscript {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGscript) OnKeyup(h EventHandler, scope ...any) HTMLSVGscript {
+func (e *htmlSVGscript) OnKeyUp(h EventHandler, scope ...any) HTMLSVGscript {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -81805,17 +81805,17 @@ type HTMLSVGcircle interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGcircle
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGcircle
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGcircle
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGcircle
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGcircle
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGcircle
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGcircle
 
 	/* OnLoad
 	 */
@@ -82311,17 +82311,17 @@ func (e *htmlSVGcircle) OnInvalid(h EventHandler, scope ...any) HTMLSVGcircle {
 	return e
 }
 
-func (e *htmlSVGcircle) OnKeydown(h EventHandler, scope ...any) HTMLSVGcircle {
+func (e *htmlSVGcircle) OnKeyDown(h EventHandler, scope ...any) HTMLSVGcircle {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGcircle) OnKeypress(h EventHandler, scope ...any) HTMLSVGcircle {
+func (e *htmlSVGcircle) OnKeyPress(h EventHandler, scope ...any) HTMLSVGcircle {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGcircle) OnKeyup(h EventHandler, scope ...any) HTMLSVGcircle {
+func (e *htmlSVGcircle) OnKeyUp(h EventHandler, scope ...any) HTMLSVGcircle {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }
@@ -83200,17 +83200,17 @@ type HTMLSVGstop interface {
 	 */
 	OnInvalid(h EventHandler, scope ...any) HTMLSVGstop
 
-	/* OnKeydown
+	/* OnKeyDown
 	 */
-	OnKeydown(h EventHandler, scope ...any) HTMLSVGstop
+	OnKeyDown(h EventHandler, scope ...any) HTMLSVGstop
 
-	/* OnKeypress
+	/* OnKeyPress
 	 */
-	OnKeypress(h EventHandler, scope ...any) HTMLSVGstop
+	OnKeyPress(h EventHandler, scope ...any) HTMLSVGstop
 
-	/* OnKeyup
+	/* OnKeyUp
 	 */
-	OnKeyup(h EventHandler, scope ...any) HTMLSVGstop
+	OnKeyUp(h EventHandler, scope ...any) HTMLSVGstop
 
 	/* OnLoad
 	 */
@@ -83565,17 +83565,17 @@ func (e *htmlSVGstop) OnInvalid(h EventHandler, scope ...any) HTMLSVGstop {
 	return e
 }
 
-func (e *htmlSVGstop) OnKeydown(h EventHandler, scope ...any) HTMLSVGstop {
+func (e *htmlSVGstop) OnKeyDown(h EventHandler, scope ...any) HTMLSVGstop {
 	e.setEventHandler("keydown", h, scope...)
 	return e
 }
 
-func (e *htmlSVGstop) OnKeypress(h EventHandler, scope ...any) HTMLSVGstop {
+func (e *htmlSVGstop) OnKeyPress(h EventHandler, scope ...any) HTMLSVGstop {
 	e.setEventHandler("keypress", h, scope...)
 	return e
 }
 
-func (e *htmlSVGstop) OnKeyup(h EventHandler, scope ...any) HTMLSVGstop {
+func (e *htmlSVGstop) OnKeyUp(h EventHandler, scope ...any) HTMLSVGstop {
 	e.setEventHandler("keyup", h, scope...)
 	return e
 }

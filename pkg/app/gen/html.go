@@ -4721,13 +4721,13 @@ var svgEventHandlers = map[string]eventHandler{"onbegin": {
 		Name: "OnInvalid",
 	},
 	"onkeydown": {
-		Name: "OnKeydown",
+		Name: "OnKeyDown",
 	},
 	"onkeypress": {
-		Name: "OnKeypress",
+		Name: "OnKeyPress",
 	},
 	"onkeyup": {
-		Name: "OnKeyup",
+		Name: "OnKeyUp",
 	},
 	"onload": {
 		Name: "OnLoad",
