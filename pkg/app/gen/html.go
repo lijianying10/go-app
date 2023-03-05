@@ -5438,6 +5438,10 @@ import (
 			)
 
 		default:
+			htmlTagname := strings.ToLower(t.Name)
+			if strings.HasPrefix(t.Name, "SVG") {
+				htmlTagname = strings.ToLower(t.Name[3:])
+			}
 			fmt.Fprintf(f, `
 			/* %s returns an HTML element that %s */
 			func %s() HTML%s {
@@ -5456,7 +5460,7 @@ import (
 				t.Name,
 				t.Name,
 				t.Name,
-				strings.ToLower(t.Name),
+				htmlTagname,
 				t.Type == selfClosing,
 			)
 		}

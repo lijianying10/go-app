@@ -56647,7 +56647,7 @@ The <vkern> SVG element allows to fine-tweak the vertical distance between two g
 func SVGvkern() HTMLSVGvkern {
 	e := &htmlSVGvkern{
 		htmlElement: htmlElement{
-			tag:           "svgvkern",
+			tag:           "vkern",
 			isSelfClosing: false,
 		},
 	}
@@ -56820,7 +56820,7 @@ A clipping path restricts the region to which paint can be applied. Conceptually
 func SVGclipPath() HTMLSVGclipPath {
 	e := &htmlSVGclipPath{
 		htmlElement: htmlElement{
-			tag:           "svgclippath",
+			tag:           "clippath",
 			isSelfClosing: false,
 		},
 	}
@@ -57282,7 +57282,7 @@ The hidden text of a <desc> element can also be concatenated with the visible te
 func SVGdesc() HTMLSVGdesc {
 	e := &htmlSVGdesc{
 		htmlElement: htmlElement{
-			tag:           "svgdesc",
+			tag:           "desc",
 			isSelfClosing: false,
 		},
 	}
@@ -58046,7 +58046,7 @@ type HTMLSVGline interface {
 func SVGline() HTMLSVGline {
 	e := &htmlSVGline{
 		htmlElement: htmlElement{
-			tag:           "svgline",
+			tag:           "line",
 			isSelfClosing: false,
 		},
 	}
@@ -58998,7 +58998,7 @@ type HTMLSVGrect interface {
 func SVGrect() HTMLSVGrect {
 	e := &htmlSVGrect{
 		htmlElement: htmlElement{
-			tag:           "svgrect",
+			tag:           "rect",
 			isSelfClosing: false,
 		},
 	}
@@ -59955,7 +59955,7 @@ Note: Ellipses are unable to specify the exact orientation of the ellipse (if, f
 func SVGellipse() HTMLSVGellipse {
 	e := &htmlSVGellipse{
 		htmlElement: htmlElement{
-			tag:           "svgellipse",
+			tag:           "ellipse",
 			isSelfClosing: false,
 		},
 	}
@@ -60528,7 +60528,7 @@ This filter primitive produces an image which contains the specular reflection p
 func SVGfeSpecularLighting() HTMLSVGfeSpecularLighting {
 	e := &htmlSVGfeSpecularLighting{
 		htmlElement: htmlElement{
-			tag:           "svgfespecularlighting",
+			tag:           "fespecularlighting",
 			isSelfClosing: false,
 		},
 	}
@@ -60642,7 +60642,7 @@ It is used within a lighting filter primitive: <feDiffuseLighting> or <feSpecula
 func SVGfeSpotLight() HTMLSVGfeSpotLight {
 	e := &htmlSVGfeSpotLight{
 		htmlElement: htmlElement{
-			tag:           "svgfespotlight",
+			tag:           "fespotlight",
 			isSelfClosing: false,
 		},
 	}
@@ -61818,7 +61818,7 @@ type HTMLSVGfeTurbulence interface {
 func SVGfeTurbulence() HTMLSVGfeTurbulence {
 	e := &htmlSVGfeTurbulence{
 		htmlElement: htmlElement{
-			tag:           "svgfeturbulence",
+			tag:           "feturbulence",
 			isSelfClosing: false,
 		},
 	}
@@ -61898,7 +61898,7 @@ The <altGlyphDef> SVG element defines a substitution representation for glyphs. 
 func SVGaltGlyphDef() HTMLSVGaltGlyphDef {
 	e := &htmlSVGaltGlyphDef{
 		htmlElement: htmlElement{
-			tag:           "svgaltglyphdef",
+			tag:           "altglyphdef",
 			isSelfClosing: false,
 		},
 	}
@@ -62323,7 +62323,7 @@ Graphical objects can be referenced from anywhere, however, defining these objec
 func SVGdefs() HTMLSVGdefs {
 	e := &htmlSVGdefs{
 		htmlElement: htmlElement{
-			tag:           "svgdefs",
+			tag:           "defs",
 			isSelfClosing: false,
 		},
 	}
@@ -62854,7 +62854,7 @@ type HTMLSVGfeMerge interface {
 func SVGfeMerge() HTMLSVGfeMerge {
 	e := &htmlSVGfeMerge{
 		htmlElement: htmlElement{
-			tag:           "svgfemerge",
+			tag:           "femerge",
 			isSelfClosing: false,
 		},
 	}
@@ -62933,7 +62933,7 @@ type HTMLSVGfeMorphology interface {
 func SVGfeMorphology() HTMLSVGfeMorphology {
 	e := &htmlSVGfeMorphology{
 		htmlElement: htmlElement{
-			tag:           "svgfemorphology",
+			tag:           "femorphology",
 			isSelfClosing: false,
 		},
 	}
@@ -63002,7 +63002,7 @@ type HTMLSVGmetadata interface {
 func SVGmetadata() HTMLSVGmetadata {
 	e := &htmlSVGmetadata{
 		htmlElement: htmlElement{
-			tag:           "svgmetadata",
+			tag:           "metadata",
 			isSelfClosing: false,
 		},
 	}
@@ -63434,7 +63434,7 @@ type HTMLSVGpath interface {
 func SVGpath() HTMLSVGpath {
 	e := &htmlSVGpath{
 		htmlElement: htmlElement{
-			tag:           "svgpath",
+			tag:           "path",
 			isSelfClosing: false,
 		},
 	}
@@ -64352,7 +64352,7 @@ For open shapes, see the <polyline> element. */
 func SVGpolygon() HTMLSVGpolygon {
 	e := &htmlSVGpolygon{
 		htmlElement: htmlElement{
-			tag:           "svgpolygon",
+			tag:           "polygon",
 			isSelfClosing: false,
 		},
 	}
@@ -65293,7 +65293,7 @@ type HTMLSVGtspan interface {
 func SVGtspan() HTMLSVGtspan {
 	e := &htmlSVGtspan{
 		htmlElement: htmlElement{
-			tag:           "svgtspan",
+			tag:           "tspan",
 			isSelfClosing: false,
 		},
 	}
@@ -66196,7 +66196,7 @@ type HTMLSVGanimate interface {
 func SVGanimate() HTMLSVGanimate {
 	e := &htmlSVGanimate{
 		htmlElement: htmlElement{
-			tag:           "svganimate",
+			tag:           "animate",
 			isSelfClosing: false,
 		},
 	}
@@ -66683,7 +66683,7 @@ The <altGlyphItem> element provides a set of candidates for glyph substitution b
 func SVGaltGlyphItem() HTMLSVGaltGlyphItem {
 	e := &htmlSVGaltGlyphItem{
 		htmlElement: htmlElement{
-			tag:           "svgaltglyphitem",
+			tag:           "altglyphitem",
 			isSelfClosing: false,
 		},
 	}
@@ -67135,7 +67135,7 @@ Transformations applied to the <g> element are performed on its child elements, 
 func SVGg() HTMLSVGg {
 	e := &htmlSVGg{
 		htmlElement: htmlElement{
-			tag:           "svgg",
+			tag:           "g",
 			isSelfClosing: false,
 		},
 	}
@@ -67682,7 +67682,7 @@ The glyphRef element provides a single possible glyph to the referencing <altGly
 func SVGglyphRef() HTMLSVGglyphRef {
 	e := &htmlSVGglyphRef{
 		htmlElement: htmlElement{
-			tag:           "svgglyphref",
+			tag:           "glyphref",
 			isSelfClosing: false,
 		},
 	}
@@ -67942,7 +67942,7 @@ Markers are attached to shapes using the marker-start, marker-mid, and marker-en
 func SVGmarker() HTMLSVGmarker {
 	e := &htmlSVGmarker{
 		htmlElement: htmlElement{
-			tag:           "svgmarker",
+			tag:           "marker",
 			isSelfClosing: false,
 		},
 	}
@@ -68249,7 +68249,7 @@ The <altGlyph> SVG element allows sophisticated selection of the glyphs used to 
 func SVGaltGlyph() HTMLSVGaltGlyph {
 	e := &htmlSVGaltGlyph{
 		htmlElement: htmlElement{
-			tag:           "svgaltglyph",
+			tag:           "altglyph",
 			isSelfClosing: false,
 		},
 	}
@@ -68328,7 +68328,7 @@ type HTMLSVGfeMergeNode interface {
 func SVGfeMergeNode() HTMLSVGfeMergeNode {
 	e := &htmlSVGfeMergeNode{
 		htmlElement: htmlElement{
-			tag:           "svgfemergenode",
+			tag:           "femergenode",
 			isSelfClosing: false,
 		},
 	}
@@ -68421,7 +68421,7 @@ type HTMLSVGfePointLight interface {
 func SVGfePointLight() HTMLSVGfePointLight {
 	e := &htmlSVGfePointLight{
 		htmlElement: htmlElement{
-			tag:           "svgfepointlight",
+			tag:           "fepointlight",
 			isSelfClosing: false,
 		},
 	}
@@ -68767,7 +68767,7 @@ Note: For backward compatibility with SVG 1.1, <title> elements should be the fi
 func SVGtitle() HTMLSVGtitle {
 	e := &htmlSVGtitle{
 		htmlElement: htmlElement{
-			tag:           "svgtitle",
+			tag:           "title",
 			isSelfClosing: false,
 		},
 	}
@@ -69562,7 +69562,7 @@ type HTMLSVGuse interface {
 func SVGuse() HTMLSVGuse {
 	e := &htmlSVGuse{
 		htmlElement: htmlElement{
-			tag:           "svguse",
+			tag:           "use",
 			isSelfClosing: false,
 		},
 	}
@@ -70138,7 +70138,7 @@ type HTMLSVGmpath interface {
 func SVGmpath() HTMLSVGmpath {
 	e := &htmlSVGmpath{
 		htmlElement: htmlElement{
-			tag:           "svgmpath",
+			tag:           "mpath",
 			isSelfClosing: false,
 		},
 	}
@@ -70521,7 +70521,7 @@ Note: The <set> element is non-additive. The additive and accumulate attributes 
 func SVGset() HTMLSVGset {
 	e := &htmlSVGset{
 		htmlElement: htmlElement{
-			tag:           "svgset",
+			tag:           "set",
 			isSelfClosing: false,
 		},
 	}
@@ -71382,7 +71382,7 @@ SVG's <a> element is a container, which means you can create a link around text 
 func SVGa() HTMLSVGa {
 	e := &htmlSVGa{
 		htmlElement: htmlElement{
-			tag:           "svga",
+			tag:           "a",
 			isSelfClosing: false,
 		},
 	}
@@ -71959,7 +71959,7 @@ A <glyph> defines a single glyph in an SVG font. */
 func SVGglyph() HTMLSVGglyph {
 	e := &htmlSVGglyph{
 		htmlElement: htmlElement{
-			tag:           "svgglyph",
+			tag:           "glyph",
 			isSelfClosing: false,
 		},
 	}
@@ -72038,7 +72038,7 @@ type HTMLSVGfeDistantLight interface {
 func SVGfeDistantLight() HTMLSVGfeDistantLight {
 	e := &htmlSVGfeDistantLight{
 		htmlElement: htmlElement{
-			tag:           "svgfedistantlight",
+			tag:           "fedistantlight",
 			isSelfClosing: false,
 		},
 	}
@@ -72119,7 +72119,7 @@ type HTMLSVGfeFuncA interface {
 func SVGfeFuncA() HTMLSVGfeFuncA {
 	e := &htmlSVGfeFuncA{
 		htmlElement: htmlElement{
-			tag:           "svgfefunca",
+			tag:           "fefunca",
 			isSelfClosing: false,
 		},
 	}
@@ -72375,7 +72375,7 @@ The <pattern> is referenced by the fill and/or stroke attributes on other graphi
 func SVGpattern() HTMLSVGpattern {
 	e := &htmlSVGpattern{
 		htmlElement: htmlElement{
-			tag:           "svgpattern",
+			tag:           "pattern",
 			isSelfClosing: false,
 		},
 	}
@@ -72676,7 +72676,7 @@ type HTMLSVGfeFuncB interface {
 func SVGfeFuncB() HTMLSVGfeFuncB {
 	e := &htmlSVGfeFuncB{
 		htmlElement: htmlElement{
-			tag:           "svgfefuncb",
+			tag:           "fefuncb",
 			isSelfClosing: false,
 		},
 	}
@@ -72759,7 +72759,7 @@ type HTMLSVGfeTile interface {
 func SVGfeTile() HTMLSVGfeTile {
 	e := &htmlSVGfeTile{
 		htmlElement: htmlElement{
-			tag:           "svgfetile",
+			tag:           "fetile",
 			isSelfClosing: false,
 		},
 	}
@@ -73273,7 +73273,7 @@ type HTMLSVGforeignObject interface {
 func SVGforeignObject() HTMLSVGforeignObject {
 	e := &htmlSVGforeignObject{
 		htmlElement: htmlElement{
-			tag:           "svgforeignobject",
+			tag:           "foreignobject",
 			isSelfClosing: false,
 		},
 	}
@@ -73895,7 +73895,7 @@ type HTMLSVGanimateTransform interface {
 func SVGanimateTransform() HTMLSVGanimateTransform {
 	e := &htmlSVGanimateTransform{
 		htmlElement: htmlElement{
-			tag:           "svganimatetransform",
+			tag:           "animatetransform",
 			isSelfClosing: false,
 		},
 	}
@@ -74006,7 +74006,7 @@ type HTMLSVGfeBlend interface {
 func SVGfeBlend() HTMLSVGfeBlend {
 	e := &htmlSVGfeBlend{
 		htmlElement: htmlElement{
-			tag:           "svgfeblend",
+			tag:           "feblend",
 			isSelfClosing: false,
 		},
 	}
@@ -74257,7 +74257,7 @@ The table below shows each of these operations using an image of the MDN logo co
 func SVGfeComposite() HTMLSVGfeComposite {
 	e := &htmlSVGfeComposite{
 		htmlElement: htmlElement{
-			tag:           "svgfecomposite",
+			tag:           "fecomposite",
 			isSelfClosing: false,
 		},
 	}
@@ -74389,7 +74389,7 @@ type HTMLSVGfeFlood interface {
 func SVGfeFlood() HTMLSVGfeFlood {
 	e := &htmlSVGfeFlood{
 		htmlElement: htmlElement{
-			tag:           "svgfeflood",
+			tag:           "feflood",
 			isSelfClosing: false,
 		},
 	}
@@ -74628,7 +74628,7 @@ type HTMLSVGmask interface {
 func SVGmask() HTMLSVGmask {
 	e := &htmlSVGmask{
 		htmlElement: htmlElement{
-			tag:           "svgmask",
+			tag:           "mask",
 			isSelfClosing: false,
 		},
 	}
@@ -74887,7 +74887,7 @@ Note: Don't be confused with CSS radial-gradient() as CSS gradients can only app
 func SVGradialGradient() HTMLSVGradialGradient {
 	e := &htmlSVGradialGradient{
 		htmlElement: htmlElement{
-			tag:           "svgradialgradient",
+			tag:           "radialgradient",
 			isSelfClosing: false,
 		},
 	}
@@ -75370,7 +75370,7 @@ type HTMLSVGtextPath interface {
 func SVGtextPath() HTMLSVGtextPath {
 	e := &htmlSVGtextPath{
 		htmlElement: htmlElement{
-			tag:           "svgtextpath",
+			tag:           "textpath",
 			isSelfClosing: false,
 		},
 	}
@@ -75965,7 +75965,7 @@ The <discard> element may occur wherever the <animate> element may. */
 func SVGdiscard() HTMLSVGdiscard {
 	e := &htmlSVGdiscard{
 		htmlElement: htmlElement{
-			tag:           "svgdiscard",
+			tag:           "discard",
 			isSelfClosing: false,
 		},
 	}
@@ -76047,7 +76047,7 @@ The <hkern> SVG element allows to fine-tweak the horizontal distance between two
 func SVGhkern() HTMLSVGhkern {
 	e := &htmlSVGhkern{
 		htmlElement: htmlElement{
-			tag:           "svghkern",
+			tag:           "hkern",
 			isSelfClosing: false,
 		},
 	}
@@ -76527,7 +76527,7 @@ The use of <symbol> elements for graphics that are used multiple times in the sa
 func SVGsymbol() HTMLSVGsymbol {
 	e := &htmlSVGsymbol{
 		htmlElement: htmlElement{
-			tag:           "svgsymbol",
+			tag:           "symbol",
 			isSelfClosing: false,
 		},
 	}
@@ -77109,7 +77109,7 @@ The textual content for a <text> SVG element can be either character data direct
 func SVGtref() HTMLSVGtref {
 	e := &htmlSVGtref{
 		htmlElement: htmlElement{
-			tag:           "svgtref",
+			tag:           "tref",
 			isSelfClosing: false,
 		},
 	}
@@ -77211,7 +77211,7 @@ where P(x,y) is the input image, in, and P'(x,y) is the destination. XC(x,y) and
 func SVGfeDisplacementMap() HTMLSVGfeDisplacementMap {
 	e := &htmlSVGfeDisplacementMap{
 		htmlElement: htmlElement{
-			tag:           "svgfedisplacementmap",
+			tag:           "fedisplacementmap",
 			isSelfClosing: false,
 		},
 	}
@@ -77357,7 +77357,7 @@ type HTMLSVGfilter interface {
 func SVGfilter() HTMLSVGfilter {
 	e := &htmlSVGfilter{
 		htmlElement: htmlElement{
-			tag:           "svgfilter",
+			tag:           "filter",
 			isSelfClosing: false,
 		},
 	}
@@ -77866,7 +77866,7 @@ type HTMLSVGpolyline interface {
 func SVGpolyline() HTMLSVGpolyline {
 	e := &htmlSVGpolyline{
 		htmlElement: htmlElement{
-			tag:           "svgpolyline",
+			tag:           "polyline",
 			isSelfClosing: false,
 		},
 	}
@@ -78442,7 +78442,7 @@ type HTMLSVGfeGaussianBlur interface {
 func SVGfeGaussianBlur() HTMLSVGfeGaussianBlur {
 	e := &htmlSVGfeGaussianBlur{
 		htmlElement: htmlElement{
-			tag:           "svgfegaussianblur",
+			tag:           "fegaussianblur",
 			isSelfClosing: false,
 		},
 	}
@@ -78539,7 +78539,7 @@ The <font> SVG element defines a font to be used for text layout. */
 func SVGfont() HTMLSVGfont {
 	e := &htmlSVGfont{
 		htmlElement: htmlElement{
-			tag:           "svgfont",
+			tag:           "font",
 			isSelfClosing: false,
 		},
 	}
@@ -78881,7 +78881,7 @@ Note: SVG's style element has the same attributes as the corresponding element i
 func SVGstyle() HTMLSVGstyle {
 	e := &htmlSVGstyle{
 		htmlElement: htmlElement{
-			tag:           "svgstyle",
+			tag:           "style",
 			isSelfClosing: false,
 		},
 	}
@@ -79638,7 +79638,7 @@ Note: To reuse an existing path, it will be necessary to use an <mpath> element 
 func SVGanimateMotion() HTMLSVGanimateMotion {
 	e := &htmlSVGanimateMotion{
 		htmlElement: htmlElement{
-			tag:           "svganimatemotion",
+			tag:           "animatemotion",
 			isSelfClosing: false,
 		},
 	}
@@ -80201,7 +80201,7 @@ In it, every new value is exactly 1 times its old value, with nothing else added
 func SVGfeColorMatrix() HTMLSVGfeColorMatrix {
 	e := &htmlSVGfeColorMatrix{
 		htmlElement: htmlElement{
-			tag:           "svgfecolormatrix",
+			tag:           "fecolormatrix",
 			isSelfClosing: false,
 		},
 	}
@@ -80297,7 +80297,7 @@ type HTMLSVGlinearGradient interface {
 func SVGlinearGradient() HTMLSVGlinearGradient {
 	e := &htmlSVGlinearGradient{
 		htmlElement: htmlElement{
-			tag:           "svglineargradient",
+			tag:           "lineargradient",
 			isSelfClosing: false,
 		},
 	}
@@ -80635,7 +80635,7 @@ Note: While SVG's script element is equivalent to the HTML <script> element, it 
 func SVGscript() HTMLSVGscript {
 	e := &htmlSVGscript{
 		htmlElement: htmlElement{
-			tag:           "svgscript",
+			tag:           "script",
 			isSelfClosing: false,
 		},
 	}
@@ -81036,7 +81036,7 @@ type HTMLSVGfeFuncR interface {
 func SVGfeFuncR() HTMLSVGfeFuncR {
 	e := &htmlSVGfeFuncR{
 		htmlElement: htmlElement{
-			tag:           "svgfefuncr",
+			tag:           "fefuncr",
 			isSelfClosing: false,
 		},
 	}
@@ -81119,7 +81119,7 @@ type HTMLSVGfeImage interface {
 func SVGfeImage() HTMLSVGfeImage {
 	e := &htmlSVGfeImage{
 		htmlElement: htmlElement{
-			tag:           "svgfeimage",
+			tag:           "feimage",
 			isSelfClosing: false,
 		},
 	}
@@ -81225,7 +81225,7 @@ type HTMLSVGfeOffset interface {
 func SVGfeOffset() HTMLSVGfeOffset {
 	e := &htmlSVGfeOffset{
 		htmlElement: htmlElement{
-			tag:           "svgfeoffset",
+			tag:           "feoffset",
 			isSelfClosing: false,
 		},
 	}
@@ -81346,7 +81346,7 @@ The light map produced by this filter primitive can be combined with a texture i
 func SVGfeDiffuseLighting() HTMLSVGfeDiffuseLighting {
 	e := &htmlSVGfeDiffuseLighting{
 		htmlElement: htmlElement{
-			tag:           "svgfediffuselighting",
+			tag:           "fediffuselighting",
 			isSelfClosing: false,
 		},
 	}
@@ -81463,7 +81463,7 @@ type HTMLSVGview interface {
 func SVGview() HTMLSVGview {
 	e := &htmlSVGview{
 		htmlElement: htmlElement{
-			tag:           "svgview",
+			tag:           "view",
 			isSelfClosing: false,
 		},
 	}
@@ -81950,7 +81950,7 @@ type HTMLSVGcircle interface {
 func SVGcircle() HTMLSVGcircle {
 	e := &htmlSVGcircle{
 		htmlElement: htmlElement{
-			tag:           "svgcircle",
+			tag:           "circle",
 			isSelfClosing: false,
 		},
 	}
@@ -82521,7 +82521,7 @@ The PNG format is recommended because it supports the ability to define a transp
 func SVGcursor() HTMLSVGcursor {
 	e := &htmlSVGcursor{
 		htmlElement: htmlElement{
-			tag:           "svgcursor",
+			tag:           "cursor",
 			isSelfClosing: false,
 		},
 	}
@@ -82605,7 +82605,7 @@ The calculations are performed on non-premultiplied color values. The colors are
 func SVGfeComponentTransfer() HTMLSVGfeComponentTransfer {
 	e := &htmlSVGfeComponentTransfer{
 		htmlElement: htmlElement{
-			tag:           "svgfecomponenttransfer",
+			tag:           "fecomponenttransfer",
 			isSelfClosing: false,
 		},
 	}
@@ -82768,7 +82768,7 @@ Let's focus on the color value at the second row and second column of the image 
 func SVGfeConvolveMatrix() HTMLSVGfeConvolveMatrix {
 	e := &htmlSVGfeConvolveMatrix{
 		htmlElement: htmlElement{
-			tag:           "svgfeconvolvematrix",
+			tag:           "feconvolvematrix",
 			isSelfClosing: false,
 		},
 	}
@@ -82944,7 +82944,7 @@ Note: The HTML spec defines <image> as a synonym for <img> while parsing HTML. T
 func SVGimage() HTMLSVGimage {
 	e := &htmlSVGimage{
 		htmlElement: htmlElement{
-			tag:           "svgimage",
+			tag:           "image",
 			isSelfClosing: false,
 		},
 	}
@@ -83349,7 +83349,7 @@ type HTMLSVGstop interface {
 func SVGstop() HTMLSVGstop {
 	e := &htmlSVGstop{
 		htmlElement: htmlElement{
-			tag:           "svgstop",
+			tag:           "stop",
 			isSelfClosing: false,
 		},
 	}
@@ -83775,7 +83775,7 @@ type HTMLSVGfeFuncG interface {
 func SVGfeFuncG() HTMLSVGfeFuncG {
 	e := &htmlSVGfeFuncG{
 		htmlElement: htmlElement{
-			tag:           "svgfefuncg",
+			tag:           "fefuncg",
 			isSelfClosing: false,
 		},
 	}
