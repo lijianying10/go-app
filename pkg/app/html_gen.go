@@ -60718,6 +60718,10 @@ type HTMLSvg interface {
 	// Text sets the content of the element with a text node containing the stringified given value.
 	Text(v any) HTMLSvg
 
+	/* Attr sets the named attribute with the given value.
+	 */
+	Attr(n string, v any) HTMLSvg
+
 	/* Baseprofile Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 	 */
 	Baseprofile(v string) HTMLSvg
@@ -60897,6 +60901,10 @@ type HTMLSvg interface {
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
 	X(v string) HTMLSvg
+
+	/* XMLNS specifies the xml namespace of the element.
+	 */
+	XMLNS(v string) HTMLSvg
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
@@ -61202,6 +61210,11 @@ func (e *htmlSvg) Text(v any) HTMLSvg {
 	return e.Body(Text(v))
 }
 
+func (e *htmlSvg) Attr(n string, v any) HTMLSvg {
+	e.setAttr(n, v)
+	return e
+}
+
 func (e *htmlSvg) Baseprofile(v string) HTMLSvg {
 	e.setAttr("baseprofile", v)
 	return e
@@ -61424,6 +61437,11 @@ func (e *htmlSvg) Width(v string) HTMLSvg {
 
 func (e *htmlSvg) X(v string) HTMLSvg {
 	e.setAttr("x", v)
+	return e
+}
+
+func (e *htmlSvg) XMLNS(v string) HTMLSvg {
+	e.xmlns = v
 	return e
 }
 

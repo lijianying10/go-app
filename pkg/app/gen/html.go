@@ -1282,6 +1282,8 @@ It is used within a lighting filter primitive: <feDiffuseLighting> or <feSpecula
 Note: The xmlns attribute is only required on the outermost svg element of SVG documents. It is unnecessary for inner svg elements or inside HTML documents.
 `,
 		Attrs: attrsSVGByNames(
+			"xmlns",
+			"attribute",
 			"viewBox",
 			"baseProfile",
 			"contentScriptType",
@@ -3474,6 +3476,16 @@ var attrs = map[string]attr{
 }
 
 var svgattrs = map[string]attr{
+	"xmlns": {
+		Name: "XMLNS",
+		Type: "xmlns",
+		Doc:  "specifies the xml namespace of the element.",
+	},
+	"attribute": {
+		Name: "Attr",
+		Type: "attr|value",
+		Doc:  "sets the named attribute with the given value.",
+	},
 	"filterRes": {
 		Name: "Filterres",
 		Type: "attr|value",

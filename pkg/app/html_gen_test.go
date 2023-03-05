@@ -7489,6 +7489,7 @@ func TestSVGfeSpotLight(t *testing.T) {
 
 func TestSvg(t *testing.T) {
 	elem := Svg()
+	elem.Attr("foo", "bar")
 	elem.Baseprofile("foo")
 	elem.Class("foo")
 	elem.ClipPath("foo")
@@ -7534,6 +7535,7 @@ func TestSvg(t *testing.T) {
 	elem.Visibility("foo")
 	elem.Width("foo")
 	elem.X("foo")
+	elem.XMLNS("http://www.w3.org/2000/svg")
 	elem.Y("foo")
 
 	h := func(ctx Context, e Event) {}
