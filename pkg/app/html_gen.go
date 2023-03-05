@@ -56649,6 +56649,7 @@ func SVGvkern() HTMLSVGvkern {
 		htmlElement: htmlElement{
 			tag:           "vkern",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -56822,6 +56823,7 @@ func SVGclipPath() HTMLSVGclipPath {
 		htmlElement: htmlElement{
 			tag:           "clippath",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -57284,6 +57286,7 @@ func SVGdesc() HTMLSVGdesc {
 		htmlElement: htmlElement{
 			tag:           "desc",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -58048,6 +58051,7 @@ func SVGline() HTMLSVGline {
 		htmlElement: htmlElement{
 			tag:           "line",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -59000,6 +59004,7 @@ func SVGrect() HTMLSVGrect {
 		htmlElement: htmlElement{
 			tag:           "rect",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -59957,6 +59962,7 @@ func SVGellipse() HTMLSVGellipse {
 		htmlElement: htmlElement{
 			tag:           "ellipse",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -60530,6 +60536,7 @@ func SVGfeSpecularLighting() HTMLSVGfeSpecularLighting {
 		htmlElement: htmlElement{
 			tag:           "fespecularlighting",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -60644,6 +60651,7 @@ func SVGfeSpotLight() HTMLSVGfeSpotLight {
 		htmlElement: htmlElement{
 			tag:           "fespotlight",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -61191,6 +61199,7 @@ func Svg() HTMLSvg {
 		htmlElement: htmlElement{
 			tag:           "svg",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -61838,6 +61847,7 @@ func SVGfeTurbulence() HTMLSVGfeTurbulence {
 		htmlElement: htmlElement{
 			tag:           "feturbulence",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -61918,6 +61928,7 @@ func SVGaltGlyphDef() HTMLSVGaltGlyphDef {
 		htmlElement: htmlElement{
 			tag:           "altglyphdef",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -62343,6 +62354,7 @@ func SVGdefs() HTMLSVGdefs {
 		htmlElement: htmlElement{
 			tag:           "defs",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -62874,6 +62886,7 @@ func SVGfeMerge() HTMLSVGfeMerge {
 		htmlElement: htmlElement{
 			tag:           "femerge",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -62953,6 +62966,7 @@ func SVGfeMorphology() HTMLSVGfeMorphology {
 		htmlElement: htmlElement{
 			tag:           "femorphology",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -63022,6 +63036,7 @@ func SVGmetadata() HTMLSVGmetadata {
 		htmlElement: htmlElement{
 			tag:           "metadata",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -63454,6 +63469,7 @@ func SVGpath() HTMLSVGpath {
 		htmlElement: htmlElement{
 			tag:           "path",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -64372,6 +64388,7 @@ func SVGpolygon() HTMLSVGpolygon {
 		htmlElement: htmlElement{
 			tag:           "polygon",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -65313,6 +65330,7 @@ func SVGtspan() HTMLSVGtspan {
 		htmlElement: htmlElement{
 			tag:           "tspan",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -66216,6 +66234,7 @@ func SVGanimate() HTMLSVGanimate {
 		htmlElement: htmlElement{
 			tag:           "animate",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -66703,6 +66722,7 @@ func SVGaltGlyphItem() HTMLSVGaltGlyphItem {
 		htmlElement: htmlElement{
 			tag:           "altglyphitem",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -67155,6 +67175,7 @@ func SVGg() HTMLSVGg {
 		htmlElement: htmlElement{
 			tag:           "g",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -67702,6 +67723,7 @@ func SVGglyphRef() HTMLSVGglyphRef {
 		htmlElement: htmlElement{
 			tag:           "glyphref",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -67962,6 +67984,7 @@ func SVGmarker() HTMLSVGmarker {
 		htmlElement: htmlElement{
 			tag:           "marker",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -68269,6 +68292,7 @@ func SVGaltGlyph() HTMLSVGaltGlyph {
 		htmlElement: htmlElement{
 			tag:           "altglyph",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -68348,6 +68372,7 @@ func SVGfeMergeNode() HTMLSVGfeMergeNode {
 		htmlElement: htmlElement{
 			tag:           "femergenode",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -68441,6 +68466,7 @@ func SVGfePointLight() HTMLSVGfePointLight {
 		htmlElement: htmlElement{
 			tag:           "fepointlight",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -68787,6 +68813,7 @@ func SVGtitle() HTMLSVGtitle {
 		htmlElement: htmlElement{
 			tag:           "title",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -69582,6 +69609,7 @@ func SVGuse() HTMLSVGuse {
 		htmlElement: htmlElement{
 			tag:           "use",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -70158,6 +70186,7 @@ func SVGmpath() HTMLSVGmpath {
 		htmlElement: htmlElement{
 			tag:           "mpath",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -70541,6 +70570,7 @@ func SVGset() HTMLSVGset {
 		htmlElement: htmlElement{
 			tag:           "set",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -71402,6 +71432,7 @@ func SVGa() HTMLSVGa {
 		htmlElement: htmlElement{
 			tag:           "a",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -71979,6 +72010,7 @@ func SVGglyph() HTMLSVGglyph {
 		htmlElement: htmlElement{
 			tag:           "glyph",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -72058,6 +72090,7 @@ func SVGfeDistantLight() HTMLSVGfeDistantLight {
 		htmlElement: htmlElement{
 			tag:           "fedistantlight",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -72139,6 +72172,7 @@ func SVGfeFuncA() HTMLSVGfeFuncA {
 		htmlElement: htmlElement{
 			tag:           "fefunca",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -72395,6 +72429,7 @@ func SVGpattern() HTMLSVGpattern {
 		htmlElement: htmlElement{
 			tag:           "pattern",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -72696,6 +72731,7 @@ func SVGfeFuncB() HTMLSVGfeFuncB {
 		htmlElement: htmlElement{
 			tag:           "fefuncb",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -72779,6 +72815,7 @@ func SVGfeTile() HTMLSVGfeTile {
 		htmlElement: htmlElement{
 			tag:           "fetile",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -73293,6 +73330,7 @@ func SVGforeignObject() HTMLSVGforeignObject {
 		htmlElement: htmlElement{
 			tag:           "foreignobject",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -73915,6 +73953,7 @@ func SVGanimateTransform() HTMLSVGanimateTransform {
 		htmlElement: htmlElement{
 			tag:           "animatetransform",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -74026,6 +74065,7 @@ func SVGfeBlend() HTMLSVGfeBlend {
 		htmlElement: htmlElement{
 			tag:           "feblend",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -74277,6 +74317,7 @@ func SVGfeComposite() HTMLSVGfeComposite {
 		htmlElement: htmlElement{
 			tag:           "fecomposite",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -74409,6 +74450,7 @@ func SVGfeFlood() HTMLSVGfeFlood {
 		htmlElement: htmlElement{
 			tag:           "feflood",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -74648,6 +74690,7 @@ func SVGmask() HTMLSVGmask {
 		htmlElement: htmlElement{
 			tag:           "mask",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -74907,6 +74950,7 @@ func SVGradialGradient() HTMLSVGradialGradient {
 		htmlElement: htmlElement{
 			tag:           "radialgradient",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -75390,6 +75434,7 @@ func SVGtextPath() HTMLSVGtextPath {
 		htmlElement: htmlElement{
 			tag:           "textpath",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -75985,6 +76030,7 @@ func SVGdiscard() HTMLSVGdiscard {
 		htmlElement: htmlElement{
 			tag:           "discard",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -76067,6 +76113,7 @@ func SVGhkern() HTMLSVGhkern {
 		htmlElement: htmlElement{
 			tag:           "hkern",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -76547,6 +76594,7 @@ func SVGsymbol() HTMLSVGsymbol {
 		htmlElement: htmlElement{
 			tag:           "symbol",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -77129,6 +77177,7 @@ func SVGtref() HTMLSVGtref {
 		htmlElement: htmlElement{
 			tag:           "tref",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -77231,6 +77280,7 @@ func SVGfeDisplacementMap() HTMLSVGfeDisplacementMap {
 		htmlElement: htmlElement{
 			tag:           "fedisplacementmap",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -77377,6 +77427,7 @@ func SVGfilter() HTMLSVGfilter {
 		htmlElement: htmlElement{
 			tag:           "filter",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -77886,6 +77937,7 @@ func SVGpolyline() HTMLSVGpolyline {
 		htmlElement: htmlElement{
 			tag:           "polyline",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -78462,6 +78514,7 @@ func SVGfeGaussianBlur() HTMLSVGfeGaussianBlur {
 		htmlElement: htmlElement{
 			tag:           "fegaussianblur",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -78559,6 +78612,7 @@ func SVGfont() HTMLSVGfont {
 		htmlElement: htmlElement{
 			tag:           "font",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -78901,6 +78955,7 @@ func SVGstyle() HTMLSVGstyle {
 		htmlElement: htmlElement{
 			tag:           "style",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -79658,6 +79713,7 @@ func SVGanimateMotion() HTMLSVGanimateMotion {
 		htmlElement: htmlElement{
 			tag:           "animatemotion",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -80221,6 +80277,7 @@ func SVGfeColorMatrix() HTMLSVGfeColorMatrix {
 		htmlElement: htmlElement{
 			tag:           "fecolormatrix",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -80317,6 +80374,7 @@ func SVGlinearGradient() HTMLSVGlinearGradient {
 		htmlElement: htmlElement{
 			tag:           "lineargradient",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -80655,6 +80713,7 @@ func SVGscript() HTMLSVGscript {
 		htmlElement: htmlElement{
 			tag:           "script",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81056,6 +81115,7 @@ func SVGfeFuncR() HTMLSVGfeFuncR {
 		htmlElement: htmlElement{
 			tag:           "fefuncr",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81139,6 +81199,7 @@ func SVGfeImage() HTMLSVGfeImage {
 		htmlElement: htmlElement{
 			tag:           "feimage",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81245,6 +81306,7 @@ func SVGfeOffset() HTMLSVGfeOffset {
 		htmlElement: htmlElement{
 			tag:           "feoffset",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81366,6 +81428,7 @@ func SVGfeDiffuseLighting() HTMLSVGfeDiffuseLighting {
 		htmlElement: htmlElement{
 			tag:           "fediffuselighting",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81483,6 +81546,7 @@ func SVGview() HTMLSVGview {
 		htmlElement: htmlElement{
 			tag:           "view",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -81970,6 +82034,7 @@ func SVGcircle() HTMLSVGcircle {
 		htmlElement: htmlElement{
 			tag:           "circle",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -82541,6 +82606,7 @@ func SVGcursor() HTMLSVGcursor {
 		htmlElement: htmlElement{
 			tag:           "cursor",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -82625,6 +82691,7 @@ func SVGfeComponentTransfer() HTMLSVGfeComponentTransfer {
 		htmlElement: htmlElement{
 			tag:           "fecomponenttransfer",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -82788,6 +82855,7 @@ func SVGfeConvolveMatrix() HTMLSVGfeConvolveMatrix {
 		htmlElement: htmlElement{
 			tag:           "feconvolvematrix",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -82964,6 +83032,7 @@ func SVGimage() HTMLSVGimage {
 		htmlElement: htmlElement{
 			tag:           "image",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -83369,6 +83438,7 @@ func SVGstop() HTMLSVGstop {
 		htmlElement: htmlElement{
 			tag:           "stop",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 
@@ -83795,6 +83865,7 @@ func SVGfeFuncG() HTMLSVGfeFuncG {
 		htmlElement: htmlElement{
 			tag:           "fefuncg",
 			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
 		},
 	}
 

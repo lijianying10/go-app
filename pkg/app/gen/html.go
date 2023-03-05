@@ -5454,6 +5454,10 @@ import (
 			if strings.HasPrefix(t.Name, "SVG") {
 				htmlTagname = strings.ToLower(t.Name[3:])
 			}
+			xmlnstag := ""
+			if strings.HasPrefix(t.Name, "SVG") || t.Name == "Svg" {
+				xmlnstag = `xmlns: "http://www.w3.org/2000/svg",`
+			}
 			fmt.Fprintf(f, `
 			/* %s returns an HTML element that %s */
 			func %s() HTML%s {
@@ -5461,6 +5465,7 @@ import (
 					htmlElement: htmlElement{
 						tag: "%s",
 						isSelfClosing: %v,
+						%s
 					},
 				}
 
@@ -5474,6 +5479,7 @@ import (
 				t.Name,
 				htmlTagname,
 				t.Type == selfClosing,
+				xmlnstag,
 			)
 		}
 
