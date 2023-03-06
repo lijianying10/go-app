@@ -1029,6 +1029,14 @@ var tags = []tag{
 	//SVG label start
 
 	{
+		Name: "SVGtext",
+		Doc:  `The SVG <text> element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, like any other SVG graphics element.`,
+		Attrs: attrsSVGByNames(
+			"x", "y", "dx", "dy", "rotate", "lengthAdjust", "textLength", "id", "tabindex", "class", "style", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight",
+		),
+		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGGraphicalEventHandler()...)...),
+	},
+	{
 		Name: "SVGvkern",
 		Doc: `Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 The <vkern> SVG element allows to fine-tweak the vertical distance between two glyphs in top-to-bottom fonts. This process is known as kerning.`,

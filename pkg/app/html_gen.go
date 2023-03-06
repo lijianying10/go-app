@@ -56628,6 +56628,771 @@ func (e *htmlWbr) OnWheel(h EventHandler, scope ...any) HTMLWbr {
 	return e
 }
 
+// HTMLSVGtext is the interface that describes a "svgtext" HTML element.
+type HTMLSVGtext interface {
+	UI
+
+	// Body set the content of the element.
+	Body(elems ...UI) HTMLSVGtext
+
+	// Text sets the content of the element with a text node containing the stringified given value.
+	Text(v any) HTMLSVGtext
+
+	/* Class « SVG Attribute reference home
+	 */
+	Class(v string) HTMLSVGtext
+
+	/* Dx The dx attribute indicates a shift along the x-axis on the position of an element or its content.
+	 */
+	Dx(v string) HTMLSVGtext
+
+	/* Dy The dy attribute indicates a shift along the y-axis on the position of an element or its content.
+	 */
+	Dy(v string) HTMLSVGtext
+
+	/* FontFamily The font-family attribute indicates which font family will be used to render the text, specified as a prioritized list of font family names and/or generic family names.
+	 */
+	FontFamily(v string) HTMLSVGtext
+
+	/* FontSize The font-size attribute refers to the size of the font from baseline to baseline when multiple lines of text are set solid in a multiline layout environment.
+	 */
+	FontSize(v string) HTMLSVGtext
+
+	/* FontSizeAdjust The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.
+	 */
+	FontSizeAdjust(v string) HTMLSVGtext
+
+	/* FontStretch The font-stretch attribute indicates the desired amount of condensing or expansion in the glyphs used to render the text.
+	 */
+	FontStretch(n string, v any) HTMLSVGtext
+
+	/* FontStyle The font-style attribute specifies whether the text is to be rendered using a normal, italic, or oblique face.
+	 */
+	FontStyle(v string) HTMLSVGtext
+
+	/* FontVariant The font-variant attribute indicates whether the text is to be rendered using variations of the font's glyphs.
+	 */
+	FontVariant(v string) HTMLSVGtext
+
+	/* FontWeight The font-weight attribute refers to the boldness or lightness of the glyphs used to render the text, relative to other fonts in the same font family.
+	 */
+	FontWeight(v string) HTMLSVGtext
+
+	/* Id The id attribute assigns a unique name to an element.
+	 */
+	Id(v string) HTMLSVGtext
+
+	/* Lengthadjust The lengthAdjust attribute controls how the text is stretched into the length defined by the textLength attribute.
+	 */
+	Lengthadjust(v string) HTMLSVGtext
+
+	/* Rotate The rotate attribute specifies how the animated element rotates as it travels along a path specified in an <animateMotion> element.
+	 */
+	Rotate(v string) HTMLSVGtext
+
+	/* Style The style attribute allows to style an element using CSS declarations. It functions identically to the style attribute in HTML.
+	 */
+	Style(v string) HTMLSVGtext
+
+	/* Tabindex The tabindex attribute allows you to control whether an element is focusable and to define the relative order of the element for the purposes of sequential focus navigation.
+	 */
+	Tabindex(v string) HTMLSVGtext
+
+	/* Textlength The textLength attribute, available on SVG <text> and <tspan> elements, lets you specify the width of the space into which the text will draw. The user agent will ensure that the text does not extend farther than that distance, using the method or methods specified by the lengthAdjust attribute. By default, only the spacing between characters is adjusted, but the glyph size can also be adjusted if you change lengthAdjust.
+	 */
+	Textlength(v string) HTMLSVGtext
+
+	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
+	 */
+	X(v string) HTMLSVGtext
+
+	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
+	 */
+	Y(v string) HTMLSVGtext
+
+	// On registers the given event handler to the specified event.
+	On(event string, h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnActivate
+	 */
+	OnActivate(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCancel
+	 */
+	OnCancel(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCanplay
+	 */
+	OnCanplay(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCanplaythrough
+	 */
+	OnCanplaythrough(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnChange
+	 */
+	OnChange(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnClick
+	 */
+	OnClick(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnClose
+	 */
+	OnClose(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCopy
+	 */
+	OnCopy(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCuechange
+	 */
+	OnCuechange(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnCut
+	 */
+	OnCut(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDblclick
+	 */
+	OnDblclick(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDrag
+	 */
+	OnDrag(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDragend
+	 */
+	OnDragend(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDragenter
+	 */
+	OnDragenter(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDragleave
+	 */
+	OnDragleave(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDragover
+	 */
+	OnDragover(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDragstart
+	 */
+	OnDragstart(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDrop
+	 */
+	OnDrop(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnDurationchange
+	 */
+	OnDurationchange(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnEmptied
+	 */
+	OnEmptied(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnEnded
+	 */
+	OnEnded(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnError
+	 */
+	OnError(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnFocus
+	 */
+	OnFocus(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnFocusin
+	 */
+	OnFocusin(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnFocusout
+	 */
+	OnFocusout(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnInput
+	 */
+	OnInput(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnInvalid
+	 */
+	OnInvalid(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnKeydown
+	 */
+	OnKeydown(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnKeypress
+	 */
+	OnKeypress(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnKeyup
+	 */
+	OnKeyup(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnLoad
+	 */
+	OnLoad(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnLoadeddata
+	 */
+	OnLoadeddata(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnLoadedmetadata
+	 */
+	OnLoadedmetadata(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnLoadstart
+	 */
+	OnLoadstart(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMousedown
+	 */
+	OnMousedown(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMouseenter
+	 */
+	OnMouseenter(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMouseleave
+	 */
+	OnMouseleave(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMousemove
+	 */
+	OnMousemove(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMouseout
+	 */
+	OnMouseout(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMouseover
+	 */
+	OnMouseover(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMouseup
+	 */
+	OnMouseup(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnMousewheel
+	 */
+	OnMousewheel(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnPaste
+	 */
+	OnPaste(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnPause
+	 */
+	OnPause(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnPlay
+	 */
+	OnPlay(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnPlaying
+	 */
+	OnPlaying(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnProgress
+	 */
+	OnProgress(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnRatechange
+	 */
+	OnRatechange(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnReset
+	 */
+	OnReset(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnResize
+	 */
+	OnResize(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnScroll
+	 */
+	OnScroll(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnSeeked
+	 */
+	OnSeeked(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnSeeking
+	 */
+	OnSeeking(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnSelect
+	 */
+	OnSelect(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnShow
+	 */
+	OnShow(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnStalled
+	 */
+	OnStalled(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnSubmit
+	 */
+	OnSubmit(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnSuspend
+	 */
+	OnSuspend(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnTimeupdate
+	 */
+	OnTimeupdate(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnToggle
+	 */
+	OnToggle(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnVolumechange
+	 */
+	OnVolumechange(h EventHandler, scope ...any) HTMLSVGtext
+
+	/* OnWaiting
+	 */
+	OnWaiting(h EventHandler, scope ...any) HTMLSVGtext
+}
+
+/* SVGtext returns an HTML element that The SVG <text> element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, like any other SVG graphics element. */
+func SVGtext() HTMLSVGtext {
+	e := &htmlSVGtext{
+		htmlElement: htmlElement{
+			tag:           "text",
+			isSelfClosing: false,
+			xmlns:         "http://www.w3.org/2000/svg",
+		},
+	}
+
+	return e
+}
+
+type htmlSVGtext struct {
+	htmlElement
+}
+
+func (e *htmlSVGtext) Body(v ...UI) HTMLSVGtext {
+	e.setChildren(v...)
+	return e
+}
+
+func (e *htmlSVGtext) Text(v any) HTMLSVGtext {
+	return e.Body(Text(v))
+}
+
+func (e *htmlSVGtext) Class(v string) HTMLSVGtext {
+	e.setAttr("class", v)
+	return e
+}
+
+func (e *htmlSVGtext) Dx(v string) HTMLSVGtext {
+	e.setAttr("dx", v)
+	return e
+}
+
+func (e *htmlSVGtext) Dy(v string) HTMLSVGtext {
+	e.setAttr("dy", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontFamily(v string) HTMLSVGtext {
+	e.setAttr("font-family", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontSize(v string) HTMLSVGtext {
+	e.setAttr("font-size", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontSizeAdjust(v string) HTMLSVGtext {
+	e.setAttr("font-size-adjust", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontStretch(n string, v any) HTMLSVGtext {
+	e.setAttr(n, v)
+	return e
+}
+
+func (e *htmlSVGtext) FontStyle(v string) HTMLSVGtext {
+	e.setAttr("font-style", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontVariant(v string) HTMLSVGtext {
+	e.setAttr("font-variant", v)
+	return e
+}
+
+func (e *htmlSVGtext) FontWeight(v string) HTMLSVGtext {
+	e.setAttr("font-weight", v)
+	return e
+}
+
+func (e *htmlSVGtext) Id(v string) HTMLSVGtext {
+	e.setAttr("id", v)
+	return e
+}
+
+func (e *htmlSVGtext) Lengthadjust(v string) HTMLSVGtext {
+	e.setAttr("lengthadjust", v)
+	return e
+}
+
+func (e *htmlSVGtext) Rotate(v string) HTMLSVGtext {
+	e.setAttr("rotate", v)
+	return e
+}
+
+func (e *htmlSVGtext) Style(v string) HTMLSVGtext {
+	e.setAttr("style", v)
+	return e
+}
+
+func (e *htmlSVGtext) Tabindex(v string) HTMLSVGtext {
+	e.setAttr("tabindex", v)
+	return e
+}
+
+func (e *htmlSVGtext) Textlength(v string) HTMLSVGtext {
+	e.setAttr("textlength", v)
+	return e
+}
+
+func (e *htmlSVGtext) X(v string) HTMLSVGtext {
+	e.setAttr("x", v)
+	return e
+}
+
+func (e *htmlSVGtext) Y(v string) HTMLSVGtext {
+	e.setAttr("y", v)
+	return e
+}
+
+func (e *htmlSVGtext) On(event string, h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler(event, h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnActivate(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("activate", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCancel(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("cancel", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCanplay(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("canplay", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCanplaythrough(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("canplaythrough", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnChange(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("change", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnClick(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("click", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnClose(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("close", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCopy(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("copy", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCuechange(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("cuechange", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnCut(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("cut", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDblclick(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dblclick", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDrag(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("drag", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDragend(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dragend", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDragenter(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dragenter", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDragleave(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dragleave", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDragover(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dragover", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDragstart(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("dragstart", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDrop(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("drop", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnDurationchange(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("durationchange", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnEmptied(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("emptied", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnEnded(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("ended", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnError(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("error", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnFocus(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("focus", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnFocusin(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("focusin", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnFocusout(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("focusout", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnInput(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("input", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnInvalid(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("invalid", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnKeydown(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("keydown", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnKeypress(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("keypress", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnKeyup(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("keyup", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnLoad(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("load", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnLoadeddata(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("loadeddata", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnLoadedmetadata(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("loadedmetadata", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnLoadstart(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("loadstart", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMousedown(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mousedown", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMouseenter(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mouseenter", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMouseleave(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mouseleave", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMousemove(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mousemove", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMouseout(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mouseout", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMouseover(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mouseover", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMouseup(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mouseup", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnMousewheel(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("mousewheel", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnPaste(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("paste", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnPause(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("pause", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnPlay(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("play", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnPlaying(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("playing", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnProgress(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("progress", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnRatechange(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("ratechange", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnReset(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("reset", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnResize(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("resize", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnScroll(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("scroll", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnSeeked(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("seeked", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnSeeking(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("seeking", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnSelect(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("select", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnShow(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("show", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnStalled(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("stalled", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnSubmit(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("submit", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnSuspend(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("suspend", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnTimeupdate(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("timeupdate", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnToggle(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("toggle", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnVolumechange(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("volumechange", h, scope...)
+	return e
+}
+
+func (e *htmlSVGtext) OnWaiting(h EventHandler, scope ...any) HTMLSVGtext {
+	e.setEventHandler("waiting", h, scope...)
+	return e
+}
+
 // HTMLSVGvkern is the interface that describes a "svgvkern" HTML element.
 type HTMLSVGvkern interface {
 	UI
