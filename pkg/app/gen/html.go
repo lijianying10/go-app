@@ -3552,7 +3552,7 @@ var svgattrs = map[string]attr{
 
 	"x": {
 		Name: "X",
-		Type: "string",
+		Type: "any",
 		Doc:  "The x attribute defines an x-axis coordinate in the user coordinate system.",
 	},
 
@@ -4441,7 +4441,7 @@ var svgattrs = map[string]attr{
 
 	"y": {
 		Name: "Y",
-		Type: "string",
+		Type: "any",
 		Doc:  "The y attribute defines a y-axis coordinate in the user coordinate system.",
 	},
 

@@ -56704,11 +56704,11 @@ type HTMLSVGtext interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGtext
+	X(v any) HTMLSVGtext
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGtext
+	Y(v any) HTMLSVGtext
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGtext
@@ -57068,12 +57068,12 @@ func (e *htmlSVGtext) Textlength(v string) HTMLSVGtext {
 	return e
 }
 
-func (e *htmlSVGtext) X(v string) HTMLSVGtext {
+func (e *htmlSVGtext) X(v any) HTMLSVGtext {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGtext) Y(v string) HTMLSVGtext {
+func (e *htmlSVGtext) Y(v any) HTMLSVGtext {
 	e.setAttr("y", v)
 	return e
 }
@@ -59517,11 +59517,11 @@ type HTMLSVGrect interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGrect
+	X(v any) HTMLSVGrect
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGrect
+	Y(v any) HTMLSVGrect
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGrect
@@ -59994,12 +59994,12 @@ func (e *htmlSVGrect) Width(v string) HTMLSVGrect {
 	return e
 }
 
-func (e *htmlSVGrect) X(v string) HTMLSVGrect {
+func (e *htmlSVGrect) X(v any) HTMLSVGrect {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGrect) Y(v string) HTMLSVGrect {
+func (e *htmlSVGrect) Y(v any) HTMLSVGrect {
 	e.setAttr("y", v)
 	return e
 }
@@ -61393,11 +61393,11 @@ type HTMLSVGfeSpotLight interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGfeSpotLight
+	X(v any) HTMLSVGfeSpotLight
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGfeSpotLight
+	Y(v any) HTMLSVGfeSpotLight
 
 	/* Z The z attribute defines the location along the z-axis for a light source in the coordinate system established by the primitiveUnits attribute on the <filter> element, assuming that, in the initial coordinate system, the positive z-axis comes out towards the person viewing the content and assuming that one unit along the z-axis equals one unit in x and y.
 	 */
@@ -61461,12 +61461,12 @@ func (e *htmlSVGfeSpotLight) Specularexponent(v string) HTMLSVGfeSpotLight {
 	return e
 }
 
-func (e *htmlSVGfeSpotLight) X(v string) HTMLSVGfeSpotLight {
+func (e *htmlSVGfeSpotLight) X(v any) HTMLSVGfeSpotLight {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGfeSpotLight) Y(v string) HTMLSVGfeSpotLight {
+func (e *htmlSVGfeSpotLight) Y(v any) HTMLSVGfeSpotLight {
 	e.setAttr("y", v)
 	return e
 }
@@ -61673,7 +61673,7 @@ type HTMLSvg interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSvg
+	X(v any) HTMLSvg
 
 	/* XMLNS specifies the xml namespace of the element.
 	 */
@@ -61681,7 +61681,7 @@ type HTMLSvg interface {
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSvg
+	Y(v any) HTMLSvg
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSvg
@@ -62209,7 +62209,7 @@ func (e *htmlSvg) Width(v string) HTMLSvg {
 	return e
 }
 
-func (e *htmlSvg) X(v string) HTMLSvg {
+func (e *htmlSvg) X(v any) HTMLSvg {
 	e.setAttr("x", v)
 	return e
 }
@@ -62219,7 +62219,7 @@ func (e *htmlSvg) XMLNS(v string) HTMLSvg {
 	return e
 }
 
-func (e *htmlSvg) Y(v string) HTMLSvg {
+func (e *htmlSvg) Y(v any) HTMLSvg {
 	e.setAttr("y", v)
 	return e
 }
@@ -65843,11 +65843,11 @@ type HTMLSVGtspan interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGtspan
+	X(v any) HTMLSVGtspan
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGtspan
+	Y(v any) HTMLSVGtspan
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGtspan
@@ -66325,12 +66325,12 @@ func (e *htmlSVGtspan) Visibility(v string) HTMLSVGtspan {
 	return e
 }
 
-func (e *htmlSVGtspan) X(v string) HTMLSVGtspan {
+func (e *htmlSVGtspan) X(v any) HTMLSVGtspan {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGtspan) Y(v string) HTMLSVGtspan {
+func (e *htmlSVGtspan) Y(v any) HTMLSVGtspan {
 	e.setAttr("y", v)
 	return e
 }
@@ -69199,11 +69199,11 @@ type HTMLSVGfePointLight interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGfePointLight
+	X(v any) HTMLSVGfePointLight
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGfePointLight
+	Y(v any) HTMLSVGfePointLight
 
 	/* Z The z attribute defines the location along the z-axis for a light source in the coordinate system established by the primitiveUnits attribute on the <filter> element, assuming that, in the initial coordinate system, the positive z-axis comes out towards the person viewing the content and assuming that one unit along the z-axis equals one unit in x and y.
 	 */
@@ -69251,12 +69251,12 @@ func (e *htmlSVGfePointLight) Text(v any) HTMLSVGfePointLight {
 	return e.Body(Text(v))
 }
 
-func (e *htmlSVGfePointLight) X(v string) HTMLSVGfePointLight {
+func (e *htmlSVGfePointLight) X(v any) HTMLSVGfePointLight {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGfePointLight) Y(v string) HTMLSVGfePointLight {
+func (e *htmlSVGfePointLight) Y(v any) HTMLSVGfePointLight {
 	e.setAttr("y", v)
 	return e
 }
@@ -70110,11 +70110,11 @@ type HTMLSVGuse interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGuse
+	X(v any) HTMLSVGuse
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGuse
+	Y(v any) HTMLSVGuse
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGuse
@@ -70594,12 +70594,12 @@ func (e *htmlSVGuse) Width(v string) HTMLSVGuse {
 	return e
 }
 
-func (e *htmlSVGuse) X(v string) HTMLSVGuse {
+func (e *htmlSVGuse) X(v any) HTMLSVGuse {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGuse) Y(v string) HTMLSVGuse {
+func (e *htmlSVGuse) Y(v any) HTMLSVGuse {
 	e.setAttr("y", v)
 	return e
 }
@@ -73165,11 +73165,11 @@ type HTMLSVGpattern interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGpattern
+	X(v any) HTMLSVGpattern
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGpattern
+	Y(v any) HTMLSVGpattern
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGpattern
@@ -73434,12 +73434,12 @@ func (e *htmlSVGpattern) Width(v string) HTMLSVGpattern {
 	return e
 }
 
-func (e *htmlSVGpattern) X(v string) HTMLSVGpattern {
+func (e *htmlSVGpattern) X(v any) HTMLSVGpattern {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGpattern) Y(v string) HTMLSVGpattern {
+func (e *htmlSVGpattern) Y(v any) HTMLSVGpattern {
 	e.setAttr("y", v)
 	return e
 }
@@ -73799,11 +73799,11 @@ type HTMLSVGforeignObject interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGforeignObject
+	X(v any) HTMLSVGforeignObject
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGforeignObject
+	Y(v any) HTMLSVGforeignObject
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGforeignObject
@@ -74305,12 +74305,12 @@ func (e *htmlSVGforeignObject) Width(v string) HTMLSVGforeignObject {
 	return e
 }
 
-func (e *htmlSVGforeignObject) X(v string) HTMLSVGforeignObject {
+func (e *htmlSVGforeignObject) X(v any) HTMLSVGforeignObject {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGforeignObject) Y(v string) HTMLSVGforeignObject {
+func (e *htmlSVGforeignObject) Y(v any) HTMLSVGforeignObject {
 	e.setAttr("y", v)
 	return e
 }
@@ -75427,11 +75427,11 @@ type HTMLSVGmask interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGmask
+	X(v any) HTMLSVGmask
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGmask
+	Y(v any) HTMLSVGmask
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGmask
@@ -75650,12 +75650,12 @@ func (e *htmlSVGmask) Width(v string) HTMLSVGmask {
 	return e
 }
 
-func (e *htmlSVGmask) X(v string) HTMLSVGmask {
+func (e *htmlSVGmask) X(v any) HTMLSVGmask {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGmask) Y(v string) HTMLSVGmask {
+func (e *htmlSVGmask) Y(v any) HTMLSVGmask {
 	e.setAttr("y", v)
 	return e
 }
@@ -77082,11 +77082,11 @@ type HTMLSVGsymbol interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGsymbol
+	X(v any) HTMLSVGsymbol
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGsymbol
+	Y(v any) HTMLSVGsymbol
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGsymbol
@@ -77569,12 +77569,12 @@ func (e *htmlSVGsymbol) Width(v string) HTMLSVGsymbol {
 	return e
 }
 
-func (e *htmlSVGsymbol) X(v string) HTMLSVGsymbol {
+func (e *htmlSVGsymbol) X(v any) HTMLSVGsymbol {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGsymbol) Y(v string) HTMLSVGsymbol {
+func (e *htmlSVGsymbol) Y(v any) HTMLSVGsymbol {
 	e.setAttr("y", v)
 	return e
 }
@@ -78164,11 +78164,11 @@ type HTMLSVGfilter interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGfilter
+	X(v any) HTMLSVGfilter
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGfilter
+	Y(v any) HTMLSVGfilter
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGfilter
@@ -78252,12 +78252,12 @@ func (e *htmlSVGfilter) Width(v string) HTMLSVGfilter {
 	return e
 }
 
-func (e *htmlSVGfilter) X(v string) HTMLSVGfilter {
+func (e *htmlSVGfilter) X(v any) HTMLSVGfilter {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGfilter) Y(v string) HTMLSVGfilter {
+func (e *htmlSVGfilter) Y(v any) HTMLSVGfilter {
 	e.setAttr("y", v)
 	return e
 }
@@ -83764,11 +83764,11 @@ type HTMLSVGimage interface {
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
-	X(v string) HTMLSVGimage
+	X(v any) HTMLSVGimage
 
 	/* Y The y attribute defines a y-axis coordinate in the user coordinate system.
 	 */
-	Y(v string) HTMLSVGimage
+	Y(v any) HTMLSVGimage
 
 	// On registers the given event handler to the specified event.
 	On(event string, h EventHandler, scope ...any) HTMLSVGimage
@@ -83857,12 +83857,12 @@ func (e *htmlSVGimage) Width(v string) HTMLSVGimage {
 	return e
 }
 
-func (e *htmlSVGimage) X(v string) HTMLSVGimage {
+func (e *htmlSVGimage) X(v any) HTMLSVGimage {
 	e.setAttr("x", v)
 	return e
 }
 
-func (e *htmlSVGimage) Y(v string) HTMLSVGimage {
+func (e *htmlSVGimage) Y(v any) HTMLSVGimage {
 	e.setAttr("y", v)
 	return e
 }

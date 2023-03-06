@@ -7040,8 +7040,8 @@ func TestSVGtext(t *testing.T) {
 	elem.Style("foo")
 	elem.Tabindex("foo")
 	elem.Textlength("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -7375,8 +7375,8 @@ func TestSVGrect(t *testing.T) {
 	elem.VectorEffect("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -7569,8 +7569,8 @@ func TestSVGfeSpotLight(t *testing.T) {
 	elem.Pointsaty("foo")
 	elem.Pointsatz("foo")
 	elem.Specularexponent("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 	elem.Z("foo")
 	elem.Text("hello")
 }
@@ -7622,9 +7622,9 @@ func TestSvg(t *testing.T) {
 	elem.Viewbox("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
+	elem.X(42)
 	elem.XMLNS("http://www.w3.org/2000/svg")
-	elem.Y("foo")
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8095,8 +8095,8 @@ func TestSVGtspan(t *testing.T) {
 	elem.Textlength("foo")
 	elem.VectorEffect("foo")
 	elem.Visibility("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8468,8 +8468,8 @@ func TestSVGfeMergeNode(t *testing.T) {
 
 func TestSVGfePointLight(t *testing.T) {
 	elem := SVGfePointLight()
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 	elem.Z("foo")
 
 	h := func(ctx Context, e Event) {}
@@ -8597,8 +8597,8 @@ func TestSVGuse(t *testing.T) {
 	elem.Viewbox("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -8959,8 +8959,8 @@ func TestSVGpattern(t *testing.T) {
 	elem.Viewbox("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9035,8 +9035,8 @@ func TestSVGforeignObject(t *testing.T) {
 	elem.VectorEffect("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9216,8 +9216,8 @@ func TestSVGmask(t *testing.T) {
 	elem.VectorEffect("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9416,8 +9416,8 @@ func TestSVGsymbol(t *testing.T) {
 	elem.Viewbox("foo")
 	elem.Visibility("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -9528,8 +9528,8 @@ func TestSVGfilter(t *testing.T) {
 	elem.Primitiveunits("foo", "bar")
 	elem.Style("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
@@ -10195,8 +10195,8 @@ func TestSVGimage(t *testing.T) {
 	elem.Style("foo")
 	elem.Transform("foo")
 	elem.Width("foo")
-	elem.X("foo")
-	elem.Y("foo")
+	elem.X(42)
+	elem.Y(42)
 
 	h := func(ctx Context, e Event) {}
 	elem.On("click", h)
