@@ -56642,6 +56642,38 @@ type HTMLSVGtext interface {
 	 */
 	Class(v string) HTMLSVGtext
 
+	/* ClipPath The clip-path presentation attribute defines or associates a clipping path with the element it is related to.
+	 */
+	ClipPath(v string) HTMLSVGtext
+
+	/* ClipRule « SVG Attribute reference home
+	 */
+	ClipRule(v string) HTMLSVGtext
+
+	/* Color The color attribute is used to provide a potential indirect value, currentcolor, for the fill, stroke, stop-color, flood-color, and lighting-color attributes.
+	 */
+	Color(v string) HTMLSVGtext
+
+	/* ColorInterpolation The color-interpolation attribute specifies the color space for gradient interpolations, color animations, and alpha compositing.
+	 */
+	ColorInterpolation(n string, v any) HTMLSVGtext
+
+	/* ColorRendering
+	 */
+	ColorRendering(n string, v any) HTMLSVGtext
+
+	/* Cursor SVG Attribute reference home
+	 */
+	Cursor(n string, v any) HTMLSVGtext
+
+	/* Display The display attribute lets you control the rendering of graphical or container elements.
+	 */
+	Display(v string) HTMLSVGtext
+
+	/* DominantBaseline The dominant-baseline attribute specifies the dominant baseline, which is the baseline used to align the box's text and inline-level contents. It also indicates the default alignment baseline of any boxes participating in baseline alignment in the box's alignment context.
+	 */
+	DominantBaseline(v string) HTMLSVGtext
+
 	/* Dx The dx attribute indicates a shift along the x-axis on the position of an element or its content.
 	 */
 	Dx(v string) HTMLSVGtext
@@ -56649,6 +56681,22 @@ type HTMLSVGtext interface {
 	/* Dy The dy attribute indicates a shift along the y-axis on the position of an element or its content.
 	 */
 	Dy(v string) HTMLSVGtext
+
+	/* Fill The fill attribute has two different meanings. For shapes and text it's a presentation attribute that defines the color (or any SVG paint servers like gradients or patterns) used to paint the element; for animation it defines the final state of the animation.
+	 */
+	Fill(v string) HTMLSVGtext
+
+	/* FillOpacity The fill-opacity attribute is a presentation attribute defining the opacity of the paint server (color, gradient, pattern, etc.) applied to a shape.
+	 */
+	FillOpacity(v string) HTMLSVGtext
+
+	/* FillRule The fill-rule attribute is a presentation attribute defining the algorithm to use to determine the inside part of a shape.
+	 */
+	FillRule(v string) HTMLSVGtext
+
+	/* Filter The filter attribute specifies the filter effects defined by the <filter> element that shall be applied to its element.
+	 */
+	Filter(v string) HTMLSVGtext
 
 	/* FontFamily The font-family attribute indicates which font family will be used to render the text, specified as a prioritized list of font family names and/or generic family names.
 	 */
@@ -56686,9 +56734,57 @@ type HTMLSVGtext interface {
 	 */
 	Lengthadjust(v string) HTMLSVGtext
 
+	/* Mask The mask attribute is a presentation attribute mainly used to bind a given <mask> element with the element the attribute belongs to.
+	 */
+	Mask(v string) HTMLSVGtext
+
+	/* Opacity The opacity attribute specifies the transparency of an object or of a group of objects, that is, the degree to which the background behind the element is overlaid.
+	 */
+	Opacity(v string) HTMLSVGtext
+
+	/* PointerEvents The pointer-events attribute is a presentation attribute that allows defining whether or when an element may be the target of a mouse event.
+	 */
+	PointerEvents(v string) HTMLSVGtext
+
 	/* Rotate The rotate attribute specifies how the animated element rotates as it travels along a path specified in an <animateMotion> element.
 	 */
 	Rotate(v string) HTMLSVGtext
+
+	/* ShapeRendering The shape-rendering attribute provides hints to the renderer about what tradeoffs to make when rendering shapes like paths, circles, or rectangles.
+	 */
+	ShapeRendering(v string) HTMLSVGtext
+
+	/* Stroke The stroke attribute is a presentation attribute defining the color (or any SVG paint servers like gradients or patterns) used to paint the outline of the shape;
+	 */
+	Stroke(v string) HTMLSVGtext
+
+	/* StrokeDasharray The stroke-dasharray attribute is a presentation attribute defining the pattern of dashes and gaps used to paint the outline of the shape;
+	 */
+	StrokeDasharray(v string) HTMLSVGtext
+
+	/* StrokeDashoffset The stroke-dashoffset attribute is a presentation attribute defining an offset on the rendering of the associated dash array.
+	 */
+	StrokeDashoffset(v string) HTMLSVGtext
+
+	/* StrokeLinecap The stroke-linecap attribute is a presentation attribute defining the shape to be used at the end of open subpaths when they are stroked.
+	 */
+	StrokeLinecap(v string) HTMLSVGtext
+
+	/* StrokeLinejoin The stroke-linejoin attribute is a presentation attribute defining the shape to be used at the corners of paths when they are stroked.
+	 */
+	StrokeLinejoin(v string) HTMLSVGtext
+
+	/* StrokeMiterlimit The stroke-miterlimit attribute is a presentation attribute defining a limit on the ratio of the miter length to the stroke-width used to draw a miter join. When the limit is exceeded, the join is converted from a miter to a bevel.
+	 */
+	StrokeMiterlimit(v string) HTMLSVGtext
+
+	/* StrokeOpacity The stroke-opacity attribute is a presentation attribute defining the opacity of the paint server (color, gradient, pattern, etc.) applied to the stroke of a shape.
+	 */
+	StrokeOpacity(v string) HTMLSVGtext
+
+	/* StrokeWidth The stroke-width attribute is a presentation attribute defining the width of the stroke to be applied to the shape.
+	 */
+	StrokeWidth(v string) HTMLSVGtext
 
 	/* Style The style attribute allows to style an element using CSS declarations. It functions identically to the style attribute in HTML.
 	 */
@@ -56698,9 +56794,25 @@ type HTMLSVGtext interface {
 	 */
 	Tabindex(v string) HTMLSVGtext
 
+	/* TextAnchor The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of pre-formatted text or auto-wrapped text where the wrapping area is determined from the inline-size property relative to a given point.
+	 */
+	TextAnchor(v string) HTMLSVGtext
+
 	/* Textlength The textLength attribute, available on SVG <text> and <tspan> elements, lets you specify the width of the space into which the text will draw. The user agent will ensure that the text does not extend farther than that distance, using the method or methods specified by the lengthAdjust attribute. By default, only the spacing between characters is adjusted, but the glyph size can also be adjusted if you change lengthAdjust.
 	 */
 	Textlength(v string) HTMLSVGtext
+
+	/* Transform The transform attribute defines a list of transform definitions that are applied to an element and the element's children.
+	 */
+	Transform(v string) HTMLSVGtext
+
+	/* VectorEffect The vector-effect property specifies the vector effect to use when drawing an object. Vector effects are applied before any of the other compositing operations, i.e. filters, masks and clips.
+	 */
+	VectorEffect(v string) HTMLSVGtext
+
+	/* Visibility The visibility attribute lets you control the visibility of graphical elements. With a value of hidden or collapse the current graphics element is invisible.
+	 */
+	Visibility(v string) HTMLSVGtext
 
 	/* X The x attribute defines an x-axis coordinate in the user coordinate system.
 	 */
@@ -56993,6 +57105,46 @@ func (e *htmlSVGtext) Class(v string) HTMLSVGtext {
 	return e
 }
 
+func (e *htmlSVGtext) ClipPath(v string) HTMLSVGtext {
+	e.setAttr("clip-path", v)
+	return e
+}
+
+func (e *htmlSVGtext) ClipRule(v string) HTMLSVGtext {
+	e.setAttr("clip-rule", v)
+	return e
+}
+
+func (e *htmlSVGtext) Color(v string) HTMLSVGtext {
+	e.setAttr("color", v)
+	return e
+}
+
+func (e *htmlSVGtext) ColorInterpolation(n string, v any) HTMLSVGtext {
+	e.setAttr(n, v)
+	return e
+}
+
+func (e *htmlSVGtext) ColorRendering(n string, v any) HTMLSVGtext {
+	e.setAttr(n, v)
+	return e
+}
+
+func (e *htmlSVGtext) Cursor(n string, v any) HTMLSVGtext {
+	e.setAttr(n, v)
+	return e
+}
+
+func (e *htmlSVGtext) Display(v string) HTMLSVGtext {
+	e.setAttr("display", v)
+	return e
+}
+
+func (e *htmlSVGtext) DominantBaseline(v string) HTMLSVGtext {
+	e.setAttr("dominant-baseline", v)
+	return e
+}
+
 func (e *htmlSVGtext) Dx(v string) HTMLSVGtext {
 	e.setAttr("dx", v)
 	return e
@@ -57000,6 +57152,26 @@ func (e *htmlSVGtext) Dx(v string) HTMLSVGtext {
 
 func (e *htmlSVGtext) Dy(v string) HTMLSVGtext {
 	e.setAttr("dy", v)
+	return e
+}
+
+func (e *htmlSVGtext) Fill(v string) HTMLSVGtext {
+	e.setAttr("fill", v)
+	return e
+}
+
+func (e *htmlSVGtext) FillOpacity(v string) HTMLSVGtext {
+	e.setAttr("fill-opacity", v)
+	return e
+}
+
+func (e *htmlSVGtext) FillRule(v string) HTMLSVGtext {
+	e.setAttr("fill-rule", v)
+	return e
+}
+
+func (e *htmlSVGtext) Filter(v string) HTMLSVGtext {
+	e.setAttr("filter", v)
 	return e
 }
 
@@ -57048,8 +57220,68 @@ func (e *htmlSVGtext) Lengthadjust(v string) HTMLSVGtext {
 	return e
 }
 
+func (e *htmlSVGtext) Mask(v string) HTMLSVGtext {
+	e.setAttr("mask", v)
+	return e
+}
+
+func (e *htmlSVGtext) Opacity(v string) HTMLSVGtext {
+	e.setAttr("opacity", v)
+	return e
+}
+
+func (e *htmlSVGtext) PointerEvents(v string) HTMLSVGtext {
+	e.setAttr("pointer-events", v)
+	return e
+}
+
 func (e *htmlSVGtext) Rotate(v string) HTMLSVGtext {
 	e.setAttr("rotate", v)
+	return e
+}
+
+func (e *htmlSVGtext) ShapeRendering(v string) HTMLSVGtext {
+	e.setAttr("shape-rendering", v)
+	return e
+}
+
+func (e *htmlSVGtext) Stroke(v string) HTMLSVGtext {
+	e.setAttr("stroke", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeDasharray(v string) HTMLSVGtext {
+	e.setAttr("stroke-dasharray", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeDashoffset(v string) HTMLSVGtext {
+	e.setAttr("stroke-dashoffset", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeLinecap(v string) HTMLSVGtext {
+	e.setAttr("stroke-linecap", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeLinejoin(v string) HTMLSVGtext {
+	e.setAttr("stroke-linejoin", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeMiterlimit(v string) HTMLSVGtext {
+	e.setAttr("stroke-miterlimit", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeOpacity(v string) HTMLSVGtext {
+	e.setAttr("stroke-opacity", v)
+	return e
+}
+
+func (e *htmlSVGtext) StrokeWidth(v string) HTMLSVGtext {
+	e.setAttr("stroke-width", v)
 	return e
 }
 
@@ -57063,8 +57295,28 @@ func (e *htmlSVGtext) Tabindex(v string) HTMLSVGtext {
 	return e
 }
 
+func (e *htmlSVGtext) TextAnchor(v string) HTMLSVGtext {
+	e.setAttr("text-anchor", v)
+	return e
+}
+
 func (e *htmlSVGtext) Textlength(v string) HTMLSVGtext {
 	e.setAttr("textlength", v)
+	return e
+}
+
+func (e *htmlSVGtext) Transform(v string) HTMLSVGtext {
+	e.setAttr("transform", v)
+	return e
+}
+
+func (e *htmlSVGtext) VectorEffect(v string) HTMLSVGtext {
+	e.setAttr("vector-effect", v)
+	return e
+}
+
+func (e *htmlSVGtext) Visibility(v string) HTMLSVGtext {
+	e.setAttr("visibility", v)
 	return e
 }
 

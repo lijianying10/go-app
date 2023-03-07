@@ -1033,6 +1033,7 @@ var tags = []tag{
 		Doc:  `The SVG <text> element draws a graphics element consisting of text. It's possible to apply a gradient, pattern, clipping path, mask, or filter to <text>, like any other SVG graphics element.`,
 		Attrs: attrsSVGByNames(
 			"x", "y", "dx", "dy", "rotate", "lengthAdjust", "textLength", "id", "tabindex", "class", "style", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight",
+			"clip-path", "clip-rule", "color", "color-interpolation", "color-rendering", "cursor", "display", "dominant-baseline", "fill", "fill-opacity", "fill-rule", "filter", "mask", "opacity", "pointer-events", "shape-rendering", "stroke", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke-width", "text-anchor", "transform", "vector-effect", "visibility",
 		),
 		EventHandlers: withSVGDocumentElementEventHandler(withSVGGlobalEventHandler(withSVGGraphicalEventHandler()...)...),
 	},
