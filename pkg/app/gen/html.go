@@ -3559,7 +3559,7 @@ var svgattrs = map[string]attr{
 
 	"cx": {
 		Name: "Cx",
-		Type: "string",
+		Type: "any",
 		Doc:  "The cx attribute define the x-axis coordinate of a center point.",
 	},
 
@@ -3744,7 +3744,7 @@ var svgattrs = map[string]attr{
 
 	"cy": {
 		Name: "Cy",
-		Type: "string",
+		Type: "any",
 		Doc:  "The cy attribute define the y-axis coordinate of a center point.",
 	},
 

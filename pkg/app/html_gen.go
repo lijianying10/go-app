@@ -60604,11 +60604,11 @@ type HTMLSVGellipse interface {
 
 	/* Cx The cx attribute define the x-axis coordinate of a center point.
 	 */
-	Cx(v string) HTMLSVGellipse
+	Cx(v any) HTMLSVGellipse
 
 	/* Cy The cy attribute define the y-axis coordinate of a center point.
 	 */
-	Cy(v string) HTMLSVGellipse
+	Cy(v any) HTMLSVGellipse
 
 	/* Display The display attribute lets you control the rendering of graphical or container elements.
 	 */
@@ -61044,12 +61044,12 @@ func (e *htmlSVGellipse) Cursor(n string, v any) HTMLSVGellipse {
 	return e
 }
 
-func (e *htmlSVGellipse) Cx(v string) HTMLSVGellipse {
+func (e *htmlSVGellipse) Cx(v any) HTMLSVGellipse {
 	e.setAttr("cx", v)
 	return e
 }
 
-func (e *htmlSVGellipse) Cy(v string) HTMLSVGellipse {
+func (e *htmlSVGellipse) Cy(v any) HTMLSVGellipse {
 	e.setAttr("cy", v)
 	return e
 }
@@ -82671,11 +82671,11 @@ type HTMLSVGcircle interface {
 
 	/* Cx The cx attribute define the x-axis coordinate of a center point.
 	 */
-	Cx(v string) HTMLSVGcircle
+	Cx(v any) HTMLSVGcircle
 
 	/* Cy The cy attribute define the y-axis coordinate of a center point.
 	 */
-	Cy(v string) HTMLSVGcircle
+	Cy(v any) HTMLSVGcircle
 
 	/* Display The display attribute lets you control the rendering of graphical or container elements.
 	 */
@@ -83116,12 +83116,12 @@ func (e *htmlSVGcircle) Cursor(n string, v any) HTMLSVGcircle {
 	return e
 }
 
-func (e *htmlSVGcircle) Cx(v string) HTMLSVGcircle {
+func (e *htmlSVGcircle) Cx(v any) HTMLSVGcircle {
 	e.setAttr("cx", v)
 	return e
 }
 
-func (e *htmlSVGcircle) Cy(v string) HTMLSVGcircle {
+func (e *htmlSVGcircle) Cy(v any) HTMLSVGcircle {
 	e.setAttr("cy", v)
 	return e
 }
