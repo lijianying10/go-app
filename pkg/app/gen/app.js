@@ -12,9 +12,9 @@ const goappWasmContentLengthHeader = "{{.WasmContentLengthHeader}}";
 let goappServiceWorkerRegistration;
 let deferredPrompt = null;
 
-goappInitServiceWorker();
-goappWatchForUpdate();
-goappWatchForInstallable();
+//goappInitServiceWorker();
+//goappWatchForUpdate();
+//goappWatchForInstallable();
 goappInitWebAssembly();
 
 // -----------------------------------------------------------------------------
